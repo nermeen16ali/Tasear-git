@@ -1,0 +1,632 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="منصة تسعير تساعدك في مقارنة أسعار المنتجات من مئات الموردين واختيار الأنسب لجودتك وميزانيتك.">
+    <title>الرئيسية</title>
+    <link rel="icon" type="image/png" href="assets/images/tasaer-logo.svg" />
+
+    <!-- Bootstrap 5 RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <!--odometer-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.css"
+        integrity="sha512-kMPqFnKueEwgQFzXLEEl671aHhQqrZLS5IP3HzqdfozaST/EgU+/wkM07JCmXFAt9GO810I//8DBonsJUzGQsQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/tasaer-logo.svg" alt="تسعير" height="40">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav Links & Buttons -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">الفئات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">المنتجات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">الموردين</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">عن تسعير</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">تواصل معنا</a>
+                        </li>
+                    </ul>
+
+                    <!-- Action Buttons -->
+                    <div class="d-flex gap-2">
+                        <a href="#" class="main-btn btn-custom-light d-flex align-items-center gap-2">
+                            سجل كمورد
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path
+                                    d="M3.94434 13.5869C6.19656 12.2459 8.82792 11.7561 11.3545 12.1123C12.2733 12.2419 13.1686 12.484 14.0332 12.8369C14.4167 12.9934 14.6009 13.431 14.4443 13.8145C14.2878 14.1978 13.8502 14.382 13.4668 14.2256C12.7167 13.9194 11.9416 13.7099 11.1455 13.5977C8.94614 13.2875 6.66099 13.7155 4.71191 14.876C4.54407 14.9759 4.35964 15.0802 4.16699 15.1895C3.45439 15.5937 2.62208 16.066 2.04199 16.6338C1.68193 16.9862 1.52846 17.2773 1.50391 17.502C1.48447 17.6803 1.53003 17.9742 1.98047 18.4033C3.01624 19.3901 4.06849 19.9999 5.34082 20H11.25C11.6642 20 12 20.3358 12 20.75C12 21.1642 11.6642 21.5 11.25 21.5H5.34082C3.52262 21.4999 2.11671 20.6053 0.945312 19.4893C0.266505 18.8425 -0.0720448 18.1146 0.0126953 17.3389C0.092441 16.6093 0.531496 16.0134 0.993164 15.5615C1.73132 14.8391 2.80876 14.2312 3.52148 13.8291C3.68409 13.7374 3.82805 13.6562 3.94434 13.5869ZM17.25 13C17.6642 13 18 13.3358 18 13.75V16.5H20.75C21.1642 16.5 21.5 16.8358 21.5 17.25C21.5 17.6642 21.1642 18 20.75 18H18V20.75C18 21.1642 17.6642 21.5 17.25 21.5C16.8358 21.5 16.5 21.1642 16.5 20.75V18H13.75C13.3358 18 13 17.6642 13 17.25C13 16.8358 13.3358 16.5 13.75 16.5H16.5V13.75C16.5 13.3358 16.8358 13 17.25 13ZM10.75 0C13.6495 0 16 2.3505 16 5.25C16 8.14949 13.6495 10.5 10.75 10.5C7.8505 10.5 5.5 8.14949 5.5 5.25C5.5 2.3505 7.8505 0 10.75 0ZM10.75 1.5C8.67893 1.5 7 3.17893 7 5.25C7 7.32107 8.67893 9 10.75 9C12.8211 9 14.5 7.32107 14.5 5.25C14.5 3.17893 12.8211 1.5 10.75 1.5Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="#" class="main-btn btn-custom-dark d-flex align-items-center gap-2">
+                            طلب تسعير
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                fill="none">
+                                <path
+                                    d="M8.58984 0C10.4153 -1.13241e-05 11.8493 -0.000118482 12.9688 0.150391C14.1159 0.304632 15.0261 0.62762 15.7412 1.34277C16.4564 2.05793 16.7794 2.96804 16.9336 4.11523C17.0841 5.23471 17.084 6.66865 17.084 8.49414V8.58984C17.084 10.4153 17.0841 11.8493 16.9336 12.9688C16.7794 14.1159 16.4564 15.0261 15.7412 15.7412C15.0261 16.4564 14.1159 16.7794 12.9688 16.9336C11.8493 17.0841 10.4153 17.084 8.58984 17.084H8.49414C6.66865 17.084 5.23471 17.0841 4.11523 16.9336C2.96804 16.7794 2.05793 16.4564 1.34277 15.7412C0.62762 15.0261 0.304632 14.1159 0.150391 12.9688C-0.000118482 11.8493 -1.13241e-05 10.4153 0 8.58984V8.49414C-1.13241e-05 6.66865 -0.000118444 5.23471 0.150391 4.11523C0.304632 2.96804 0.627619 2.05793 1.34277 1.34277C2.05793 0.627619 2.96804 0.304632 4.11523 0.150391C5.23471 -0.000118444 6.66865 -1.13241e-05 8.49414 0H8.58984ZM8.54199 1.25C6.65854 1.25 5.30877 1.25167 4.28223 1.38965C3.27362 1.52525 2.67077 1.78236 2.22656 2.22656C1.78236 2.67077 1.52525 3.27362 1.38965 4.28223C1.25167 5.30877 1.25 6.65854 1.25 8.54199C1.25 10.4254 1.25167 11.7752 1.38965 12.8018C1.52525 13.8104 1.78236 14.4132 2.22656 14.8574C2.67077 15.3016 3.27362 15.5587 4.28223 15.6943C5.30877 15.8323 6.65854 15.834 8.54199 15.834C10.4254 15.834 11.7752 15.8323 12.8018 15.6943C13.8104 15.5587 14.4132 15.3016 14.8574 14.8574C15.3016 14.4132 15.5587 13.8104 15.6943 12.8018C15.8323 11.7752 15.834 10.4254 15.834 8.54199C15.834 6.65854 15.8323 5.30877 15.6943 4.28223C15.5587 3.27362 15.3016 2.67077 14.8574 2.22656C14.4132 1.78236 13.8104 1.52525 12.8018 1.38965C11.7752 1.25167 10.4254 1.25 8.54199 1.25ZM6.45898 9.58398C6.80401 9.58416 7.08398 9.86391 7.08398 10.209V11.875C7.08398 12.2201 6.80401 12.4998 6.45898 12.5C6.11381 12.5 5.83398 12.2202 5.83398 11.875V10.209C5.83398 9.86381 6.11381 9.58398 6.45898 9.58398ZM4.375 10.417C4.72018 10.417 5 10.6968 5 11.042C5 11.3872 4.72018 11.667 4.375 11.667H3.54199C3.19681 11.667 2.91699 11.3872 2.91699 11.042C2.91699 10.6968 3.19681 10.417 3.54199 10.417H4.375ZM13.542 10.417C13.8872 10.417 14.167 10.6968 14.167 11.042C14.167 11.3872 13.8872 11.667 13.542 11.667H8.54199C8.19681 11.667 7.91699 11.3872 7.91699 11.042C7.91699 10.6968 8.19681 10.417 8.54199 10.417H13.542ZM8.54199 4.58398C8.88717 4.58398 9.16699 4.86381 9.16699 5.20898V6.875C9.16699 7.22018 8.88717 7.5 8.54199 7.5C8.19681 7.5 7.91699 7.22018 7.91699 6.875V5.20898C7.91699 4.86381 8.19681 4.58398 8.54199 4.58398ZM10.625 4.58398C10.9702 4.58398 11.25 4.86381 11.25 5.20898V6.875C11.25 7.22018 10.9702 7.5 10.625 7.5C10.28 7.49982 10 7.22007 10 6.875V5.20898C10 4.86391 10.28 4.58416 10.625 4.58398ZM6.45898 5.41699C6.80401 5.41717 7.08398 5.69692 7.08398 6.04199C7.08398 6.38706 6.80401 6.66682 6.45898 6.66699H3.54199C3.19681 6.66699 2.91699 6.38717 2.91699 6.04199C2.91699 5.69681 3.19681 5.41699 3.54199 5.41699H6.45898ZM13.542 5.41699C13.8872 5.41699 14.167 5.69681 14.167 6.04199C14.167 6.38717 13.8872 6.66699 13.542 6.66699H12.709C12.3638 6.66699 12.084 6.38717 12.084 6.04199C12.084 5.69681 12.3638 5.41699 12.709 5.41699H13.542Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h1 class="hero-title">
+                            قارن و أكتشف أفضل الأسعار ، مئات الموردين،<br>
+                            الموثوقين في مكان واحد
+                        </h1>
+                        <p class="hero-subtitle">
+                            منصة تسعير تساعدك في مقارنة أسعار المنتجات من مئات الموردين واختيار الأنسب لجودتك وميزانيتك.
+                        </p>
+
+                        <!-- Upload Quote Button -->
+                        <a href="#" class="btn-upload-quote">
+                            إرفع تسعيرتك
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                                fill="none">
+                                <path
+                                    d="M10.3076 0C12.4979 -1.35863e-05 14.2183 0.000117035 15.5615 0.180664C16.9382 0.365751 18.0305 0.75313 18.8887 1.61133C19.7469 2.46953 20.1342 3.56182 20.3193 4.93848C20.4999 6.28174 20.5 8.00212 20.5 10.1924V10.3076C20.5 12.4979 20.4999 14.2183 20.3193 15.5615C20.1342 16.9382 19.7469 18.0305 18.8887 18.8887C18.0305 19.7469 16.9382 20.1342 15.5615 20.3193C14.2183 20.4999 12.4979 20.5 10.3076 20.5H10.1924C8.00212 20.5 6.28174 20.4999 4.93848 20.3193C3.56182 20.1342 2.46953 19.7469 1.61133 18.8887C0.75313 18.0305 0.365751 16.9382 0.180664 15.5615C0.000117035 14.2183 -1.35863e-05 12.4979 0 10.3076V10.1924C-1.35863e-05 8.00212 0.000117076 6.28174 0.180664 4.93848C0.365751 3.56182 0.75313 2.46953 1.61133 1.61133C2.46953 0.75313 3.56182 0.365751 4.93848 0.180664C6.28174 0.000117076 8.00213 -1.35863e-05 10.1924 0H10.3076ZM10.25 1.5C7.98963 1.5 6.3696 1.50137 5.1377 1.66699C3.92747 1.82972 3.2049 2.13885 2.67188 2.67188C2.13885 3.2049 1.82972 3.92747 1.66699 5.1377C1.50137 6.3696 1.5 7.98963 1.5 10.25C1.5 12.5104 1.50137 14.1304 1.66699 15.3623C1.82972 16.5725 2.13885 17.2951 2.67188 17.8281C3.2049 18.3611 3.92747 18.6703 5.1377 18.833C6.3696 18.9986 7.98963 19 10.25 19C12.5104 19 14.1304 18.9986 15.3623 18.833C16.5725 18.6703 17.2951 18.3611 17.8281 17.8281C18.3611 17.2951 18.6703 16.5725 18.833 15.3623C18.9986 14.1304 19 12.5104 19 10.25C19 7.98963 18.9986 6.3696 18.833 5.1377C18.6703 3.92747 18.3611 3.2049 17.8281 2.67188C17.2951 2.13885 16.5725 1.82972 15.3623 1.66699C14.1304 1.50137 12.5104 1.5 10.25 1.5ZM7.75 11.5C8.16421 11.5 8.5 11.8358 8.5 12.25V14.25C8.5 14.6642 8.16421 15 7.75 15C7.33579 15 7 14.6642 7 14.25V12.25C7 11.8358 7.33579 11.5 7.75 11.5ZM5.25 12.5C5.66421 12.5 6 12.8358 6 13.25C6 13.6642 5.66421 14 5.25 14H4.25C3.83579 14 3.5 13.6642 3.5 13.25C3.5 12.8358 3.83579 12.5 4.25 12.5H5.25ZM16.25 12.5C16.6642 12.5 17 12.8358 17 13.25C17 13.6642 16.6642 14 16.25 14H10.25C9.83579 14 9.5 13.6642 9.5 13.25C9.5 12.8358 9.83579 12.5 10.25 12.5H16.25ZM10.25 5.5C10.6642 5.5 11 5.83579 11 6.25V8.25C11 8.66421 10.6642 9 10.25 9C9.83579 9 9.5 8.66421 9.5 8.25V6.25C9.5 5.83579 9.83579 5.5 10.25 5.5ZM12.75 5.5C13.1642 5.5 13.5 5.83579 13.5 6.25V8.25C13.5 8.66421 13.1642 9 12.75 9C12.3358 9 12 8.66421 12 8.25V6.25C12 5.83579 12.3358 5.5 12.75 5.5ZM7.75 6.5C8.16421 6.5 8.5 6.83579 8.5 7.25C8.5 7.66421 8.16421 8 7.75 8H4.25C3.83579 8 3.5 7.66421 3.5 7.25C3.5 6.83579 3.83579 6.5 4.25 6.5H7.75ZM16.25 6.5C16.6642 6.5 17 6.83579 17 7.25C17 7.66421 16.6642 8 16.25 8H15.25C14.8358 8 14.5 7.66421 14.5 7.25C14.5 6.83579 14.8358 6.5 15.25 6.5H16.25Z"
+                                    fill="#063235" />
+                            </svg>
+                        </a>
+                        <div class="nav search-tabs mx-auto w-fit-content" id="sub-nav-tab" role="tablist">
+                            <a href="#" class="search-tab fw-medium active" id="nav-uploaded-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-uploaded" type="button" role="tab" aria-controls="nav-uploaded"
+                                aria-selected="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <path
+                                        d="M9.75 0C4.36522 0 0 4.36522 0 9.75C0 15.1348 4.36522 19.5 9.75 19.5C12.1726 19.5 14.3866 18.6138 16.0918 17.1514L20.2197 21.2803C20.5126 21.5732 20.9874 21.5732 21.2803 21.2803C21.5732 20.9874 21.5732 20.5126 21.2803 20.2197L17.1523 16.0908C18.6143 14.3858 19.5 12.1721 19.5 9.75C19.5 4.36522 15.1348 0 9.75 0ZM9.75 1.5C14.3063 1.5 18 5.19365 18 9.75C18 14.3063 14.3063 18 9.75 18C5.19365 18 1.5 14.3063 1.5 9.75C1.5 5.19365 5.19365 1.5 9.75 1.5Z"
+                                        fill="white" />
+                                </svg>
+                                بحث
+                            </a>
+                            <a href="#" class="search-tab fw-medium" id="nav-tender-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-tender" type="button" role="tab" aria-controls="nav-tender"
+                                aria-selected="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M9.10613 5.448C9.70413 3.698 12.1221 3.645 12.8311 5.289L12.8911 5.449L13.6981 7.809C13.8831 8.35023 14.1819 8.84551 14.5746 9.26142C14.9672 9.67734 15.4444 10.0042 15.9741 10.22L16.1911 10.301L18.5511 11.107C20.3011 11.705 20.3541 14.123 18.7111 14.832L18.5511 14.892L16.1911 15.699C15.6497 15.8838 15.1542 16.1826 14.7381 16.5753C14.3221 16.9679 13.995 17.4452 13.7791 17.975L13.6981 18.191L12.8921 20.552C12.2941 22.302 9.87613 22.355 9.16813 20.712L9.10613 20.552L8.30013 18.192C8.11531 17.6506 7.8165 17.1551 7.42387 16.739C7.03124 16.3229 6.55392 15.9959 6.02413 15.78L5.80813 15.699L3.44813 14.893C1.69713 14.295 1.64413 11.877 3.28813 11.169L3.44813 11.107L5.80813 10.301C6.34936 10.1161 6.84464 9.81719 7.26055 9.42457C7.67646 9.03195 8.00334 8.55469 8.21913 8.025L8.30013 7.809L9.10613 5.448ZM18.9991 2C19.1862 2 19.3695 2.05248 19.5283 2.15147C19.687 2.25046 19.8148 2.392 19.8971 2.56L19.9451 2.677L20.2951 3.703L21.3221 4.053C21.5096 4.1167 21.674 4.23462 21.7944 4.39182C21.9148 4.54902 21.9858 4.73842 21.9984 4.93602C22.011 5.13362 21.9647 5.33053 21.8653 5.50179C21.766 5.67304 21.618 5.81094 21.4401 5.898L21.3221 5.946L20.2961 6.296L19.9461 7.323C19.8823 7.51043 19.7643 7.6747 19.6071 7.79499C19.4498 7.91529 19.2604 7.98619 19.0628 7.99872C18.8652 8.01125 18.6683 7.96484 18.4971 7.86538C18.3259 7.76591 18.1881 7.61787 18.1011 7.44L18.0531 7.323L17.7031 6.297L16.6761 5.947C16.4886 5.8833 16.3243 5.76538 16.2039 5.60819C16.0835 5.45099 16.0125 5.26158 15.9999 5.06398C15.9872 4.86638 16.0335 4.66947 16.1329 4.49821C16.2323 4.32696 16.3803 4.18906 16.5581 4.102L16.6761 4.054L17.7021 3.704L18.0521 2.677C18.1196 2.47943 18.2471 2.30791 18.417 2.1865C18.5868 2.06509 18.7904 1.99987 18.9991 2Z"
+                                        fill="white" />
+                                </svg>
+                                اسأل تسعير AI
+                            </a>
+                        </div>
+                        <div class="tab-content" id="Sub-nav-tabContent">
+                            <div class="tab-pane active show" id="nav-uploaded" role="tabpanel"
+                                aria-labelledby="nav-uploaded-tab">
+                                <div class="d-flex align-items-center search-container mx-auto gap-2">
+                                    <div class="search-input-wrapper flex-grow-1">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 22 22" fill="none">
+                                                <path
+                                                    d="M9.75 0C4.36522 0 0 4.36522 0 9.75C0 15.1348 4.36522 19.5 9.75 19.5C12.1726 19.5 14.3866 18.6138 16.0918 17.1514L20.2197 21.2803C20.5126 21.5732 20.9874 21.5732 21.2803 21.2803C21.5732 20.9874 21.5732 20.5126 21.2803 20.2197L17.1523 16.0908C18.6143 14.3858 19.5 12.1721 19.5 9.75C19.5 4.36522 15.1348 0 9.75 0ZM9.75 1.5C14.3063 1.5 18 5.19365 18 9.75C18 14.3063 14.3063 18 9.75 18C5.19365 18 1.5 14.3063 1.5 9.75C1.5 5.19365 5.19365 1.5 9.75 1.5Z"
+                                                    fill="#374151" />
+                                            </svg>
+                                        </span>
+                                        <input type="text" class="search-input"
+                                            placeholder="إبحث عن منتج، فئة، أو خدمة...">
+                                    </div>
+                                    <button class="btn-filter" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="4" y1="21" x2="4" y2="14"></line>
+                                            <line x1="4" y1="10" x2="4" y2="3"></line>
+                                            <line x1="12" y1="21" x2="12" y2="12"></line>
+                                            <line x1="12" y1="8" x2="12" y2="3"></line>
+                                            <line x1="20" y1="21" x2="20" y2="16"></line>
+                                            <line x1="20" y1="12" x2="20" y2="3"></line>
+                                            <line x1="1" y1="14" x2="7" y2="14"></line>
+                                            <line x1="9" y1="8" x2="15" y2="8"></line>
+                                            <line x1="17" y1="16" x2="23" y2="16"></line>
+                                        </svg>
+                                        <span>تصنيف</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="nav-tender" role="tabpanel" aria-labelledby="nav-tender-tab">
+                                <div class="d-flex align-items-center search-container mx-auto gap-2">
+                                    <div class="search-input-wrapper flex-grow-1">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 22 22" fill="none">
+                                                <path
+                                                    d="M9.75 0C4.36522 0 0 4.36522 0 9.75C0 15.1348 4.36522 19.5 9.75 19.5C12.1726 19.5 14.3866 18.6138 16.0918 17.1514L20.2197 21.2803C20.5126 21.5732 20.9874 21.5732 21.2803 21.2803C21.5732 20.9874 21.5732 20.5126 21.2803 20.2197L17.1523 16.0908C18.6143 14.3858 19.5 12.1721 19.5 9.75C19.5 4.36522 15.1348 0 9.75 0ZM9.75 1.5C14.3063 1.5 18 5.19365 18 9.75C18 14.3063 14.3063 18 9.75 18C5.19365 18 1.5 14.3063 1.5 9.75C1.5 5.19365 5.19365 1.5 9.75 1.5Z"
+                                                    fill="#374151" />
+                                            </svg>
+                                        </span>
+                                        <input type="text" class="search-input" placeholder=" اسأل تسعير AI...">
+                                    </div>
+                                    <button class="btn-filter" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="4" y1="21" x2="4" y2="14"></line>
+                                            <line x1="4" y1="10" x2="4" y2="3"></line>
+                                            <line x1="12" y1="21" x2="12" y2="12"></line>
+                                            <line x1="12" y1="8" x2="12" y2="3"></line>
+                                            <line x1="20" y1="21" x2="20" y2="16"></line>
+                                            <line x1="20" y1="12" x2="20" y2="3"></line>
+                                            <line x1="1" y1="14" x2="7" y2="14"></line>
+                                            <line x1="9" y1="8" x2="15" y2="8"></line>
+                                            <line x1="17" y1="16" x2="23" y2="16"></line>
+                                        </svg>
+                                        <span>تصنيف</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stats -->
+        <section class="stats position-relative">
+            <div class="container">
+                <div class="row stats-row text-white text-center">
+                    <div class="col-4 stat-item">
+                        <p>عروض منفذة</p>
+                        <h3 class="ff-poppins">
+                            <span>+K</span>
+                            <span class="odometer proposals-odometer">0</span>
+                        </h3>
+                    </div>
+                    <div class="col-4 stat-item bordered-item position-relative">
+                        <p>علامة تجارية</p>
+                        <h3 class="ff-poppins">
+                            <span>+</span>
+                            <span class="odometer brand-odometer">0</span>
+                        </h3>
+                    </div>
+                    <div class="col-4 stat-item">
+                        <p>منتج متاح</p>
+                        <h3 class="ff-poppins">
+                            <span>+K</span>
+                            <span class="odometer product-odometer">0</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/Isolation_Mode.svg" class="stats-decoration position-absolute" alt="ديكور">
+        </section>
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">ماذا يقول <span class="highlight">عملاؤنا</span>؟</h2>
+                <p class="section-subtitle">آراء حقيقية من مستخدمي منصة تسعير</p>
+                <div class="swiper testimonials-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="https://i.pravatar.cc/150?img=1" alt="أحمد السعيد" class="testimonial-avatar">
+                                <div class="testimonial-rating">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                </div>
+                                <p class="testimonial-text">منصة رائعة وسهلة الاستخدام، حصلت على أفضل الأسعار في السوق
+                                    خلال دقائق معدودة</p>
+                                <h4 class="testimonial-author">أحمد السعيد</h4>
+                                <p class="testimonial-position">مدير المشتريات - شركة الرياض للمقاولات</p>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="https://i.pravatar.cc/150?img=5" alt="سارة المهدي" class="testimonial-avatar">
+                                <div class="testimonial-rating">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                </div>
+                                <p class="testimonial-text">استخدمت منصة تسعير في توفير أدوات من 15 % من تكلفة مشروعي
+                                    الأخير، شكراً لفريقكم</p>
+                                <h4 class="testimonial-author">سارة المهدي</h4>
+                                <p class="testimonial-position">مصممة داخلية - مؤسسة الإبداع</p>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="https://i.pravatar.cc/150?img=12" alt="محمد الفهد" class="testimonial-avatar">
+                                <div class="testimonial-rating">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                </div>
+                                <p class="testimonial-text">أفضل منصة للحصول على أسعار تنافسية للمنتجات المتنوعة</p>
+                                <h4 class="testimonial-author">محمد الفهد</h4>
+                                <p class="testimonial-position">مدير شبكة المطاعم - مؤسسة البحر</p>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="https://i.pravatar.cc/150?img=33" alt="فاطمة الزهراني"
+                                    class="testimonial-avatar">
+                                <div class="testimonial-rating">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FCD34D">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                </div>
+                                <p class="testimonial-text">خدمة ممتازة وسريعة، وفرت علي الكثير من الوقت والجهد</p>
+                                <h4 class="testimonial-author">فاطمة الزهراني</h4>
+                                <p class="testimonial-position">مديرة المشتريات - شركة النور</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Partners Section -->
+        <section class="partners-section">
+            <div class="container">
+                <h2 class="section-title">تعرف علي <span class="highlight">شركائنا</span>؟</h2>
+                <p class="section-subtitle">نتعاون مع أفضل الجهات الحكومية والموردين المعتمدين في المملكة</p>
+                <div class="logos">
+                    <div class="logos-slide">
+                        <img src="images/Alkhaleej.png" alt="Alkhaleej Logo" />
+                        <img src="images/emar-logo.png" alt="Emar Logo" />
+                        <img src="images/kafaat-logo.png" class="diwidth" alt="Kafaat Logo" />
+                        <img src="images/al-logo.webp" alt="Al Logo" />
+                        <img src="images/abad-logo.webp" class="diwidth" alt="Abad Logo" />
+                        <img src="images/eian-logo.png" alt="Eian Logo" />
+                        <img src="images/fahd-logo.webp" alt="Fahd Logo" />
+                        <img src="images/raha-logo.png" alt="Raha Logo" />
+                        <img src="images/esa-logo.webp" alt="Esa Logo" />
+                        <img src="images/shdw-logo.png" alt="SHDW Logo" />
+                        <img src="images/egona-logo.webp" alt="Egona Logo" />
+                        <img src="images/makam-logo.webp" alt="Makam Logo" />
+                        <img src="images/sufuh-logo.webp" alt="Sufuh Logo" />
+                        <img src="images/special-logo.webp" alt="Special Logo" />
+                    </div>
+
+                    <div class="logos-slide">
+                        <img src="images/Alkhaleej.png" alt="Alkhaleej Logo" />
+                        <img src="images/emar-logo.png" alt="Emar Logo" />
+                        <img src="images/kafaat-logo.png" class="diwidth" alt="Kafaat Logo" />
+                        <img src="images/al-logo.webp" alt="Al Logo" />
+                        <img src="images/abad-logo.webp" class="diwidth" alt="Abad Logo" />
+                        <img src="images/eian-logo.png" alt="Eian Logo" />
+                        <img src="images/fahd-logo.webp" alt="Fahd Logo" />
+                        <img src="images/raha-logo.png" alt="Raha Logo" />
+                        <img src="images/esa-logo.webp" alt="Esa Logo" />
+                        <img src="images/shdw-logo.png" alt="SHDW Logo" />
+                        <img src="images/egona-logo.webp" alt="Egona Logo" />
+                        <img src="images/makam-logo.webp" alt="Makam Logo" />
+                        <img src="images/sufuh-logo.webp" alt="Sufuh Logo" />
+                        <img src="images/special-logo.webp" alt="Special Logo" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA App Section -->
+        <section class="cta-app-section">
+            <div class="container">
+                <div class="cta-app-content">
+                    <!-- Right Side: Text Content -->
+                    <div class="cta-app-text">
+                        <h2 class="cta-app-title">هل أنت جاهز للحصول على أفضل الأسعار؟</h2>
+                        <p class="cta-app-description">انضم إلى آلاف العملاء الذين يوفرون الوقت والمال مع منصة تسعير</p>
+
+                        <div class="cta-app-buttons">
+                            <a href="#" class="app-button">طلب تسعير</a>
+                            <a href="#" class="app-button">تسعيرات خاصة</a>
+                        </div>
+
+                        <a href="#" class="login-link">
+                            سجّل كمورد
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path
+                                    d="M3.94434 13.5869C6.19656 12.2459 8.82792 11.7561 11.3545 12.1123C12.2733 12.2419 13.1686 12.484 14.0332 12.8369C14.4167 12.9934 14.6009 13.431 14.4443 13.8145C14.2878 14.1978 13.8502 14.382 13.4668 14.2256C12.7167 13.9194 11.9416 13.7099 11.1455 13.5977C8.94614 13.2875 6.66099 13.7155 4.71191 14.876C4.54407 14.9759 4.35964 15.0802 4.16699 15.1895C3.45439 15.5937 2.62208 16.066 2.04199 16.6338C1.68193 16.9862 1.52846 17.2773 1.50391 17.502C1.48447 17.6803 1.53003 17.9742 1.98047 18.4033C3.01624 19.3901 4.06849 19.9999 5.34082 20H11.25C11.6642 20 12 20.3358 12 20.75C12 21.1642 11.6642 21.5 11.25 21.5H5.34082C3.52262 21.4999 2.11671 20.6053 0.945312 19.4893C0.266505 18.8425 -0.0720448 18.1146 0.0126953 17.3389C0.092441 16.6093 0.531496 16.0134 0.993164 15.5615C1.73132 14.8391 2.80876 14.2312 3.52148 13.8291C3.68409 13.7374 3.82805 13.6562 3.94434 13.5869ZM17.25 13C17.6642 13 18 13.3358 18 13.75V16.5H20.75C21.1642 16.5 21.5 16.8358 21.5 17.25C21.5 17.6642 21.1642 18 20.75 18H18V20.75C18 21.1642 17.6642 21.5 17.25 21.5C16.8358 21.5 16.5 21.1642 16.5 20.75V18H13.75C13.3358 18 13 17.6642 13 17.25C13 16.8358 13.3358 16.5 13.75 16.5H16.5V13.75C16.5 13.3358 16.8358 13 17.25 13ZM10.75 0C13.6495 0 16 2.3505 16 5.25C16 8.14949 13.6495 10.5 10.75 10.5C7.8505 10.5 5.5 8.14949 5.5 5.25C5.5 2.3505 7.8505 0 10.75 0ZM10.75 1.5C8.67893 1.5 7 3.17893 7 5.25C7 7.32107 8.67893 9 10.75 9C12.8211 9 14.5 7.32107 14.5 5.25C14.5 3.17893 12.8211 1.5 10.75 1.5Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Left Side: Download Card -->
+                    <div class="cta-app-image">
+                        <div class="cta-app-card">
+                            <h3>احصل على تطبيق تسعير</h3>
+                            <p>قارن الأسعار وتواصل مع الموردين أينما كنت</p>
+
+                            <div class="store-buttons">
+                                <!-- App Store Button -->
+                                <a href="#" class="store-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z" />
+                                    </svg>
+                                    <div class="store-button-text">
+                                        <small>تحميل من</small>
+                                        <span>App Store</span>
+                                    </div>
+                                </a>
+                                <!-- Google Play Button -->
+                                <a href="#" class="store-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+                                    </svg>
+                                    <div class="store-button-text">
+                                        <small>تحميل من</small>
+                                        <span>Google Play</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Brand -->
+                <div class="footer-brand">
+                    <img src="assets/images/white-logo.svg" alt="Tasaer Logo" height="40">
+                    <p>منصة تسعير هي الحل الأمثل للحصول على أفضل الأسعار من موردين موثوقين لجميع احتياجاتك.</p>
+                    <div class="footer-social">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13"
+                                fill="none">
+                                <path
+                                    d="M14.3553 3.23856C14.3655 3.38069 14.3655 3.52284 14.3655 3.66497C14.3655 7.99997 11.066 12.9949 5.03553 12.9949C3.17766 12.9949 1.45178 12.4568 0 11.5228C0.263969 11.5533 0.51775 11.5634 0.791875 11.5634C2.32484 11.5634 3.73603 11.0457 4.86294 10.1624C3.42131 10.132 2.21319 9.18781 1.79694 7.88831C2 7.91875 2.20303 7.93906 2.41625 7.93906C2.71066 7.93906 3.00509 7.89844 3.27919 7.82741C1.77666 7.52281 0.649719 6.20303 0.649719 4.60913V4.56853C1.08625 4.81219 1.59391 4.96447 2.13194 4.98475C1.24869 4.39591 0.670031 3.39084 0.670031 2.25378C0.670031 1.64466 0.832438 1.08628 1.11672 0.598969C2.73094 2.58881 5.15734 3.88828 7.87813 4.03044C7.82738 3.78678 7.79691 3.533 7.79691 3.27919C7.79691 1.47206 9.25884 0 11.0761 0C12.0203 0 12.873 0.395938 13.472 1.03553C14.2131 0.893406 14.9238 0.619281 15.5533 0.243656C15.3096 1.00509 14.7918 1.64469 14.1116 2.05075C14.7715 1.97972 15.4111 1.79694 15.9999 1.54316C15.5533 2.19287 14.9949 2.77153 14.3553 3.23856Z"
+                                    fill="#9CA3AF" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M15.5 7.75C15.5 3.46875 12.0312 0 7.75 0C3.46875 0 0 3.46875 0 7.75C0 11.6181 2.83406 14.8244 6.53906 15.4062V9.99031H4.57031V7.75H6.53906V6.0425C6.53906 4.10031 7.69531 3.0275 9.46625 3.0275C10.3144 3.0275 11.2013 3.17875 11.2013 3.17875V5.085H10.2238C9.26125 5.085 8.96094 5.6825 8.96094 6.29531V7.75H11.1103L10.7666 9.99031H8.96094V15.4062C12.6659 14.8244 15.5 11.6181 15.5 7.75Z"
+                                    fill="#9CA3AF" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M7.00352 3.41172C5.01602 3.41172 3.41289 5.01484 3.41289 7.00234C3.41289 8.98984 5.01602 10.593 7.00352 10.593C8.99102 10.593 10.5941 8.98984 10.5941 7.00234C10.5941 5.01484 8.99102 3.41172 7.00352 3.41172ZM7.00352 9.33672C5.71914 9.33672 4.66914 8.28984 4.66914 7.00234C4.66914 5.71484 5.71602 4.66797 7.00352 4.66797C8.29102 4.66797 9.33789 5.71484 9.33789 7.00234C9.33789 8.28984 8.28789 9.33672 7.00352 9.33672ZM11.5785 3.26484C11.5785 3.73047 11.2035 4.10234 10.741 4.10234C10.2754 4.10234 9.90352 3.72734 9.90352 3.26484C9.90352 2.80234 10.2785 2.42734 10.741 2.42734C11.2035 2.42734 11.5785 2.80234 11.5785 3.26484ZM13.9566 4.11484C13.9035 2.99297 13.6473 1.99922 12.8254 1.18047C12.0066 0.361719 11.0129 0.105469 9.89102 0.0492187C8.73477 -0.0164062 5.26914 -0.0164062 4.11289 0.0492187C2.99414 0.102344 2.00039 0.358594 1.17852 1.17734C0.356641 1.99609 0.103516 2.98984 0.0472656 4.11172C-0.0183594 5.26797 -0.0183594 8.73359 0.0472656 9.88984C0.100391 11.0117 0.356641 12.0055 1.17852 12.8242C2.00039 13.643 2.99102 13.8992 4.11289 13.9555C5.26914 14.0211 8.73477 14.0211 9.89102 13.9555C11.0129 13.9023 12.0066 13.6461 12.8254 12.8242C13.6441 12.0055 13.9004 11.0117 13.9566 9.88984C14.0223 8.73359 14.0223 5.27109 13.9566 4.11484ZM12.4629 11.1305C12.2191 11.743 11.7473 12.2148 11.1316 12.4617C10.2098 12.8273 8.02227 12.743 7.00352 12.743C5.98477 12.743 3.79414 12.8242 2.87539 12.4617C2.26289 12.218 1.79102 11.7461 1.54414 11.1305C1.17852 10.2086 1.26289 8.02109 1.26289 7.00234C1.26289 5.98359 1.18164 3.79297 1.54414 2.87422C1.78789 2.26172 2.25977 1.78984 2.87539 1.54297C3.79727 1.17734 5.98477 1.26172 7.00352 1.26172C8.02227 1.26172 10.2129 1.18047 11.1316 1.54297C11.7441 1.78672 12.216 2.25859 12.4629 2.87422C12.8285 3.79609 12.7441 5.98359 12.7441 7.00234C12.7441 8.02109 12.8285 10.2117 12.4629 11.1305Z"
+                                    fill="#9CA3AF" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M13 0H0.996875C0.446875 0 0 0.453125 0 1.00938V12.9906C0 13.5469 0.446875 14 0.996875 14H13C13.55 14 14 13.5469 14 12.9906V1.00938C14 0.453125 13.55 0 13 0ZM4.23125 12H2.15625V5.31875H4.23438V12H4.23125ZM3.19375 4.40625C2.52812 4.40625 1.99063 3.86562 1.99063 3.20312C1.99063 2.54063 2.52812 2 3.19375 2C3.85625 2 4.39687 2.54063 4.39687 3.20312C4.39687 3.86875 3.85938 4.40625 3.19375 4.40625ZM12.0094 12H9.93437V8.75C9.93437 7.975 9.91875 6.97813 8.85625 6.97813C7.775 6.97813 7.60938 7.82188 7.60938 8.69375V12H5.53438V5.31875H7.525V6.23125H7.55312C7.83125 5.70625 8.50938 5.15312 9.51875 5.15312C11.6187 5.15312 12.0094 6.5375 12.0094 8.3375V12Z"
+                                    fill="#9CA3AF" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Column 2: Quick Links -->
+                <div class="footer-links-col">
+                    <h3 class="footer-title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">الصفحة الرئيسية</a></li>
+                        <li><a href="#">الفئات</a></li>
+                        <li><a href="#">المفضلة</a></li>
+                        <li><a href="#">المنتجات</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3: Contact Us -->
+                <div class="footer-contact-col">
+                    <h3 class="footer-title">تواصل معنا</h3>
+                    <ul class="footer-links footer-contact">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            info@taseer.sa
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            + 966 50 000 0000
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            الرياض، المملكة العربية السعودية
+                        </li>
+                    </ul>
+                </div>
+                <!-- Column 4: Newsletter -->
+                <div class="footer-newsletter">
+                    <h3 class="footer-title">النشرة الإخبارية</h3>
+                    <p>اشترك للحصول على آخر العروض والتحديثات</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="البريد الإلكتروني">
+                        <button type="submit" class="newsletter-btn">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>© 2025 منصة تسعير جميع الحقوق محفوظة.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                    <a href="#">الأسئلة الشائعة</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--odometer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
+        integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/stats.js"></script>
+    <script>
+        // Initialize Swiper
+        new Swiper('.testimonials-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
