@@ -1,8 +1,9 @@
 $(document).ready(function () {
   const table = $("#competitionTable").DataTable({
     responsive: true,
-    paging: true,
+    paging: false,
     info: false,
+    searching: false,
     pageLength: 8,
     lengthChange: false,
     language: {

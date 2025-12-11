@@ -111,6 +111,10 @@ table.table-bordered.dataTable {
     border-radius: 10px;
 }
 
+.main-btn.ms-auto {
+    min-width: 172px;
+}
+
 .main-text {
     color: var(--body-txt-color);
     font-weight: 500;
@@ -509,8 +513,14 @@ main {
     font-size: 23.04px;
     font-weight: 500;
     line-height: 32.26px;
-    color: var(--titles-color);
+}
 
+.heading-4:not(.prim-color) {
+    color: var(--titles-color);
+}
+
+.prim-color {
+    color: var(--primary-color);
 }
 
 .heading-5 {
@@ -520,9 +530,10 @@ main {
     /* margin-bottom: 8px; */
 }
 
-.heading-5:not(.colored-text) {
+.heading-5:not(.colored-text):not(.prim-color) {
     color: var(--titles-color);
 }
+
 
 .prim-section {
     background-color: var(--primary-color);
@@ -1358,7 +1369,8 @@ main {
 
 input:focus,
 .form-check-input:focus,
-.form-select:focus {
+.form-select:focus,
+.form-control:focus {
     border-color: var(--secondary-color);
     box-shadow: none;
 }
@@ -1443,6 +1455,36 @@ input:focus,
 
 .back_to_top.show {
     opacity: 1;
+}
+
+.pricing-actions-group {
+    background-color: #F4F4F5;
+    border-radius: 41px;
+    padding: 12px 18px;
+    width: fit-content;
+    margin-inline: auto;
+    width: 927px;
+    max-width: 100%;
+    margin-bottom: 32px;
+}
+
+.pricing-actions-group .nav-link {
+    flex: 1;
+    padding: 8px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #4B5563;
+    border-radius: 1000px;
+    white-space: nowrap;
+}
+
+.pricing-actions-group .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.pricing-actions-group .nav-link.active {
+    background-color: #fff;
+    color: var(--primary-color);
 }
 
 /* 

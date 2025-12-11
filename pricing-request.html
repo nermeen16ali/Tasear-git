@@ -80,109 +80,123 @@
 </header>
 <!-- main -->
 <main>
-    <section class="pricing-request py-5">
+    <section class="py-56">
         <div class="container">
-            <!-- Top Actions -->
-            <div class="d-flex justify-content-center mb-5">
-                <div class="pricing-actions-group bg-light rounded-pill p-1 d-inline-flex">
-                    <button class="btn rounded-pill px-4 py-2 active bg-white shadow-sm">إضافة المنتجات يدويا</button>
-                    <button class="btn rounded-pill px-4 py-2 text-muted">بحث بالذكاء الإصطناعي</button>
-                    <button class="btn rounded-pill px-4 py-2 text-muted">رفع ملف إكسيل</button>
-                </div>
+            <div class="d-flex align-items-center gap-10">
+                <h2 class="section-title">طلب <span class="highlight">تسعير</span></h2>
+                <span class="badge gray-badge">1 منتج</span>
             </div>
-
-            <!-- Add Product Form -->
-            <div class="add-product-form mb-5">
-                <h4 class="mb-4 fw-bold">قم بإدخال المنتجات التي تريد طلب تسعير عليها</h4>
-
-                <div class="row g-4 mb-4">
-                    <div class="col-md-6">
-                        <label class="form-label d-block small text-muted">الفئة</label>
-                        <select class="form-select bg-light border-0 py-3">
-                            <option selected disabled>إختر إسم الفئة</option>
-                            <option>إلكترونيات</option>
-                            <option>أثاث</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row g-2">
-                            <div class="col-3">
-                                <label class="form-label d-block small text-muted">الكمية</label>
-                                <div class="quantity-input position-relative">
-                                    <input type="number" class="form-control text-center bg-white border py-3"
-                                        value="5">
-                                    <div
-                                        class="quantity-controls d-flex flex-column position-absolute start-0 top-0 h-100 justify-content-center px-2">
-                                        <i class="fa-solid fa-chevron-up small text-muted cursor-pointer"></i>
-                                        <i class="fa-solid fa-chevron-down small text-muted cursor-pointer"></i>
+            <p class="main-text mb-40">احصل على أفضل الأسعار من موردين متعددين وقارن العروض بسهولة</p>
+            <!-- Tabs Actions -->
+            <nav>
+                <div class="nav gap-3 pricing-actions-group" id="sub-nav-tab" role="tablist">
+                    <button class="nav-link fz-14 active" id="nav-add-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-add" type="button" role="tab" aria-controls="nav-add"
+                        aria-selected="true">إضافة المنتجات يدويا</button>
+                    <button class="nav-link fz-14" id="nav-ai-tab" data-bs-toggle="tab" data-bs-target="#nav-ai"
+                        type="button" role="tab" aria-controls="nav-ai" aria-selected="false">بحث بالذكاء
+                        الإصطناعي</button>
+                    <button class="nav-link fz-14" id="nav-excel-tab" data-bs-toggle="tab" data-bs-target="#nav-excel"
+                        type="button" role="tab" aria-controls="nav-excel" aria-selected="false">رفع ملف إكسيل</button>
+                </div>
+            </nav>
+            <!-- Tabs Content -->
+            <div class="tab-content" id="Sub-nav-tabContent">
+                <div class="tab-pane fade active show" id="nav-add" role="tabpanel" aria-labelledby="nav-add-tab">
+                    <!-- Add Product Form -->
+                    <h4 class="prim-color heading-4 mb-3">قم بإدخال المنتجات التي تريد طلب تسعير عليها</h4>
+                    <div class="add-product-form py-3 px-4">
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label d-block small text-muted">الفئة</label>
+                                <select class="form-select">
+                                    <option selected disabled>إختر إسم الفئة</option>
+                                    <option>إلكترونيات</option>
+                                    <option>أثاث</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row g-2">
+                                    <div class="col-3">
+                                        <label class="form-label d-block small text-muted">الكمية</label>
+                                        <div class="quantity-input position-relative">
+                                            <input type="number" class="form-control" value="5">
+                                            <div
+                                                class="quantity-controls d-flex flex-column position-absolute start-0 top-0 h-100 justify-content-center px-2">
+                                                <i class="fa-solid fa-chevron-up small text-muted cursor-pointer"></i>
+                                                <i class="fa-solid fa-chevron-down small text-muted cursor-pointer"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <label class="form-label d-block small text-muted">اسم المنتج أو رقمه *</label>
+                                        <select class="form-select">
+                                            <option selected disabled>إختر اسم المنتج أو رقمه</option>
+                                            <option>تليفون سامسونج جالاكسي A54</option>
+                                            <option>ايفون 15 برو</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-9">
-                                <label class="form-label d-block small text-muted">اسم المنتج أو رقمه *</label>
-                                <select class="form-select bg-light border-0 py-3">
-                                    <option selected disabled>إختر اسم المنتج أو رقمه</option>
-                                    <option>تليفون سامسونج جالاكسي A54</option>
-                                    <option>ايفون 15 برو</option>
-                                </select>
-                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label d-block small text-muted">الوصف</label>
+                            <textarea class="form-control" rows="4"
+                                placeholder="أضف أي تفاصيل مهمة مثل: اللون ، الحجم، المواصفات"></textarea>
                         </div>
                     </div>
                 </div>
-
-                <div class="mb-4">
-                    <label class="form-label d-block small text-muted">الوصف</label>
-                    <textarea class="form-control bg-light border-0" rows="4"
-                        placeholder="أضف أي تفاصيل مهمة مثل: اللون ، الحجم، المواصفات"></textarea>
+                <div class="tab-pane fade" id="nav-ai" role="tabpanel" aria-labelledby="nav-ai-tab">
+                    ai
                 </div>
-
-                <div class="additional-details-box border rounded-3 p-4 mb-4">
-                    <h5 class="mb-4 fw-bold text-primary-custom">تفاصيل إضافية</h5>
-                    <div class="row g-4 align-items-end">
-                        <div class="col-md-4">
-                            <label class="form-label d-block small text-muted">المنطقة</label>
-                            <select class="form-select bg-white border py-2">
-                                <option selected disabled>إختر المنطقة ...</option>
-                                <option>الرياض</option>
-                                <option>جدة</option>
-                            </select>
+                <div class="tab-pane fade" id="nav-excel" role="tabpanel" aria-labelledby="nav-excel-tab">
+                    excel
+                </div>
+            </div>
+            <h5 class="prim-color heading-5 mb-16 px-4">تفاصيل إضافية</h5>
+            <div class="row align-items-center py-4 px-4">
+                <div class="col-md-4 mb-3">
+                    <label class="form-label d-block fs-14 text-color">المنطقة</label>
+                    <select class="form-select cursor-pointer">
+                        <option value="riyadh">الرياض</option>
+                        <option value="jeddah">جدة</option>
+                        <option value="dammam">الدمام</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label d-block fs-14 text-color">مدة التسليم</label>
+                    <select class="form-select cursor-pointer">
+                        <option value="1">يوم واحد</option>
+                        <option value="3">3 أيام</option>
+                        <option value="7">أسبوع</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label d-block text-color fs-14">الخدمات المطلوبة</label>
+                    <div class="d-flex align-items-center justify-content-between gap-3 pe-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="installation">
+                            <label class="form-check-label fs-14 text-color cursor-pointer" for="installation">
+                                التركيب
+                            </label>
                         </div>
-                        <div class="col-md-4">
-                            <label class="form-label d-block small text-muted">مدة التسليم</label>
-                            <select class="form-select bg-white border py-2">
-                                <option selected disabled>إختر مدة التسليم</option>
-                                <option>يوم واحد</option>
-                                <option>3 أيام</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="d-flex justify-content-end gap-4 mb-2">
-                                <label class="form-label small text-muted mb-0">الخدمات المطلوبة</label>
-                            </div>
-                            <div class="d-flex justify-content-end gap-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="installation">
-                                    <label class="form-check-label text-muted" for="installation">التركيب</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="delivery">
-                                    <label class="form-check-label text-muted" for="delivery">التوصيل</label>
-                                </div>
-                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="delivery">
+                            <label class="form-check-label cursor-pointer fs-14 text-color" for="delivery">
+                                التوصيل
+                            </label>
                         </div>
                     </div>
-                </div>
-
-                <div class="text-end">
-                    <button class="btn btn-add-product px-5 py-2 rounded-3">
-                        أضف +
-                    </button>
                 </div>
             </div>
 
+            <button class="d-block main-btn btn-custom-light ms-auto">
+                أضف +
+            </button>
+
             <!-- Products Table -->
-            <div class="products-table-container bg-white rounded-4 border p-4">
-                <h4 class="text-end mb-4 fw-bold text-primary-custom">المنتجات المطلوبة</h4>
+            <div class="products-table-container">
+                <h4 class="heading-4 prim-color mb-2">المنتجات المطلوبة</h4>
                 <div class="table-responsive">
                     <table class="table table-bordered align-middle" id="competitionTable">
                         <thead>
