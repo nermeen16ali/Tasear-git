@@ -11,21 +11,11 @@
 
     <!-- Bootstrap 5 RTL CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
-    <!--Poppins Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
-    <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
             <div class="container">
@@ -82,150 +72,534 @@
 
     <!-- Main Content -->
     <main>
-        <section class="profile-section">
+        <div class="page-breadcrumb">
+            <div class="container d-flex align-items-center gap-2 fs-14">
+                <a href="index-client.html">الرئيسية</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11" viewBox="0 0 6 11" fill="none">
+                    <path
+                        d="M0.219727 4.72207C-0.0732422 5.01504 -0.0732422 5.49082 0.219727 5.78379L4.71973 10.2838C5.0127 10.5768 5.48848 10.5768 5.78145 10.2838C6.07441 9.99082 6.07441 9.51504 5.78145 9.22207L1.81113 5.25176L5.7791 1.28145C6.07207 0.988477 6.07207 0.512695 5.7791 0.219727C5.48613 -0.0732422 5.01035 -0.0732422 4.71738 0.219727L0.217383 4.71973L0.219727 4.72207Z"
+                        fill="#016B61" />
+                </svg>
+                <span>الملف الشخصي</span>
+            </div>
+        </div>
+        <section class="profile-section py-56">
             <div class="container">
-                <div class="profile-layout">
+                <div class="profile-layout row g-3">
                     <!-- Sidebar (Right) -->
-                    <aside class="profile-sidebar">
-                        <ul class="profile-menu">
-                            <li class="menu-item active">
-                                <a href="#">
-                                    <i class="fa-solid fa-user"></i>
-                                    بياناتي الأساسية
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">
-                                    <i class="fa-solid fa-shield-halved"></i>
-                                    الأمان والخصوصية
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">
-                                    <i class="fa-solid fa-bell"></i>
-                                    إعدادات الإشعارات
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">
-                                    <i class="fa-regular fa-credit-card"></i>
-                                    طرق الدفع
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#">
-                                    <i class="fa-solid fa-globe"></i>
-                                    اللغة والمنطقة
-                                </a>
-                            </li>
-                            <li class="menu-item delete-account">
-                                <a href="#">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                    حذف الحساب
-                                </a>
-                            </li>
-                        </ul>
-                    </aside>
+                    <div class="col-md-3">
+                        <aside class="profile-sidebar sticky-top p-4" id="sub-nav-tab" role="tablist">
+                            <a class="menu-link active" href="#" id="nav-info-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-info" type="button" role="tab" aria-controls="nav-info"
+                                aria-selected="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.3743 0.120042C11.292 0.243436 12.0202 0.501462 12.5924 1.07359C13.1645 1.64572 13.4225 2.3739 13.5459 3.29166C13.6577 4.1233 13.6657 5.17179 13.6663 6.48667L13.6663 6.87112C13.6663 8.33158 13.6663 9.47872 13.5459 10.3743C13.4225 11.292 13.1645 12.0202 12.5924 12.5924C12.0202 13.1645 11.292 13.4225 10.3743 13.5459C9.54269 13.6577 8.49418 13.6657 7.1793 13.6663L6.79485 13.6663C5.33438 13.6663 4.18727 13.6663 3.29166 13.5459C2.3739 13.4225 1.64572 13.1645 1.07359 12.5924C0.501462 12.0202 0.243436 11.292 0.120042 10.3743C0.0168481 9.60666 0.00210601 8.6542 0 7.47803L0 6.18794C0.00210601 5.01178 0.0168481 4.05933 0.120042 3.29166C0.243436 2.3739 0.501462 1.64572 1.07359 1.07359C1.64572 0.501462 2.3739 0.243436 3.29166 0.120042C4.05933 0.0168481 5.01178 0.00210601 6.18794 0L7.47803 0C8.6542 0.00210601 9.60666 0.0168481 10.3743 0.120042ZM6.19258 5.83297H6.16632C5.79812 5.83297 5.49965 6.13145 5.49965 6.49965C5.49965 6.86785 5.79812 7.16632 6.16632 7.16632V9.83298C6.16632 10.2012 6.46478 10.4996 6.83298 10.4996C7.20118 10.4996 7.49966 10.2012 7.49966 9.83298V7.14005C7.49972 7.00685 7.49985 6.84818 7.48152 6.71178C7.45938 6.54705 7.40012 6.31925 7.20678 6.12592C7.01345 5.93258 6.78558 5.87332 6.62092 5.85118C6.48445 5.83278 6.32585 5.83292 6.19258 5.83297ZM6.83592 3.16632C6.46338 3.16632 6.16625 3.4648 6.16625 3.83298C6.16625 4.20117 6.46338 4.49965 6.82992 4.49965C7.20245 4.49965 7.49958 4.20117 7.49958 3.83298C7.49958 3.4648 7.20245 3.16632 6.83592 3.16632Z"
+                                        fill="currentColor" />
+                                </svg>
+                                بياناتي الأساسية
+                            </a>
+                            <a class="menu-link" href="#" id="nav-security-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-security" type="button" role="tab" aria-controls="nav-security"
+                                aria-selected="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                                    fill="none">
+                                    <path
+                                        d="M7.50001 0C7.64376 0 7.78751 0.03125 7.91876 0.090625L13.8031 2.5875C14.4906 2.87813 15.0031 3.55625 15 4.375C14.9844 7.475 13.7094 13.1469 8.32501 15.725C7.80314 15.975 7.19689 15.975 6.67501 15.725C1.29064 13.1469 0.0156392 7.475 1.4214e-05 4.375C-0.00311079 3.55625 0.509389 2.87813 1.19689 2.5875L7.08439 0.090625C7.21251 0.03125 7.35626 0 7.50001 0ZM7.50001 2.0875V13.9C11.8125 11.8125 12.9719 7.19062 13 4.41875L7.50001 2.0875Z"
+                                        fill="currentColor" />
+                                </svg>
+                                الأمان والخصوصية
+                            </a>
+                            <a class="menu-link" href="#" id="nav-notification-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-notification" type="button" role="tab"
+                                aria-controls="nav-notification" aria-selected="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"
+                                    fill="none">
+                                    <path
+                                        d="M6.9994 0C6.44628 0 5.9994 0.446875 5.9994 1V1.6C3.71815 2.0625 1.9994 4.08125 1.9994 6.5V7.0875C1.9994 8.55625 1.45878 9.975 0.483777 11.075L0.252527 11.3344C-0.00997317 11.6281 -0.0724732 12.05 0.0869018 12.4094C0.246277 12.7688 0.605652 13 0.999402 13H12.9994C13.3932 13 13.7494 12.7688 13.9119 12.4094C14.0744 12.05 14.0088 11.6281 13.7463 11.3344L13.515 11.075C12.54 9.975 11.9994 8.55937 11.9994 7.0875V6.5C11.9994 4.08125 10.2807 2.0625 7.9994 1.6V1C7.9994 0.446875 7.55253 0 6.9994 0ZM8.41503 15.4156C8.79003 15.0406 8.9994 14.5312 8.9994 14H6.9994H4.9994C4.9994 14.5312 5.20878 15.0406 5.58378 15.4156C5.95878 15.7906 6.46815 16 6.9994 16C7.53065 16 8.04003 15.7906 8.41503 15.4156Z"
+                                        fill="currentColor" />
+                                </svg>
+                                إعدادات الإشعارات
+                            </a>
+                            <a class="menu-link" href="#" id="nav-payment-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-payment" type="button" role="tab" aria-controls="nav-payment"
+                                aria-selected="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12"
+                                    fill="none">
+                                    <path
+                                        d="M0 2C0 0.896875 0.896875 0 2 0H8H9.5H10H18C19.1031 0 20 0.896875 20 2V10C20 11.1031 19.1031 12 18 12H10H9.5H8H2C0.896875 12 0 11.1031 0 10V2ZM10 2V10H18V2H10ZM5.57188 3.49687C5.47188 3.27187 5.24687 3.125 5 3.125C4.75313 3.125 4.52812 3.27187 4.42812 3.49687L2.42812 7.99687C2.2875 8.3125 2.43125 8.68125 2.74688 8.82187C3.0625 8.9625 3.43125 8.81875 3.57188 8.50313L3.85 7.875H6.15L6.42812 8.50313C6.56875 8.81875 6.9375 8.95937 7.25313 8.82187C7.56875 8.68437 7.70937 8.3125 7.57188 7.99687L5.57188 3.49687ZM5 5.2875L5.59375 6.625H4.40625L5 5.2875ZM14 3.125C14.3438 3.125 14.625 3.40625 14.625 3.75V3.875H16H16.5C16.8438 3.875 17.125 4.15625 17.125 4.5C17.125 4.84375 16.8438 5.125 16.5 5.125H16.4375L16.3875 5.26562C16.1094 6.02812 15.6875 6.72187 15.15 7.30937C15.1781 7.32812 15.2063 7.34375 15.2344 7.35938L15.825 7.7125C16.1219 7.89062 16.2156 8.275 16.0406 8.56875C15.8656 8.8625 15.4781 8.95938 15.1844 8.78438L14.5938 8.43125C14.4531 8.34687 14.3187 8.25937 14.1844 8.16562C13.8531 8.4 13.5 8.60313 13.1219 8.77188L13.0094 8.82187C12.6937 8.9625 12.325 8.81875 12.1844 8.50313C12.0437 8.1875 12.1875 7.81875 12.5031 7.67813L12.6156 7.62813C12.8156 7.5375 13.0094 7.4375 13.1938 7.32187L12.8125 6.94063C12.5688 6.69688 12.5688 6.3 12.8125 6.05625C13.0562 5.8125 13.4531 5.8125 13.6969 6.05625L14.1531 6.5125L14.1687 6.52812C14.5562 6.11875 14.8719 5.64375 15.1 5.12187H14H11.75C11.4062 5.12187 11.125 4.84062 11.125 4.49687C11.125 4.15312 11.4062 3.87187 11.75 3.87187H13.375V3.74687C13.375 3.40312 13.6562 3.12187 14 3.12187V3.125Z"
+                                        fill="currentColor" />
+                                </svg>
+                                طرق الدفع
+                            </a>
+                            <a class="menu-link" href="#" id="nav-lang-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-lang" type="button" role="tab" aria-controls="nav-lang"
+                                aria-selected="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12"
+                                    fill="none">
+                                    <path
+                                        d="M0 2C0 0.896875 0.896875 0 2 0H8H9.5H10H18C19.1031 0 20 0.896875 20 2V10C20 11.1031 19.1031 12 18 12H10H9.5H8H2C0.896875 12 0 11.1031 0 10V2ZM10 2V10H18V2H10ZM5.57188 3.49687C5.47188 3.27187 5.24687 3.125 5 3.125C4.75313 3.125 4.52812 3.27187 4.42812 3.49687L2.42812 7.99687C2.2875 8.3125 2.43125 8.68125 2.74688 8.82187C3.0625 8.9625 3.43125 8.81875 3.57188 8.50313L3.85 7.875H6.15L6.42812 8.50313C6.56875 8.81875 6.9375 8.95937 7.25313 8.82187C7.56875 8.68437 7.70937 8.3125 7.57188 7.99687L5.57188 3.49687ZM5 5.2875L5.59375 6.625H4.40625L5 5.2875ZM14 3.125C14.3438 3.125 14.625 3.40625 14.625 3.75V3.875H16H16.5C16.8438 3.875 17.125 4.15625 17.125 4.5C17.125 4.84375 16.8438 5.125 16.5 5.125H16.4375L16.3875 5.26562C16.1094 6.02812 15.6875 6.72187 15.15 7.30937C15.1781 7.32812 15.2063 7.34375 15.2344 7.35938L15.825 7.7125C16.1219 7.89062 16.2156 8.275 16.0406 8.56875C15.8656 8.8625 15.4781 8.95938 15.1844 8.78438L14.5938 8.43125C14.4531 8.34687 14.3187 8.25937 14.1844 8.16562C13.8531 8.4 13.5 8.60313 13.1219 8.77188L13.0094 8.82187C12.6937 8.9625 12.325 8.81875 12.1844 8.50313C12.0437 8.1875 12.1875 7.81875 12.5031 7.67813L12.6156 7.62813C12.8156 7.5375 13.0094 7.4375 13.1938 7.32187L12.8125 6.94063C12.5688 6.69688 12.5688 6.3 12.8125 6.05625C13.0562 5.8125 13.4531 5.8125 13.6969 6.05625L14.1531 6.5125L14.1687 6.52812C14.5562 6.11875 14.8719 5.64375 15.1 5.12187H14H11.75C11.4062 5.12187 11.125 4.84062 11.125 4.49687C11.125 4.15312 11.4062 3.87187 11.75 3.87187H13.375V3.74687C13.375 3.40312 13.6562 3.12187 14 3.12187V3.125Z"
+                                        fill="currentColor" />
+                                </svg>
+                                اللغة والمنطقة
+                            </a>
+                            <a class="menu-link delete-account" href="#" id="nav-delete-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-delete" type="button" role="tab" aria-controls="nav-delete"
+                                aria-selected="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"
+                                    fill="none">
+                                    <path
+                                        d="M4.225 0.553125L4 1H1C0.446875 1 0 1.44687 0 2C0 2.55312 0.446875 3 1 3H13C13.5531 3 14 2.55312 14 2C14 1.44687 13.5531 1 13 1H10L9.775 0.553125C9.60625 0.2125 9.25938 0 8.88125 0H5.11875C4.74062 0 4.39375 0.2125 4.225 0.553125ZM13 4H1L1.6625 14.5938C1.7125 15.3844 2.36875 16 3.15937 16H10.8406C11.6312 16 12.2875 15.3844 12.3375 14.5938L13 4Z"
+                                        fill="#DC2626" />
+                                </svg>
+                                حذف الحساب
+                            </a>
+                        </aside>
+                    </div>
 
                     <!-- Main Content (Left) -->
-                    <div class="profile-content">
+                    <div class="col-md-9">
                         <!-- Header Card -->
-                        <div class="profile-header-card">
-                            <div class="header-user-info">
-                                <div class="user-avatar-lg">
-                                    <img src="assets/images/tasaer-logo.svg" alt="User">
-                                </div>
-                                <div class="user-text">
-                                    <h3>أحمد محمد السعيد</h3>
-                                    <span class="user-role">مسؤول مشتريات</span>
-                                </div>
+                        <div class="profile-header-card bg-colored-light d-flex align-items-center">
+                            <div class="user-avatar-lg">
+                                <img src="assets/images/testimonial-author.jpg" alt="User">
                             </div>
-                            <div class="header-actions">
-                                <a href="#" class="link-browse">
-                                    <i class="fa-solid fa-check"></i>
-                                    تصفح المنتجات
-                                </a>
-                                <button class="btn-request-pricing-dark">
-                                    طلب تسعير
-                                    <i class="fa-solid fa-xmark ms-2" style="font-size: 12px;"></i>
-                                </button>
+                            <div class="user-text">
+                                <h4 class="heading-4 mb-1 prim-color">أحمد محمد السعيد</h4>
+                                <span class="section-subtitle">مسؤول مشتريات</span>
                             </div>
                         </div>
-
-                        <!-- Stats Cards -->
-                        <div class="profile-stats-grid">
-                            <!-- Card 1 -->
-                            <div class="stat-box stat-box-teal">
-                                <div class="stat-icon-circle">
-                                    <i class="fa-solid fa-file-invoice"></i>
+                        <div class="tab-content" id="Sub-nav-tabContent">
+                            <div class="profile-content tab-pane active show" id="nav-info" role="tabpanel"
+                                aria-labelledby="nav-info-tab">
+                                <!-- Stats Cards -->
+                                <div class="row py-4 px-3 g-4">
+                                    <div class="col-md-4">
+                                        <div class="stat-box stat-box-teal">
+                                            <div class="stat-info">
+                                                <span class="stat-label">أجمالي طلبات التسعير</span>
+                                                <div class="stat-number">١٤٨</div>
+                                                <div class="stat-trend">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="13"
+                                                        viewBox="0 0 11 13" fill="none">
+                                                        <path
+                                                            d="M5.86807 0.256348C5.52627 -0.0854492 4.97119 -0.0854492 4.6294 0.256348L0.254395 4.63135C-0.0874024 4.97314 -0.0874024 5.52822 0.254395 5.87002C0.596191 6.21182 1.15127 6.21182 1.49307 5.87002L4.3751 2.98525V11.3743C4.3751 11.8583 4.76611 12.2493 5.2501 12.2493C5.73408 12.2493 6.1251 11.8583 6.1251 11.3743V2.98525L9.00713 5.86729C9.34893 6.20908 9.90401 6.20908 10.2458 5.86729C10.5876 5.52549 10.5876 4.97041 10.2458 4.62861L5.8708 0.253613L5.86807 0.256348Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                    ٢٪ منذ الشهر الماضي
+                                                </div>
+                                            </div>
+                                            <div class="rounded-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 14 14" fill="none">
+                                                    <path
+                                                        d="M1.58438 0.828125L0 4H6.5V0H2.92812C2.35938 0 1.84063 0.321875 1.58438 0.828125ZM7.5 4H14L12.4156 0.828125C12.1594 0.321875 11.6406 0 11.0719 0H7.5V4ZM14 5H0V12C0 13.1031 0.896875 14 2 14H12C13.1031 14 14 13.1031 14 12V5Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="stat-box stat-box-green">
+                                            <div class="stat-info">
+                                                <span class="stat-label">الصفقات المكتملة</span>
+                                                <div class="stat-number">12</div>
+                                                <div class="stat-trend">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        viewBox="0 0 14 14" fill="none">
+                                                        <path
+                                                            d="M7 0C8.85652 0 10.637 0.737498 11.9497 2.05025C13.2625 3.36301 14 5.14348 14 7C14 8.85652 13.2625 10.637 11.9497 11.9497C10.637 13.2625 8.85652 14 7 14C5.14348 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14348 0.737498 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 0 7 0ZM6.34375 3.28125V7C6.34375 7.21875 6.45312 7.42383 6.63633 7.54688L9.26133 9.29688C9.56211 9.49922 9.96953 9.41719 10.1719 9.11367C10.3742 8.81016 10.2922 8.40547 9.98867 8.20312L7.65625 6.65V3.28125C7.65625 2.91758 7.36367 2.625 7 2.625C6.63633 2.625 6.34375 2.91758 6.34375 3.28125Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                    تحديث منذ ٣ ساعات
+                                                </div>
+                                            </div>
+                                            <div class="rounded-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path
+                                                        d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.25 3.75V8C7.25 8.25 7.375 8.48438 7.58437 8.625L10.5844 10.625C10.9281 10.8562 11.3938 10.7625 11.625 10.4156C11.8562 10.0687 11.7625 9.60625 11.4156 9.375L8.75 7.6V3.75C8.75 3.33437 8.41562 3 8 3C7.58437 3 7.25 3.33437 7.25 3.75Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="stat-box stat-box-blue">
+                                            <div class="stat-info">
+                                                <span class="stat-label">التقارير المستلمة</span>
+                                                <div class="stat-number">18</div>
+                                                <div class="stat-trend">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        viewBox="0 0 14 14" fill="none">
+                                                        <path
+                                                            d="M7 0C8.85652 0 10.637 0.737498 11.9497 2.05025C13.2625 3.36301 14 5.14348 14 7C14 8.85652 13.2625 10.637 11.9497 11.9497C10.637 13.2625 8.85652 14 7 14C5.14348 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14348 0.737498 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 0 7 0ZM6.34375 3.28125V7C6.34375 7.21875 6.45312 7.42383 6.63633 7.54688L9.26133 9.29688C9.56211 9.49922 9.96953 9.41719 10.1719 9.11367C10.3742 8.81016 10.2922 8.40547 9.98867 8.20312L7.65625 6.65V3.28125C7.65625 2.91758 7.36367 2.625 7 2.625C6.63633 2.625 6.34375 2.91758 6.34375 3.28125Z"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                    تحديث منذ ٣ ساعات
+                                                </div>
+                                            </div>
+                                            <div class="rounded-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path
+                                                        d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.25 3.75V8C7.25 8.25 7.375 8.48438 7.58437 8.625L10.5844 10.625C10.9281 10.8562 11.3938 10.7625 11.625 10.4156C11.8562 10.0687 11.7625 9.60625 11.4156 9.375L8.75 7.6V3.75C8.75 3.33437 8.41562 3 8 3C7.58437 3 7.25 3.33437 7.25 3.75Z"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="stat-info">
-                                    <span class="stat-label">أجمالي طلبات التسعير</span>
-                                    <div class="stat-number">١٤٨</div>
-                                    <div class="stat-trend up">
-                                        <i class="fa-solid fa-arrow-up"></i>
-                                        ٢٪ منذ الشهر الماضي
+
+                                <!-- Personal Info -->
+                                <div class="personal-info-section">
+                                    <div class="section-header">
+                                        <h3>المعلومات الشخصية</h3>
+                                        <a href="#" class="edit-link">
+                                            <i class="fa-regular fa-pen-to-square"></i>
+                                            تعديل
+                                        </a>
+                                    </div>
+
+                                    <div class="info-grid">
+                                        <div class="info-group">
+                                            <label>الاسم الكامل</label>
+                                            <div class="info-value">أحمد محمد السعيد</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>البريد الإلكتروني</label>
+                                            <div class="info-value">ahmed.alsaeed@riyadh-const.com</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>رقم الجوال</label>
+                                            <div class="info-value ltr-text">+966 4567 4567 4567</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>المدينة</label>
+                                            <div class="info-value">الرياض</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="profile-content tab-pane" id="nav-security" role="tabpanel"
+                                aria-labelledby="nav-security-tab">
+                                <!-- Stats Cards -->
+                                <div class="profile-stats-grid">
+                                    <!-- Card 1 -->
+                                    <div class="stat-box stat-box-teal">
+                                        <div class="rounded-icon">
+                                            <i class="fa-solid fa-file-invoice"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-label">أجمالي طلبات التسعير</span>
+                                            <div class="stat-number">١٤٨</div>
+                                            <div class="stat-trend">
+                                                <i class="fa-solid fa-arrow-up"></i>
+                                                ١٢ ٪ منذ الشهر الماضي
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            <!-- Card 2 -->
-                            <div class="stat-box stat-box-green">
-                                <div class="stat-icon-circle">
-                                    <i class="fa-regular fa-clock"></i>
+                                    <!-- Card 2 -->
+                                    <div class="stat-box stat-box-green">
+                                        <div class="rounded-icon">
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-label">الصفقات المكتملة</span>
+                                            <div class="stat-number">12</div>
+                                            <div class="stat-trend">
+                                                <i class="fa-regular fa-clock"></i>
+                                                تحديث منذ ٣ ساعات
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 3 -->
+                                    <div class="stat-box stat-box-blue">
+                                        <div class="rounded-icon">
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-label">التقارير المستلمة</span>
+                                            <div class="stat-number">18</div>
+                                            <div class="stat-trend">
+                                                <i class="fa-regular fa-clock"></i>
+                                                تحديث منذ ٣ ساعات
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="stat-info">
-                                    <span class="stat-label">الصفقات المكتملة</span>
-                                    <div class="stat-number">12</div>
-                                    <div class="stat-update">
-                                        <i class="fa-regular fa-clock"></i>
-                                        تحديث منذ ٣ ساعات
+
+                                <!-- Personal Info -->
+                                <div class="personal-info-section">
+                                    <div class="section-header">
+                                        <h3>المعلومات الشخصية</h3>
+                                        <a href="#" class="edit-link">
+                                            <i class="fa-regular fa-pen-to-square"></i>
+                                            تعديل
+                                        </a>
+                                    </div>
+
+                                    <div class="info-grid">
+                                        <div class="info-group">
+                                            <label>الاسم الكامل</label>
+                                            <div class="info-value">أحمد محمد السعيد</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>البريد الإلكتروني</label>
+                                            <div class="info-value">ahmed.alsaeed@riyadh-const.com</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>رقم الجوال</label>
+                                            <div class="info-value ltr-text">+966 4567 4567 4567</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>المدينة</label>
+                                            <div class="info-value">الرياض</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="profile-content tab-pane" id="nav-notification" role="tabpanel"
+                                aria-labelledby="nav-notification-tab">
+                                <!-- Stats Cards -->
+                                <div class="profile-stats-grid">
+                                    <!-- Card 1 -->
+                                    <div class="stat-box stat-box-teal">
+                                        <div class="rounded-icon">
+                                            <i class="fa-solid fa-file-invoice"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-label">أجمالي طلبات التسعير</span>
+                                            <div class="stat-number">١٤٨</div>
+                                            <div class="stat-trend">
+                                                <i class="fa-solid fa-arrow-up"></i>
+                                                ٢٪ منذ الشهر الماضي
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            <!-- Card 3 -->
-                            <div class="stat-box stat-box-blue">
-                                <div class="stat-icon-circle">
-                                    <i class="fa-regular fa-clock"></i>
+                                    <!-- Card 2 -->
+                                    <div class="stat-box stat-box-green">
+                                        <div class="rounded-icon">
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-label">الصفقات المكتملة</span>
+                                            <div class="stat-number">12</div>
+                                            <div class="stat-trend">
+                                                <i class="fa-regular fa-clock"></i>
+                                                تحديث منذ ٣ ساعات
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 3 -->
+                                    <div class="stat-box stat-box-blue">
+                                        <div class="rounded-icon">
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-label">التقارير المستلمة</span>
+                                            <div class="stat-number">18</div>
+                                            <div class="stat-trend">
+                                                <i class="fa-regular fa-clock"></i>
+                                                تحديث منذ ٣ ساعات
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="stat-info">
-                                    <span class="stat-label">التقارير المستلمة</span>
-                                    <div class="stat-number">18</div>
-                                    <div class="stat-update">
-                                        <i class="fa-regular fa-clock"></i>
-                                        تحديث منذ ٣ ساعات
+
+                                <!-- Personal Info -->
+                                <div class="personal-info-section">
+                                    <div class="section-header">
+                                        <h3>المعلومات الشخصية</h3>
+                                        <a href="#" class="edit-link">
+                                            <i class="fa-regular fa-pen-to-square"></i>
+                                            تعديل
+                                        </a>
+                                    </div>
+
+                                    <div class="info-grid">
+                                        <div class="info-group">
+                                            <label>الاسم الكامل</label>
+                                            <div class="info-value">أحمد محمد السعيد</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>البريد الإلكتروني</label>
+                                            <div class="info-value">ahmed.alsaeed@riyadh-const.com</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>رقم الجوال</label>
+                                            <div class="info-value ltr-text">+966 4567 4567 4567</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>المدينة</label>
+                                            <div class="info-value">الرياض</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="profile-content tab-pane" id="nav-payment" role="tabpanel"
+                                aria-labelledby="nav-payment-tab">
+                                <!-- Stats Cards -->
+                                <div class="profile-stats-grid">
+                                    <!-- Card 1 -->
+                                    <div class="stat-box stat-box-teal">
+                                        <div class="rounded-icon">
+                                            <i class="fa-solid fa-file-invoice"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-label">أجمالي طلبات التسعير</span>
+                                            <div class="stat-number">١٤٨</div>
+                                            <div class="stat-trend">
+                                                <i class="fa-solid fa-arrow-up"></i>
+                                                ٢٪ منذ الشهر الماضي
+                                            </div>
+                                        </div>
+                                    </div>
 
-                        <!-- Personal Info -->
-                        <div class="personal-info-section">
-                            <div class="section-header">
-                                <h3>المعلومات الشخصية</h3>
-                                <a href="#" class="edit-link">
-                                    <i class="fa-regular fa-pen-to-square"></i>
-                                    تعديل
-                                </a>
+                                    <!-- Card 2 -->
+                                    <div class="stat-box stat-box-green">
+                                        <div class="rounded-icon">
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-label">الصفقات المكتملة</span>
+                                            <div class="stat-number">12</div>
+                                            <div class="stat-trend">
+                                                <i class="fa-regular fa-clock"></i>
+                                                تحديث منذ ٣ ساعات
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 3 -->
+                                    <div class="stat-box stat-box-blue">
+                                        <div class="rounded-icon">
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-label">التقارير المستلمة</span>
+                                            <div class="stat-number">18</div>
+                                            <div class="stat-trend">
+                                                <i class="fa-regular fa-clock"></i>
+                                                تحديث منذ ٣ ساعات
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Personal Info -->
+                                <div class="personal-info-section">
+                                    <div class="section-header">
+                                        <h3>المعلومات الشخصية</h3>
+                                        <a href="#" class="edit-link">
+                                            <i class="fa-regular fa-pen-to-square"></i>
+                                            تعديل
+                                        </a>
+                                    </div>
+
+                                    <div class="info-grid">
+                                        <div class="info-group">
+                                            <label>الاسم الكامل</label>
+                                            <div class="info-value">أحمد محمد السعيد</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>البريد الإلكتروني</label>
+                                            <div class="info-value">ahmed.alsaeed@riyadh-const.com</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>رقم الجوال</label>
+                                            <div class="info-value ltr-text">+966 4567 4567 4567</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>المدينة</label>
+                                            <div class="info-value">الرياض</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="profile-content tab-pane" id="nav-lang" role="tabpanel"
+                                aria-labelledby="nav-lang-tab">
+                                <!-- Stats Cards -->
+                                <div class="profile-stats-grid">
+                                    <!-- Card 1 -->
+                                    <div class="stat-box stat-box-teal">
+                                        <div class="rounded-icon">
+                                            <i class="fa-solid fa-file-invoice"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-label">أجمالي طلبات التسعير</span>
+                                            <div class="stat-number">١٤٨</div>
+                                            <div class="stat-trend">
+                                                <i class="fa-solid fa-arrow-up"></i>
+                                                ٢٪ منذ الشهر الماضي
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            <div class="info-grid">
-                                <div class="info-group">
-                                    <label>الاسم الكامل</label>
-                                    <div class="info-value">أحمد محمد السعيد</div>
+                                    <!-- Card 2 -->
+                                    <div class="stat-box stat-box-green">
+                                        <div class="rounded-icon">
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-label">الصفقات المكتملة</span>
+                                            <div class="stat-number">12</div>
+                                            <div class="stat-trend">
+                                                <i class="fa-regular fa-clock"></i>
+                                                تحديث منذ ٣ ساعات
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card 3 -->
+                                    <div class="stat-box stat-box-blue">
+                                        <div class="rounded-icon">
+                                            <i class="fa-regular fa-clock"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <span class="stat-label">التقارير المستلمة</span>
+                                            <div class="stat-number">18</div>
+                                            <div class="stat-trend">
+                                                <i class="fa-regular fa-clock"></i>
+                                                تحديث منذ ٣ ساعات
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="info-group">
-                                    <label>البريد الإلكتروني</label>
-                                    <div class="info-value">ahmed.alsaeed@riyadh-const.com</div>
-                                </div>
-                                <div class="info-group">
-                                    <label>رقم الجوال</label>
-                                    <div class="info-value ltr-text">+966 4567 4567 4567</div>
-                                </div>
-                                <div class="info-group">
-                                    <label>المدينة</label>
-                                    <div class="info-value">الرياض</div>
+
+                                <!-- Personal Info -->
+                                <div class="personal-info-section">
+                                    <div class="section-header">
+                                        <h3>المعلومات الشخصية</h3>
+                                        <a href="#" class="edit-link">
+                                            <i class="fa-regular fa-pen-to-square"></i>
+                                            تعديل
+                                        </a>
+                                    </div>
+
+                                    <div class="info-grid">
+                                        <div class="info-group">
+                                            <label>الاسم الكامل</label>
+                                            <div class="info-value">أحمد محمد السعيد</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>البريد الإلكتروني</label>
+                                            <div class="info-value">ahmed.alsaeed@riyadh-const.com</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>رقم الجوال</label>
+                                            <div class="info-value ltr-text">+966 4567 4567 4567</div>
+                                        </div>
+                                        <div class="info-group">
+                                            <label>المدينة</label>
+                                            <div class="info-value">الرياض</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

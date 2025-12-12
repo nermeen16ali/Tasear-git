@@ -2664,264 +2664,132 @@ input:focus,
 }
 
 /* Profile Section Styles */
-.profile-section {
-    padding: 120px 0 60px;
-    background-color: #F9FAFB;
-    min-height: 100vh;
-}
-
-.profile-layout {
-    display: flex;
-    gap: 24px;
-    flex-direction: row-reverse;
-}
 
 /* Sidebar */
 .profile-sidebar {
-    width: 280px;
+    width: 100%;
     background: #fff;
-    border-radius: 12px;
-    padding: 24px 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
     height: fit-content;
+    top: 100px;
+    box-shadow: 6px 16px 20px 0px #0808081F;
 }
 
-.profile-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu-item a {
+.menu-link {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 14px 24px;
-    color: #4B5563;
-    font-size: 15px;
-    font-weight: 500;
-    transition: all 0.2s;
-    text-decoration: none;
-    border-right: 3px solid transparent;
+    gap: 6px;
+    padding: 12px;
+    color: var(--body-txt-color);
+    border-radius: 8px;
+    margin-bottom: 6px;
+
 }
 
-.menu-item a:hover {
+.menu-link:not(.active):not(.delete-account):hover {
     background-color: #F3F4F6;
-    color: #063235;
+    color: var(--primary-color);
 }
 
-.menu-item.active a {
-    background-color: #063235;
-    color: #fff;
-    border-right-color: #063235;
+.menu-link:not(.delete-account).active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
-.menu-item.active a:hover {
-    background-color: #05282a;
-}
-
-.menu-item i {
-    width: 20px;
-    text-align: center;
-}
-
-.menu-item.delete-account a {
+.menu-link.delete-account {
     color: #EF4444;
 }
 
-.menu-item.delete-account a:hover {
+.menu-link.delete-account:hover {
     background-color: #FEF2F2;
 }
 
 /* Main Content */
-.profile-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-/* Header Card */
 .profile-header-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 24px 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-.header-user-info {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-direction: row-reverse;
-    /* Avatar Right, Text Left */
+    padding: 16px 32px;
+    gap: 12px;
 }
 
 .user-avatar-lg img {
-    width: 64px;
-    height: 64px;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #F3F4F6;
-}
-
-.user-text {
-    text-align: right;
-}
-
-.user-text h3 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #1F2937;
-    margin: 0 0 4px;
-}
-
-.user-role {
-    font-size: 14px;
-    color: #9CA3AF;
-}
-
-.header-actions {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.link-browse {
-    color: #6B7280;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.link-browse i {
-    color: #6B7280;
-    /* Checkmark color */
-}
-
-.btn-request-pricing-dark {
-    background-color: #063235;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-/* Stats Grid */
-.profile-stats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    border: 4px solid #fff;
 }
 
 .stat-box {
     background: #fff;
-    border-radius: 12px;
-    padding: 24px;
+    border-radius: 8px;
+    padding: 20px;
     display: flex;
     align-items: flex-start;
-    gap: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    position: relative;
-    overflow: hidden;
-}
-
-/* Right border accents */
-.stat-box::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 15%;
-    bottom: 15%;
-    width: 4px;
-    border-radius: 2px;
-}
-
-.stat-box-teal::after {
-    background-color: #2DD4BF;
+    justify-content: space-between;
+    box-shadow: 0px 1px 2px 0px #0000000D;
 }
 
 /* Teal */
-.stat-box-green::after {
-    background-color: #22C55E;
+.stat-box-teal {
+    border-right: 4px solid var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 /* Green */
-.stat-box-blue::after {
-    background-color: #3B82F6;
+.stat-box-blue {
+    border-right: 4px solid #3B82F6;
+    color: #3B82F6;
+}
+
+.stat-box-green {
+    border-right: 4px solid #55AE36;
+    color: #16A34A;
 }
 
 /* Blue */
 
-.stat-icon-circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
+.stat-box-teal .rounded-icon {
+    background-color: #77B0A91A;
+    color: var(--secondary-color);
 }
 
-.stat-box-teal .stat-icon-circle {
-    background-color: #F0FDFA;
-    color: #2DD4BF;
+.stat-box-green .rounded-icon {
+    background-color: #16A34A1F;
+    color: #16A34A;
 }
 
-.stat-box-green .stat-icon-circle {
-    background-color: #F0FDF4;
-    color: #22C55E;
-}
-
-.stat-box-blue .stat-icon-circle {
-    background-color: #EFF6FF;
+.stat-box-blue .rounded-icon {
+    background-color: #3B82F61F;
     color: #3B82F6;
 }
 
-.stat-info {
-    flex: 1;
-}
-
 .stat-label {
-    display: block;
-    font-size: 14px;
-    color: #6B7280;
-    margin-bottom: 8px;
+    color: #4B5563;
+    margin-block: 8px;
 }
 
 .stat-number {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 30px;
     color: #1F2937;
-    margin-bottom: 8px;
+    margin-block: 12px;
 }
 
-.stat-trend,
-.stat-update {
-    font-size: 12px;
+.stat-trend {
+    font-size: 14px;
+    color: inherit;
     display: flex;
     align-items: center;
     gap: 4px;
+    line-height: 20px;
 }
 
+/* 
 .stat-trend.up {
     color: #10B981;
 }
 
 .stat-update {
     color: #9CA3AF;
-}
+} */
 
 /* Personal Info Section */
 .personal-info-section {
@@ -2995,10 +2863,6 @@ input:focus,
 
     .profile-sidebar {
         width: 100%;
-    }
-
-    .profile-stats-grid {
-        grid-template-columns: 1fr;
     }
 
     .info-grid {
