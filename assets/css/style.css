@@ -124,6 +124,10 @@ input[type="number"].form-control {
 }
 
 input:not([type="number"]).form-control {
+    height: 48px;
+}
+
+.contact-form-container input.form-control {
     height: 55px;
 }
 
@@ -133,7 +137,10 @@ textarea.form-control {
 
 .form-control:not(.grayed-control) {
     border: 1px solid #D1D5DB;
-    background-color: #fff;
+}
+
+.form-control:disabled {
+    background-color: #F9FAFB;
 }
 
 .form-control.grayed-control::placeholder {
@@ -1920,11 +1927,12 @@ input:focus,
     color: #0A4A4F;
 }
 
+/* 
 .edit-link {
     color: #77B0A9;
     font-size: 13px;
     text-decoration: underline;
-}
+} */
 
 .file-preview {
     display: flex;
@@ -2792,7 +2800,7 @@ input:focus,
 } */
 
 /* Personal Info Section */
-.personal-info-section {
+/* .personal-info-section {
     background: #fff;
     border-radius: 12px;
     padding: 32px;
@@ -2810,13 +2818,11 @@ input:focus,
     font-size: 18px;
     font-weight: 700;
     color: #063235;
-    /* Dark Green Title */
     margin: 0;
 }
 
 .edit-link {
     color: #5F9EA0;
-    /* Muted Teal */
     text-decoration: none;
     font-size: 14px;
     display: flex;
@@ -2854,8 +2860,6 @@ input:focus,
     direction: ltr;
     text-align: right;
 }
-
-/* Responsive */
 @media (max-width: 991px) {
     .profile-layout {
         flex-direction: column;
@@ -2868,7 +2872,7 @@ input:focus,
     .info-grid {
         grid-template-columns: 1fr;
     }
-}
+} */
 
 /* --- Upload Your Pricing Section --- */
 

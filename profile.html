@@ -171,7 +171,7 @@
                             </div>
                         </div>
                         <div class="tab-content" id="Sub-nav-tabContent">
-                            <div class="profile-content tab-pane active show" id="nav-info" role="tabpanel"
+                            <div class="tab-pane active show" id="nav-info" role="tabpanel"
                                 aria-labelledby="nav-info-tab">
                                 <!-- Stats Cards -->
                                 <div class="row py-4 px-3 g-4">
@@ -253,32 +253,25 @@
                                 </div>
 
                                 <!-- Personal Info -->
-                                <div class="personal-info-section">
-                                    <div class="section-header">
-                                        <h3>المعلومات الشخصية</h3>
-                                        <a href="#" class="edit-link">
-                                            <i class="fa-regular fa-pen-to-square"></i>
-                                            تعديل
-                                        </a>
+                                <div class="row p-4 g-4">
+                                    <h5 class="prim-color heading-5">المعلومات الشخصية</h5>
+                                    <div class="col-md-6 mb-4">
+                                        <label class="form-label fs-14 text-color">الإسم بالكامل</label>
+                                        <input type="text" class="form-control" value="أحمد محمد السعيد" disabled>
                                     </div>
-
-                                    <div class="info-grid">
-                                        <div class="info-group">
-                                            <label>الاسم الكامل</label>
-                                            <div class="info-value">أحمد محمد السعيد</div>
-                                        </div>
-                                        <div class="info-group">
-                                            <label>البريد الإلكتروني</label>
-                                            <div class="info-value">ahmed.alsaeed@riyadh-const.com</div>
-                                        </div>
-                                        <div class="info-group">
-                                            <label>رقم الجوال</label>
-                                            <div class="info-value ltr-text">+966 4567 4567 4567</div>
-                                        </div>
-                                        <div class="info-group">
-                                            <label>المدينة</label>
-                                            <div class="info-value">الرياض</div>
-                                        </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label class="form-label fs-14 text-color">البريد
+                                            الإلكتروني</label>
+                                        <input type="email" class="form-control" value="ahmed.alsaeed@riyadh-const.com"
+                                            disabled>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label class="form-label fs-14 text-color">رقم الجوال</label>
+                                        <input type="tel" class="form-control" value="+966 4567 4567 4567" disabled>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label class="form-label fs-14 text-color">المدينة</label>
+                                        <input type="text" class="form-control" value="الرياض" disabled>
                                     </div>
                                 </div>
                             </div>
@@ -341,23 +334,13 @@
                                             تعديل
                                         </a>
                                     </div>
-
-                                    <div class="info-grid">
-                                        <div class="info-group">
-                                            <label>الاسم الكامل</label>
-                                            <div class="info-value">أحمد محمد السعيد</div>
-                                        </div>
-                                        <div class="info-group">
-                                            <label>البريد الإلكتروني</label>
-                                            <div class="info-value">ahmed.alsaeed@riyadh-const.com</div>
-                                        </div>
-                                        <div class="info-group">
-                                            <label>رقم الجوال</label>
-                                            <div class="info-value ltr-text">+966 4567 4567 4567</div>
-                                        </div>
-                                        <div class="info-group">
-                                            <label>المدينة</label>
-                                            <div class="info-value">الرياض</div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-4">
+                                                <label for="fullName" class="form-label heading-5">الإسم بالكامل</label>
+                                                <input type="text" class="form-control" value="أحمد محمد السعيد"
+                                                    id="fullName" disabled>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
