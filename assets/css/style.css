@@ -175,18 +175,6 @@ textarea.form-control {
     opacity: 1;
 }
 
-/* --- Utilities --- */
-/* .text-primary-dark {
-    color: var(--primary-color);
-} */
-
-/* .text-primary-light {
-    color: var(--secondary-color);
-} */
-
-/* .bg-primary-dark {
-    background-color: var(--primary-color);
-} */
 .text-color {
     color: var(--body-txt-color);
 }
@@ -479,8 +467,6 @@ main {
 
 /* Stats */
 .stats {
-    /* background-color: var(--primary-color);
-    background: linear-gradient(90deg, #063235 0%, #0A4A4F 100%); */
     padding-block: 43px;
 }
 
@@ -651,6 +637,11 @@ main {
     color: #222733;
 }
 
+.heading-6 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
 .prim-section {
     background-color: var(--primary-color);
     background: linear-gradient(90deg, #063235 0%, #0A4A4F 50%, #77B0A9 100%),
@@ -711,9 +702,25 @@ main {
     color: #0360B3;
 }
 
+.badge-alt {
+    font-size: 12px;
+    padding: 6px 12px;
+    border: 1px solid #E5E7EB;
+}
+
+.blue-badge-alt {
+    color: #2563EB;
+    background-color: #DBEAFE;
+}
+
 .green-badge {
     color: #0F7A37;
     background-color: #D6F4DE;
+}
+
+.prim-badge {
+    color: var(--primary-color);
+    background-color: #D4E6E4;
 }
 
 .gray-badge {
@@ -837,13 +844,6 @@ main {
     box-shadow: 0 12px 12px 0 #06323530;
 }
 
-/* .product-image {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-    margin-bottom: 20px;
-} */
-
 .product-actions {
     position: absolute;
     top: 8px;
@@ -851,25 +851,18 @@ main {
     z-index: 2;
 }
 
-.product-action-btn {
-    width: 40px;
-    height: 40.5px;
-    background-color: var(--gray-bg-color);
+.rounded-icon {
+    min-width: 40px;
+    height: 40px;
     border-radius: 29px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* 
-.product-action-btn:hover {
-    transform: scale(1.1);
-} */
-
-/* 
-.product-action-btn:hover svg path {
-    fill: #fff;
-} */
+.product-card .rounded-icon {
+    background-color: var(--gray-bg-color);
+}
 
 .product-description {
     font-size: 13.33px;
@@ -911,8 +904,6 @@ main {
 
 /* --- Trust Section --- */
 .trust-section {
-    /* background: linear-gradient(90deg, #0A4A4F 0%, #063235 100%);
-    color: #fff; */
     font-weight: 350;
 }
 
@@ -1051,24 +1042,6 @@ main {
 }
 
 /* --- Testimonials Section --- */
-/* .testimonials-section {
-    padding: 80px 0;
-    background-color: #fff;
-}
-
-.testimonials-section .section-title {
-    font-size: 32px;
-    margin-bottom: 16px;
-}
-
-.testimonials-section .section-title .highlight {
-    color: #77B0A9;
-}
-
-.testimonials-section .section-subtitle {
-    margin-bottom: 60px;
-} */
-
 .testimonials-swiper {
     position: relative;
     overflow: hidden;
@@ -1298,8 +1271,6 @@ main {
 
 .cta-app-card {
     background: rgba(255, 255, 255, 0.1);
-    /* backdrop-filter: blur(10px); */
-    /* border: 1px solid #E5E7EB; */
     border-radius: 8px;
     padding: 24px;
 }
@@ -1377,7 +1348,6 @@ main {
 /* --- Footer Section --- */
 .footer-section {
     background-color: #0F172A;
-    /* Dark blue/black from image */
     color: #fff;
     padding-top: 80px;
     font-size: 14px;
@@ -1477,11 +1447,6 @@ main {
     outline: none;
     transition: border-color 0.3s ease;
 }
-
-/* 
-.newsletter-input:focus {
-    border-color: #77B0A9;
-} */
 
 input:focus,
 .form-check-input:focus,
@@ -1604,12 +1569,6 @@ input:focus,
     color: var(--primary-color);
 }
 
-/* 
-.back_to_top:hover {
-    background-color: var(--secondary-color);
-    box-shadow: 0 9px 10.3px 0 #26507891;
-}
-*/
 .back_to_top:hover {
     box-shadow: 0 12px 12px 0 #063235ab;
 }
@@ -1658,11 +1617,6 @@ input:focus,
     min-width: 121px;
     height: 34px;
 }
-
-/* .form-select:focus {
-    box-shadow: none;
-    border-color: var(--secondary-color);
-} */
 
 /* --- Multi-Step Form --- */
 .multi-step-section {
@@ -1889,30 +1843,6 @@ input:focus,
     margin: 0 auto;
 }
 
-/* .form-group {
-    margin-bottom: 24px;
-} */
-
-/* .form-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #374151;
-} */
-
-/* .form-control-custom {
-    width: 100%;
-    padding: 12px 16px;
-    border: 1px solid #D1D5DB;
-    border-radius: 8px;
-    outline: none;
-    transition: border-color 0.3s ease;
-} */
-
-/* .form-control-custom:focus {
-    border-color: #0A4A4F;
-} */
-
 .upload-box {
     border: 1px solid #D1D5DB;
     border-radius: 12px;
@@ -1924,12 +1854,6 @@ input:focus,
 .upload-box:hover {
     border-color: #77B0A9;
     background-color: #F0FDFA;
-}
-
-.upload-icon {
-    font-size: 32px;
-    color: #9CA3AF;
-    margin-bottom: 16px;
 }
 
 .upload-text {
@@ -2368,24 +2292,9 @@ input:focus,
     align-items: center;
     width: 100%;
     justify-content: flex-end;
-    /* RTL: content starts from right, but we want user info on right? No, image shows user info on right. Wait. */
-    /* In RTL, flex-start is right. So justify-content: space-between puts one item on right, one on left. */
-    /* The image shows: Left side: 3 dots. Right side: User info. */
-    /* So in RTL: Left is flex-end. Right is flex-start. */
-    /* Wait. RTL: Start is Right. End is Left. */
-    /* So User Info (Right) is at Start. 3 Dots (Left) is at End. */
-    /* Let's just use flex and auto margins or space-between. */
     justify-content: space-between;
     flex-direction: row-reverse;
-    /* To match visual if needed, or just normal RTL flow */
 }
-
-/* Actually, let's look at the image again. */
-/* Top Left corner: 3 dots. */
-/* Top Right corner: User Avatar and Name. */
-/* In RTL: Right is Start. Left is End. */
-/* So User Info is at Start. 3 Dots is at End. */
-/* Standard flex row in RTL will put first child on Right. */
 
 .chat-user-info {
     display: flex;
@@ -2396,17 +2305,7 @@ input:focus,
 
 .user-details {
     text-align: left;
-    /* Image shows text aligned to avatar? No, standard RTL. */
     margin-right: auto;
-    /* Push to left? No. */
-    /* Let's restructure HTML slightly or use CSS order. */
-    /* HTML: btn-more, details, avatar. */
-    /* RTL: btn-more (Right), details, avatar (Left). This is WRONG. */
-    /* We want Avatar (Right), Details, ..., Btn-more (Left). */
-    /* So HTML should be: Avatar, Details, ..., Btn-more. */
-    /* But I wrote HTML: btn-more, details, avatar. */
-    /* So I need to reverse it or fix HTML. */
-    /* Let's fix with CSS order or flex-direction. */
     flex-direction: row-reverse;
 }
 
@@ -2420,7 +2319,6 @@ input:focus,
 .user-details {
     margin-right: 12px;
     margin-left: auto;
-    /* Push 3 dots to far end */
     text-align: right;
 }
 
@@ -2486,10 +2384,8 @@ input:focus,
     position: absolute;
     top: 0;
     right: 0;
-    /* RTL fill from right */
     height: 6px;
     background: #063235;
-    /* Dark Green */
     border-radius: 3px;
     z-index: 1;
 }
@@ -2500,10 +2396,6 @@ input:focus,
     color: #9CA3AF;
     font-weight: 500;
     z-index: 2;
-    /* We need dots on the track? The image shows just text below the bar? */
-    /* Image shows text labels below the bar. */
-    /* The bar itself has sections. */
-    /* Let's simplify: Just text labels distributed. */
 }
 
 .progress-step.active {
@@ -2531,18 +2423,6 @@ input:focus,
 
 .message.incoming {
     align-self: flex-start;
-    /* Left side in LTR, Right side in RTL? */
-    /* Incoming: From other person. Should be on Start (Right in RTL). */
-    /* Image shows Incoming on Right? No. */
-    /* Image shows: */
-    /* "?????...": Avatar on Right. Bubble on Left of Avatar. This is Incoming. */
-    /* "???? ?????...": Avatar on Left. Bubble on Right of Avatar. This is Outgoing. */
-    /* So Incoming = Right aligned (Start). Outgoing = Left aligned (End). */
-    /* Wait, standard chat: Me = Right (or Left depending on app). */
-    /* WhatsApp RTL: Me = Left. Other = Right. */
-    /* Image: */
-    /* Top message (Sarah): Avatar Right. Bubble Left of it. -> Incoming. */
-    /* Bottom message (Me): Avatar Left. Bubble Right of it. -> Outgoing. */
 }
 
 .message.incoming {
@@ -2551,7 +2431,6 @@ input:focus,
 
 .message.outgoing {
     align-self: flex-end;
-    /* Left side */
     flex-direction: row-reverse;
 }
 
@@ -2560,7 +2439,6 @@ input:focus,
     height: 36px;
     border-radius: 50%;
     margin-left: 12px;
-    /* For incoming */
     margin-right: 0;
 }
 
@@ -2579,14 +2457,12 @@ input:focus,
 
 .message.incoming .message-content {
     background-color: #F3F4F6;
-    /* Light Gray */
     color: #1F2937;
     border-top-right-radius: 0;
 }
 
 .message.outgoing .message-content {
     background-color: #EEF2FF;
-    /* Light Blueish/Gray */
     color: #1F2937;
     border-top-left-radius: 0;
 }
@@ -2597,12 +2473,10 @@ input:focus,
     margin-top: 4px;
     position: absolute;
     bottom: -20px;
-    /* Align based on type */
 }
 
 .message.incoming .message-time {
     right: 50px;
-    /* Near avatar */
 }
 
 .message.outgoing .message-time {
@@ -2612,11 +2486,7 @@ input:focus,
 /* Action Block */
 .chat-action-block {
     background-color: #ECFDF5;
-    /* Light Green */
     border: 1px solid #10B981;
-    /* Green Border? Or just light? Image shows light border maybe. */
-    /* Image shows: Light Green Background. Darker Green Left Border? No, it's a block. */
-    /* It has an icon on right. Text. Buttons. */
     border-radius: 8px;
     padding: 16px;
     display: flex;
@@ -2624,8 +2494,6 @@ input:focus,
     align-items: flex-start;
     max-width: 80%;
     align-self: center;
-    /* Center in chat? Or aligned to incoming? */
-    /* Image shows it aligned to Incoming (Right). It's from the vendor/user. */
     align-self: flex-start;
     position: relative;
 }
@@ -2668,7 +2536,6 @@ input:focus,
 
 .btn-accept {
     background-color: #5F9EA0;
-    /* Muted Green/Teal from image */
     color: #fff;
     border: none;
     padding: 8px 24px;
@@ -2683,8 +2550,6 @@ input:focus,
 .btn-reject {
     background-color: #fff;
     color: #EF4444;
-    /* Red text? Image shows dark text maybe? */
-    /* Image shows "Refuse X" with white bg. */
     border: 1px solid #E5E7EB;
     padding: 8px 24px;
     border-radius: 6px;
@@ -2707,6 +2572,34 @@ input:focus,
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.notification-item .position-absolute {
+    top: 24px;
+    left: 24px;
+}
+
+.notification-item.bordered-right {
+    border-right: 4px solid #063235;
+    background-color: #fff;
+    box-shadow: 0px 10px 6px 0px #77B0A92E;
+}
+
+.btn-outlined-link {
+    border: 1px solid #016B61;
+    color: #016B61;
+    padding: 8px 12px;
+    border-radius: var(--border-radius-sm);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+    gap: 4px;
+}
+
+.btn-outlined-link:hover {
+    color: white;
+    background-color: #016B61;
 }
 
 .notification-badge {
@@ -2772,7 +2665,6 @@ input:focus,
     display: flex;
     gap: 24px;
     flex-direction: row-reverse;
-    /* Sidebar on Right */
 }
 
 /* Sidebar */
@@ -2813,7 +2705,6 @@ input:focus,
     background-color: #063235;
     color: #fff;
     border-right-color: #063235;
-    /* Or keep transparent if full bg */
 }
 
 .menu-item.active a:hover {
@@ -3085,7 +2976,6 @@ input:focus,
 .ltr-text {
     direction: ltr;
     text-align: right;
-    /* Keep aligned to right but LTR for phone */
 }
 
 /* Responsive */
@@ -3139,31 +3029,6 @@ input:focus,
     max-width: 100%;
 }
 
-/* .upload-box {
-    border: 2px dashed #E5E7EB;
-    border-radius: var(--border-radius-lg);
-    padding: 60px 20px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background-color: #fff;
-}
-
-.upload-box:hover {
-    border-color: var(--secondary-color);
-    background-color: #F9FAFB;
-}
-
-.upload-box-label {
-    width: 100%;
-    cursor: pointer;
-} */
-
-.upload-icon {
-    color: var(--color-text-muted);
-    margin-bottom: 16px;
-}
-
 .upload-text {
     font-size: 14px;
     color: #9CA3AF;
@@ -3175,26 +3040,6 @@ input:focus,
     color: var(--secondary-color);
     margin-bottom: 24px;
 }
-
-/* 
-.form-label {
-    font-size: 14px;
-    color: var(--color-text-muted);
-    margin-bottom: 8px;
-} */
-
-/* .form-select {
-    padding: 12px 16px;
-    border-radius: 8px;
-    border: 1px solid #E5E7EB;
-    color: var(--body-txt-color);
-    font-size: 14px;
-}
-
-.form-select:focus {
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 0 4px rgba(119, 176, 169, 0.1);
-} */
 
 .form-check-input:checked {
     background-color: var(--secondary-color);
@@ -3213,18 +3058,11 @@ input:focus,
 .additional-details {
     border-bottom: 1px solid #E5E7EB;
     margin-bottom: 52px;
-    /* box-shadow: 0px 1px 2px 0px #0000000D; */
 }
 
 .services-badge svg {
     color: var(--secondary-color);
 }
-
-/* .btn-submit-pricing {
-    padding: 12px 32px;
-    font-size: 16px;
-    border-radius: 8px;
-} */
 
 /* --- Contact Section --- */
 .contact-form-container {
@@ -3293,14 +3131,6 @@ input:focus,
 }
 
 /* --- FAQ Section --- */
-/* .faq-sidebar .search-box .form-control {
-    background-color: #F9FAFB;
-    border: 1px solid #E5E7EB;
-    border-radius: 8px;
-    padding: 12px 16px;
-    font-size: 14px;
-    text-align: right;
-} */
 .blob-icon {
     margin-bottom: 73px;
 }
@@ -3314,29 +3144,19 @@ input:focus,
     border-radius: 8px;
     box-shadow: 0px 24.56px 32.74px -14.73px #9595951F;
     overflow: hidden;
-    /* padding-block: 24px; */
 }
 
-/* .faq-accordion .accordion-header {
-    padding-inline: 24px;
-} */
 .faq-accordion .accordion-button {
     background-color: #fff;
-    /* color: var(--primary-color);
-    font-weight: 600;
-    font-size: 16px; */
     box-shadow: none;
     padding: 24px;
-    /* padding: 0 0 12.5px; */
 }
 
 .faq-accordion .accordion-button:not(.collapsed) {
     background-color: #fff;
     color: var(--primary-color);
-    /* border-bottom: 0.5px solid #ADAEBC; */
     box-shadow: none;
     position: relative;
-    /* padding-bottom: 16px; */
 }
 
 .faq-accordion .accordion-button:not(.collapsed)::before {
@@ -3471,32 +3291,7 @@ input:focus,
     color: var(--primary-color);
 }
 
-/* Upload Box */
-/* .upload-box {
-    border: 2px dashed #E5E7EB;
-    border-radius: 12px;
-    padding: 40px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background-color: #F9FAFB;
-}
-
-.upload-box:hover {
-    border-color: var(--secondary-color);
-    background-color: #F0FDFA;
-}
-
-.upload-box-label {
-    cursor: pointer;
-    width: 100%;
-}
-
-.upload-box .upload-icon {
-    color: #9CA3AF;
-} */
-
-.btn-download-template {
+/* .btn-download-template {
     color: var(--primary-color);
     text-decoration: none;
     display: inline-flex;
@@ -3507,7 +3302,7 @@ input:focus,
 
 .btn-download-template:hover {
     text-decoration: underline;
-}
+} */
 
 /* Payment Options */
 .payment-option-card {
@@ -3522,22 +3317,6 @@ input:focus,
     border-color: var(--primary-color) !important;
     background-color: #F0FDFA;
 }
-
-/* --- Checkout Section --- */
-/* .checkout-section {
-    background-color: #fff;
-}
-
-.checkout-section .form-control {
-    padding: 12px;
-    border-radius: 8px;
-    border-color: #E5E7EB;
-} */
-
-/* .checkout-section .form-control:focus {
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.1);
-} */
 
 .payment-methods-container {
     border: 1px solid #E5E7EB;
