@@ -70,8 +70,72 @@ html[dir="rtl"] table.dataTable tbody td {
     text-align: right;
 }
 
-table.table-bordered.dataTable {
+table.dataTable {
     width: 100% !important;
+}
+
+table td {
+    font-size: 18px;
+    color: var(--titles-color);
+    font-weight: 700;
+}
+
+.table>:not(caption)>*>* {
+    border-bottom: unset;
+    padding-block: 16px;
+}
+
+#pricingTable {
+    border-collapse: separate !important;
+    border-spacing: 32px 0;
+    border: 1px solid #D1D5DB;
+    border-radius: var(--border-radius-lg);
+    /* 32px horizontal gap, 0 vertical gap */
+}
+
+/* Remove table background so gaps show */
+#pricingTable tr,
+#pricingTable td,
+#pricingTable th {
+    background: #fff;
+}
+
+#pricingTable th {
+    font-size: 19.2px;
+    font-weight: 500;
+    color: var(--body-txt-color);
+    line-height: 120%;
+    border-bottom: 1px solid #E5E7EB;
+    padding-right: 16px;
+}
+
+.form-control {
+    border: 1px solid #D1D5DB;
+    background-color: #fff;
+    border-radius: 8px;
+    min-height: 44px;
+}
+
+.form-control::placeholder {
+    font-size: 16px;
+    color: #ADAEBC;
+}
+
+#pricingTable thead th.sorting:after,
+#pricingTable thead th.sorting_asc:after,
+#pricingTable thead th.sorting_desc:after {
+    display: none !important;
+}
+
+#pricingTable thead th.sorting:before,
+#pricingTable thead th.sorting_asc:before,
+#pricingTable thead th.sorting_desc:before {
+    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15' fill='none'><path d='M2.4375 0C2.748 0.00018761 3 0.251956 3 0.5625V12.9092C3.0015 12.9074 3.0024 12.9051 3.00391 12.9033C3.16192 12.7168 3.31723 12.5202 3.46191 12.3359C3.47315 12.3216 3.48401 12.3071 3.49512 12.293C3.63927 12.1094 3.79139 11.9171 3.90918 11.7959C4.12569 11.5731 4.48133 11.5677 4.7041 11.7842C4.92674 12.0006 4.93196 12.3563 4.71582 12.5791C4.64929 12.6475 4.53978 12.7847 4.37988 12.9883C4.36836 13.0029 4.3566 13.0181 4.34473 13.0332C4.2022 13.2148 4.03456 13.4276 3.8623 13.6309C3.6777 13.8487 3.47119 14.075 3.26465 14.251C3.16118 14.3391 3.0444 14.426 2.91895 14.4932C2.79794 14.5579 2.63107 14.6249 2.4375 14.625C2.24379 14.625 2.07616 14.558 1.95508 14.4932C1.82971 14.426 1.71278 14.3391 1.60938 14.251C1.40286 14.075 1.19629 13.8487 1.01172 13.6309C0.839432 13.4275 0.671839 13.2148 0.529297 13.0332C0.517382 13.018 0.505699 13.003 0.494141 12.9883C0.334246 12.7847 0.225706 12.6475 0.15918 12.5791C-0.0572712 12.3564 -0.0527259 12.0007 0.169922 11.7842C0.392691 11.5677 0.749293 11.5731 0.96582 11.7959C1.08353 11.9171 1.23493 12.1097 1.37891 12.293C1.39002 12.3071 1.40185 12.3216 1.41309 12.3359C1.55766 12.5201 1.71224 12.717 1.87012 12.9033C1.87163 12.9051 1.87349 12.9074 1.875 12.9092V0.5625C1.875 0.25184 2.12684 0 2.4375 0ZM8.8125 9.75C9.123 9.75019 9.375 10.002 9.375 10.3125C9.375 10.623 9.123 10.8748 8.8125 10.875H6.5625C6.25184 10.875 6 10.6232 6 10.3125C6 10.0018 6.25184 9.75 6.5625 9.75H8.8125ZM10.3125 6.75C10.623 6.75019 10.875 7.00196 10.875 7.3125C10.875 7.62304 10.623 7.87481 10.3125 7.875H6.5625C6.25184 7.875 6 7.62316 6 7.3125C6 7.00184 6.25184 6.75 6.5625 6.75H10.3125ZM12.5625 3.75C12.873 3.75019 13.125 4.00198 13.125 4.3125C13.125 4.62304 12.873 4.87481 12.5625 4.875H6.5625C6.25184 4.875 6 4.62316 6 4.3125C6 4.00184 6.25184 3.75 6.5625 3.75H12.5625ZM14.0625 0.75C14.373 0.750188 14.625 1.00196 14.625 1.3125C14.625 1.62304 14.373 1.87481 14.0625 1.875H6.5625C6.25184 1.875 6 1.62316 6 1.3125C6 1.00184 6.25184 0.75 6.5625 0.75H14.0625Z' fill='%23374151'/></svg>");
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translateY(-50%);
+    opacity: 1;
 }
 
 /* --- Utilities --- */
@@ -1529,6 +1593,7 @@ input:focus,
     border-radius: 8px;
     border: 1px solid #D1D5DB;
     color: #000;
+    cursor: pointer;
     font-size: 14px;
 }
 
@@ -1536,12 +1601,12 @@ input:focus,
     height: 44px;
 }
 
-.form-control::placeholder {
+/* .form-control::placeholder {
     color: #797C7F;
     font-weight: 500;
     line-height: 120%;
     font-size: 19.2px;
-}
+} */
 
 .form-select.sm-select {
     min-width: 121px;

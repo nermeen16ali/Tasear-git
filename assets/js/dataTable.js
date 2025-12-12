@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const table = $("#competitionTable").DataTable({
+  const table = $("#pricingTable").DataTable({
     responsive: true,
     paging: false,
     info: false,
