@@ -2560,6 +2560,15 @@ input:focus,
     gap: 8px;
 }
 
+.notification-area {
+    max-height: 540px;
+    overflow-y: auto;
+}
+
+.notification-area::-webkit-scrollbar {
+    display: none;
+}
+
 /* System Notification */
 .system-notification {
     align-self: center;
