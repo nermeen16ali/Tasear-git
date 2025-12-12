@@ -6,13 +6,14 @@ $(document).ready(function () {
     searching: false,
     pageLength: 8,
     lengthChange: false,
+    order: [],
+    columnDefs: [
+      { orderable: true, targets: [1, 2] },
+      { orderable: false, targets: "_all" }
+    ],
+
     language: {
       url: "//cdn.datatables.net/plug-ins/1.13.6/i18n/ar.json",
     },
-  });
-
-  // Custom search
-  $("#tableSearch").on("keyup", function () {
-    table.search(this.value).draw();
   });
 });
