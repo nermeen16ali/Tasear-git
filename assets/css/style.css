@@ -207,7 +207,12 @@ textarea.form-control {
     border-radius: 10px;
 }
 
-.main-btn.ms-auto {
+.bg-grayed-btn {
+    background-color: #F9FAFB;
+    color: var(--primary-color);
+}
+
+.main-btn.maxed-btn {
     min-width: 172px;
 }
 
@@ -256,6 +261,7 @@ textarea.form-control {
 
 .btn-custom-dark:hover {
     background-color: #0c2e30;
+    /* background-color: #071b1c; */
 }
 
 .delete-btn {
@@ -711,6 +717,7 @@ main {
 .badge-alt {
     font-size: 12px;
     padding: 6px 12px;
+    border-radius: 9999px;
     /* border: 1px solid #E5E7EB; */
 }
 
@@ -1398,7 +1405,6 @@ main {
 .footer-social a {
     color: #94A3B8;
     font-size: 18px;
-    transition: color 0.3s ease;
 }
 
 .footer-social a:hover {
@@ -1873,7 +1879,8 @@ input:focus,
 }
 
 .upload-box:hover,
-.payment-box:hover {
+.payment-box:hover,
+.lang-box:hover {
     border-color: #77B0A9;
     background-color: #F0FDFA;
 }
@@ -2697,8 +2704,31 @@ input:focus,
     border-radius: 8px;
 }
 
+.profile-card .heading-6 {
+    color: #1F2937;
+    font-weight: 400;
+}
+
 .profile-card:not(:last-child) {
     margin-bottom: 24px;
+}
+
+.info-box {
+    background-color: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    border-radius: 8px;
+    padding: 17px;
+    font-size: 14px;
+    color: #1E40AF;
+}
+
+.lang-box {
+    gap: 12px;
+}
+
+.lang-box:has(input:checked) {
+    border: 1px solid #063235;
+    background-color: #0632350D;
 }
 
 .bordered-btm {
@@ -2764,7 +2794,7 @@ input:focus,
     color: var(--white-color);
 }
 
-.menu-link.delete-account {
+.delete-account {
     color: #EF4444;
 }
 
@@ -2796,13 +2826,11 @@ input:focus,
     box-shadow: 0px 1px 2px 0px #0000000D;
 }
 
-/* Teal */
 .stat-box-teal {
     border-right: 4px solid var(--secondary-color);
     color: var(--secondary-color);
 }
 
-/* Green */
 .stat-box-blue {
     border-right: 4px solid #3B82F6;
     color: #3B82F6;
@@ -2812,8 +2840,6 @@ input:focus,
     border-right: 4px solid #55AE36;
     color: #16A34A;
 }
-
-/* Blue */
 
 .stat-box-teal .rounded-icon {
     background-color: #77B0A91A;
