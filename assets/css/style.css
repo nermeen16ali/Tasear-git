@@ -1897,6 +1897,18 @@ input:focus,
 
 }
 
+.title-color {
+    color: var(--titles-color);
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
 .upload-hint {
     font-size: 12px;
     color: #9CA3AF;
@@ -3349,4 +3361,40 @@ input:focus,
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+/* --- Slider Navigation Arrows --- */
+.slider-nav-arrows {
+    display: flex;
+    gap: 8px;
+}
+
+.slider-arrow-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #D1D5DB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #374151;
+}
+
+.slider-arrow-btn:hover:not(:disabled) {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #fff;
+}
+
+.slider-arrow-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.slider-arrow-btn svg {
+    width: 20px;
+    height: 20px;
 }
