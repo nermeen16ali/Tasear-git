@@ -82,27 +82,37 @@
     </header>
     <!-- main -->
     <main>
-        <section class="special-pricing-section py-5">
+        <div class="page-breadcrumb">
+            <div class="container d-flex align-items-center gap-2 fs-14">
+                <a href="index-client.html">الرئيسية</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11" viewBox="0 0 6 11" fill="none">
+                    <path
+                        d="M0.219727 4.72207C-0.0732422 5.01504 -0.0732422 5.49082 0.219727 5.78379L4.71973 10.2838C5.0127 10.5768 5.48848 10.5768 5.78145 10.2838C6.07441 9.99082 6.07441 9.51504 5.78145 9.22207L1.81113 5.25176L5.7791 1.28145C6.07207 0.988477 6.07207 0.512695 5.7791 0.219727C5.48613 -0.0732422 5.01035 -0.0732422 4.71738 0.219727L0.217383 4.71973L0.219727 4.72207Z"
+                        fill="#016B61" />
+                </svg>
+                <span>تسعيرات خاصة</span>
+            </div>
+        </div>
+        <section class="py-5">
             <div class="container">
-                <!-- Header -->
-                <div class="text-end mb-5">
-                    <h1 class="section-title mb-2">تسعيرات <span class="text-primary-custom">خاصة</span></h1>
-                    <p class="text-muted">احصل على أفضل الأسعار من موردين متعددين وقارن العروض بسهولة</p>
-                </div>
+                <h2 class="section-title"><span class="highlight">تسعيرات</span> خاصة</h2>
+                <p class="main-text mb-40">احصل على أفضل الأسعار من موردين متعددين وقارن العروض بسهولة</p>
 
                 <!-- Stepper -->
-                <div class="stepper-wrapper mb-5">
-                    <div class="stepper-item completed active" data-step="1">
-                        <div class="step-counter">1</div>
-                        <div class="step-name">نوع التسعير</div>
-                    </div>
-                    <div class="stepper-item" data-step="2">
-                        <div class="step-counter">2</div>
-                        <div class="step-name">تفاصيل المنتجات</div>
-                    </div>
-                    <div class="stepper-item" data-step="3">
-                        <div class="step-counter">3</div>
-                        <div class="step-name">مراجعة وإرسال</div>
+                <div class="bg-colored-light">
+                    <div class="stepper-wrapper mb-5">
+                        <div class="stepper-item completed active" data-step="1">
+                            <div class="step-counter">1</div>
+                            <div class="step-name">نوع التسعير</div>
+                        </div>
+                        <div class="stepper-item" data-step="2">
+                            <div class="step-counter">2</div>
+                            <div class="step-name">تفاصيل المنتجات</div>
+                        </div>
+                        <div class="stepper-item" data-step="3">
+                            <div class="step-counter">3</div>
+                            <div class="step-name">مراجعة وإرسال</div>
+                        </div>
                     </div>
                 </div>
 
@@ -369,7 +379,7 @@
                     </div>
 
                     <!-- Navigation Buttons -->
-                    <div class="d-flex justify-content-between mt-5 pt-4 border-top">
+                    <div class="d-flex justify-content-end mt-5 pt-4 border-top">
                         <button type="button" class="btn btn-outline-secondary px-5" id="prevBtn"
                             style="visibility: hidden;">رجوع</button>
                         <button type="button" class="btn btn-dark px-5" id="nextBtn">التالي</button>
