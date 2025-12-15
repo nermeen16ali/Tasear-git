@@ -645,6 +645,10 @@ main {
     height: 24px;
 }
 
+.lh-100 {
+    line-height: 100%;
+}
+
 .heading-3 {
     font-size: 27.65px;
     line-height: 120%;
@@ -3432,10 +3436,6 @@ hr {
     border-color: #E5E7EB;
 }
 
-.order-summary-card {
-    border: 1px solid #E5E7EB;
-}
-
 .x-small {
     font-size: 12px;
 }
@@ -3693,5 +3693,6 @@ hr {
 
 .cart-card {
     box-shadow: 0px 1px 2px 0px #0000000D;
-    padding: 24px 24px 50px;
+    padding: 24px;
+    border-radius: 8px;
 }
