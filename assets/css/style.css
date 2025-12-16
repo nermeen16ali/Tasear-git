@@ -681,7 +681,7 @@ main {
     line-height: 120%;
 }
 
-.heading-5:not(.colored-text):not(.prim-color):not(.form-label) {
+.heading-5:not(.colored-text):not(.prim-color):not(.form-label):not(.plc-color) {
     color: var(--titles-color);
 }
 
@@ -968,7 +968,8 @@ main {
     padding-bottom: 45px;
 }
 
-.product-availability.available {
+.product-availability.available,
+.green-color {
     color: #16A34A;
 }
 
@@ -3398,7 +3399,7 @@ hr {
 } */
 
 /* Payment Options */
-.payment-option-card {
+/* .payment-option-card {
     transition: all 0.3s ease;
 }
 
@@ -3409,9 +3410,9 @@ hr {
 .payment-option-card:has(input:checked) {
     border-color: var(--primary-color) !important;
     background-color: #F0FDFA;
-}
+} */
 
-.payment-methods-container {
+/* .payment-methods-container {
     border: 1px solid #E5E7EB;
     border-radius: 12px;
     padding: 20px;
@@ -3438,7 +3439,7 @@ hr {
 
 .x-small {
     font-size: 12px;
-}
+} */
 
 .cursor-pointer {
     cursor: pointer;
