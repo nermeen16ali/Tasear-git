@@ -1168,10 +1168,16 @@ main {
     transform: translateY(-5px);
 }
 
-.testimonial-avatar {
-    position: absolute;
+.icon-36 {
     width: 36px;
     height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-avatar {
+    position: absolute;
     border-radius: 50%;
     top: -18px;
     border: 1px solid #E5E7EB;
@@ -2073,7 +2079,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: all 0.3s ease;
 }
 
@@ -3703,4 +3709,21 @@ hr {
     box-shadow: 0px 1px 2px 0px #0000000D;
     padding: 24px;
     border-radius: 8px;
+}
+
+.product-image-container img {
+    height: 541px;
+}
+
+.thumbnail-card {
+    border: 1px solid #E5E7EB;
+    cursor: pointer;
+}
+
+.thumbnail-card.active {
+    border-color: var(--secondary-color);
+}
+
+.thumbnail-card img {
+    height: 146px;
 }
