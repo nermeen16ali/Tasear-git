@@ -976,7 +976,7 @@ main {
 
 .product-footer {
     border-bottom: 1px solid #F1F1F1;
-    padding-bottom: 45px;
+    /* padding-bottom: 45px; */
 }
 
 .product-availability.available,
@@ -3141,10 +3141,10 @@ hr {
     max-width: 100%;
 }
 
-.upload-text {
+/* .upload-text {
     font-size: 14px;
     color: #9CA3AF;
-}
+} */
 
 .details-title {
     font-size: 18px;
