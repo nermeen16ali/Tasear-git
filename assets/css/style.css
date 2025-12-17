@@ -799,6 +799,128 @@ main {
     background-color: #F3E8FF;
 }
 
+/* --- Progress Tracker --- */
+.tracker-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tracker-line {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #E5E7EB;
+    z-index: 0;
+}
+
+.tracker-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.tracker-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+}
+
+.step-icon-wrapper {
+    background-color: #fff;
+    padding: 0 10px;
+    margin-bottom: 16px;
+}
+
+.step-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.bg-teal {
+    background-color: #115E59;
+}
+
+.bg-gold {
+    background-color: #DCA54E;
+}
+
+.bg-blue {
+    background-color: #009EF7;
+}
+
+.bg-green {
+    background-color: #4ADE80;
+}
+
+.step-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.step-desc {
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.step-status {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.text-gold {
+    color: #DCA54E;
+}
+
+.text-success-custom {
+    color: #10B981;
+}
+
+/* Adjust icons */
+.step-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tracker-steps {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .tracker-line {
+        display: none;
+    }
+
+    .tracker-step {
+        width: 100%;
+        flex-direction: row;
+        text-align: right;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .step-icon-wrapper {
+        padding: 0;
+        margin-bottom: 0;
+    }
+}
+
 .green-badge {
     /* color: #0F7A37;
     background-color: #D6F4DE; */
