@@ -99,9 +99,9 @@
                 <p class="main-text mb-40">احصل على أفضل الأسعار من موردين متعددين وقارن العروض بسهولة</p>
 
                 <!-- Stepper -->
-                <div class="bg-colored-light">
-                    <div class="stepper-wrapper mb-5">
-                        <div class="stepper-item completed active" data-step="1">
+                <div class="bg-colored-light p-4 mb-40">
+                    <div class="stepper-wrapper mx-auto">
+                        <div class="stepper-item active" data-step="1">
                             <div class="step-counter">1</div>
                             <div class="step-name">نوع التسعير</div>
                         </div>
@@ -117,39 +117,66 @@
                 </div>
 
                 <!-- Form Steps -->
-                <form id="specialPricingForm">
+                <form id="specialPricingForm" class="mt-4">
                     <!-- Step 1: Pricing Type -->
                     <div class="step-content active" id="step1">
-                        <h3 class="text-end mb-4">إختر نوع التسعير المناسب</h3>
+                        <div class="heading-4 prim-color mb-3">إختر نوع التسعير المناسب</div>
                         <div class="row g-4">
                             <!-- Option 1 -->
                             <div class="col-md-6">
-                                <label class="pricing-option-card h-100 d-block position-relative">
-                                    <input type="radio" name="pricingType" value="project"
-                                        class="card-input-element d-none" checked>
-                                    <div
-                                        class="card-content p-4 text-center h-100 d-flex flex-column justify-content-center align-items-center">
-                                        <div class="check-icon position-absolute top-0 end-0 m-3">
-                                            <i class="fa-regular fa-circle"></i>
-                                            <i class="fa-solid fa-circle-check"></i>
-                                        </div>
-                                        <div class="icon-wrapper mb-3">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round">
-                                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                <label class="pricing-option-card h-100 d-block position-relative cursor-pointer">
+                                    <input type="radio" name="pricingType" value="project" class="form-check-input"
+                                        checked>
+                                    <div class="card-content">
+                                        <div class="grayed-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M6 22V4C6 3.46957 6.21071 2.96086 6.58579 2.58579C6.96086 2.21071 7.46957 2 8 2H16C16.5304 2 17.0391 2.21071 17.4142 2.58579C17.7893 2.96086 18 3.46957 18 4V22H6Z"
+                                                    stroke="#063235" stroke-width="1.67" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M6 12H4C3.46957 12 2.96086 12.2107 2.58579 12.5858C2.21071 12.9609 2 13.4696 2 14V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H6"
+                                                    stroke="#063235" stroke-width="1.67" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M18 9H20C20.5304 9 21.0391 9.21071 21.4142 9.58579C21.7893 9.96086 22 10.4696 22 11V20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22H18"
+                                                    stroke="#063235" stroke-width="1.67" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M10 6H14" stroke="#063235" stroke-width="1.67"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M10 10H14" stroke="#063235" stroke-width="1.67"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M10 14H14" stroke="#063235" stroke-width="1.67"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M10 18H14" stroke="#063235" stroke-width="1.67"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
                                             </svg>
                                         </div>
-                                        <h4 class="mb-3">تسعير مناقصة/مشروع</h4>
-                                        <p class="text-muted small mb-4">للكميات الضخمة أو المشاريع الكاملة أو المنتجات
+                                        <h5 class="heading-5 mb-3">تسعير مناقصة/مشروع</h5>
+                                        <p class="text-color mb-3">للكميات الضخمة أو المشاريع الكاملة أو المنتجات
                                             غير المتوفرة في التسعير العادي</p>
-                                        <ul class="list-unstyled text-end w-100 small text-muted">
-                                            <li class="mb-2"><i class="fa-solid fa-check text-primary-custom ms-2"></i>
+                                        <ul class="list-unstyled fs-14 text-color">
+                                            <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="me-1"
+                                                    width="16" height="13" viewBox="0 0 16 13" fill="none">
+                                                    <path
+                                                        d="M4.25213 12.5C4.25213 12.5 4.24512 12.5 4.24212 12.5C3.97612 12.496 3.73215 12.353 3.60115 12.122C1.92315 9.186 0.765125 9.02148 0.752125 9.01948C0.752125 9.01948 0.494289 9.08008 0.228589 8.80078C-0.0371106 8.52148 0.00202665 8.20312 0.00202665 8.20312C0.00202665 8.20312 0.0176517 7.91406 0.228589 7.70703C0.439527 7.50001 0.752125 7.50001 0.752125 7.50001C1.04212 7.50001 2.45311 7.64999 4.26111 10.339C5.89811 7.845 10.3251 1.593 14.4911 0.0470029C14.8791 -0.0969971 15.3112 0.100995 15.4552 0.488995C15.5992 0.876995 15.4012 1.30901 15.0132 1.45301C10.3752 3.17401 4.94814 12.049 4.89314 12.139C4.75714 12.363 4.51413 12.5 4.25213 12.5Z"
+                                                        fill="#77B0A9" />
+                                                </svg>
                                                 أسعار تنافسية للكميات الكبيرة</li>
-                                            <li class="mb-2"><i class="fa-solid fa-check text-primary-custom ms-2"></i>
+                                            <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="me-1"
+                                                    width="16" height="13" viewBox="0 0 16 13" fill="none">
+                                                    <path
+                                                        d="M4.25213 12.5C4.25213 12.5 4.24512 12.5 4.24212 12.5C3.97612 12.496 3.73215 12.353 3.60115 12.122C1.92315 9.186 0.765125 9.02148 0.752125 9.01948C0.752125 9.01948 0.494289 9.08008 0.228589 8.80078C-0.0371106 8.52148 0.00202665 8.20312 0.00202665 8.20312C0.00202665 8.20312 0.0176517 7.91406 0.228589 7.70703C0.439527 7.50001 0.752125 7.50001 0.752125 7.50001C1.04212 7.50001 2.45311 7.64999 4.26111 10.339C5.89811 7.845 10.3251 1.593 14.4911 0.0470029C14.8791 -0.0969971 15.3112 0.100995 15.4552 0.488995C15.5992 0.876995 15.4012 1.30901 15.0132 1.45301C10.3752 3.17401 4.94814 12.049 4.89314 12.139C4.75714 12.363 4.51413 12.5 4.25213 12.5Z"
+                                                        fill="#77B0A9" />
+                                                </svg>
                                                 تواصل مباشر مع موردين نخبة</li>
-                                            <li><i class="fa-solid fa-check text-primary-custom ms-2"></i> دعم فني متخصص
+                                            <li><svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="16"
+                                                    height="13" viewBox="0 0 16 13" fill="none">
+                                                    <path
+                                                        d="M4.25213 12.5C4.25213 12.5 4.24512 12.5 4.24212 12.5C3.97612 12.496 3.73215 12.353 3.60115 12.122C1.92315 9.186 0.765125 9.02148 0.752125 9.01948C0.752125 9.01948 0.494289 9.08008 0.228589 8.80078C-0.0371106 8.52148 0.00202665 8.20312 0.00202665 8.20312C0.00202665 8.20312 0.0176517 7.91406 0.228589 7.70703C0.439527 7.50001 0.752125 7.50001 0.752125 7.50001C1.04212 7.50001 2.45311 7.64999 4.26111 10.339C5.89811 7.845 10.3251 1.593 14.4911 0.0470029C14.8791 -0.0969971 15.3112 0.100995 15.4552 0.488995C15.5992 0.876995 15.4012 1.30901 15.0132 1.45301C10.3752 3.17401 4.94814 12.049 4.89314 12.139C4.75714 12.363 4.51413 12.5 4.25213 12.5Z"
+                                                        fill="#77B0A9" />
+                                                </svg> دعم فني متخصص
                                             </li>
                                         </ul>
                                     </div>
@@ -157,32 +184,58 @@
                             </div>
                             <!-- Option 2 -->
                             <div class="col-md-6">
-                                <label class="pricing-option-card h-100 d-block position-relative">
-                                    <input type="radio" name="pricingType" value="individual"
-                                        class="card-input-element d-none">
-                                    <div
-                                        class="card-content p-4 text-center h-100 d-flex flex-column justify-content-center align-items-center">
-                                        <div class="check-icon position-absolute top-0 end-0 m-3">
-                                            <i class="fa-regular fa-circle"></i>
-                                            <i class="fa-solid fa-circle-check"></i>
-                                        </div>
-                                        <div class="icon-wrapper mb-3">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                                <circle cx="12" cy="7" r="4"></circle>
+                                <label class="pricing-option-card h-100 d-block position-relative cursor-pointer">
+                                    <input type="radio" name="pricingType" value="individual" class="form-check-input">
+                                    <div class="card-content">
+                                        <div class="grayed-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M6 22V4C6 3.46957 6.21071 2.96086 6.58579 2.58579C6.96086 2.21071 7.46957 2 8 2H16C16.5304 2 17.0391 2.21071 17.4142 2.58579C17.7893 2.96086 18 3.46957 18 4V22H6Z"
+                                                    stroke="#063235" stroke-width="1.67" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M6 12H4C3.46957 12 2.96086 12.2107 2.58579 12.5858C2.21071 12.9609 2 13.4696 2 14V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H6"
+                                                    stroke="#063235" stroke-width="1.67" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M18 9H20C20.5304 9 21.0391 9.21071 21.4142 9.58579C21.7893 9.96086 22 10.4696 22 11V20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22H18"
+                                                    stroke="#063235" stroke-width="1.67" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M10 6H14" stroke="#063235" stroke-width="1.67"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M10 10H14" stroke="#063235" stroke-width="1.67"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M10 14H14" stroke="#063235" stroke-width="1.67"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M10 18H14" stroke="#063235" stroke-width="1.67"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
                                             </svg>
                                         </div>
-                                        <h4 class="mb-3">تسعير فردي</h4>
-                                        <p class="text-muted small mb-4">طلب عروض أسعار من الموردين للمنتجات المتوفرة في
+                                        <h4 class="heading-5 mb-3">تسعير فردي</h4>
+                                        <p class="text-color mb-3">طلب عروض أسعار من الموردين للمنتجات المتوفرة في
                                             كتالوج المنصة</p>
-                                        <ul class="list-unstyled text-end w-100 small text-muted">
-                                            <li class="mb-2"><i class="fa-solid fa-check text-primary-custom ms-2"></i>
+                                        <ul class="list-unstyled fs-14 text-color">
+                                            <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="me-1"
+                                                    width="16" height="13" viewBox="0 0 16 13" fill="none">
+                                                    <path
+                                                        d="M4.25213 12.5C4.25213 12.5 4.24512 12.5 4.24212 12.5C3.97612 12.496 3.73215 12.353 3.60115 12.122C1.92315 9.186 0.765125 9.02148 0.752125 9.01948C0.752125 9.01948 0.494289 9.08008 0.228589 8.80078C-0.0371106 8.52148 0.00202665 8.20312 0.00202665 8.20312C0.00202665 8.20312 0.0176517 7.91406 0.228589 7.70703C0.439527 7.50001 0.752125 7.50001 0.752125 7.50001C1.04212 7.50001 2.45311 7.64999 4.26111 10.339C5.89811 7.845 10.3251 1.593 14.4911 0.0470029C14.8791 -0.0969971 15.3112 0.100995 15.4552 0.488995C15.5992 0.876995 15.4012 1.30901 15.0132 1.45301C10.3752 3.17401 4.94814 12.049 4.89314 12.139C4.75714 12.363 4.51413 12.5 4.25213 12.5Z"
+                                                        fill="#77B0A9" />
+                                                </svg>
                                                 سرعة في الحصول على التسعير</li>
-                                            <li class="mb-2"><i class="fa-solid fa-check text-primary-custom ms-2"></i>
+                                            <li class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="me-1"
+                                                    width="16" height="13" viewBox="0 0 16 13" fill="none">
+                                                    <path
+                                                        d="M4.25213 12.5C4.25213 12.5 4.24512 12.5 4.24212 12.5C3.97612 12.496 3.73215 12.353 3.60115 12.122C1.92315 9.186 0.765125 9.02148 0.752125 9.01948C0.752125 9.01948 0.494289 9.08008 0.228589 8.80078C-0.0371106 8.52148 0.00202665 8.20312 0.00202665 8.20312C0.00202665 8.20312 0.0176517 7.91406 0.228589 7.70703C0.439527 7.50001 0.752125 7.50001 0.752125 7.50001C1.04212 7.50001 2.45311 7.64999 4.26111 10.339C5.89811 7.845 10.3251 1.593 14.4911 0.0470029C14.8791 -0.0969971 15.3112 0.100995 15.4552 0.488995C15.5992 0.876995 15.4012 1.30901 15.0132 1.45301C10.3752 3.17401 4.94814 12.049 4.89314 12.139C4.75714 12.363 4.51413 12.5 4.25213 12.5Z"
+                                                        fill="#77B0A9" />
+                                                </svg>
                                                 مناسب للكميات الصغيرة</li>
-                                            <li><i class="fa-solid fa-check text-primary-custom ms-2"></i> إجراءات مبسطة
+                                            <li><svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="16"
+                                                    height="13" viewBox="0 0 16 13" fill="none">
+                                                    <path
+                                                        d="M4.25213 12.5C4.25213 12.5 4.24512 12.5 4.24212 12.5C3.97612 12.496 3.73215 12.353 3.60115 12.122C1.92315 9.186 0.765125 9.02148 0.752125 9.01948C0.752125 9.01948 0.494289 9.08008 0.228589 8.80078C-0.0371106 8.52148 0.00202665 8.20312 0.00202665 8.20312C0.00202665 8.20312 0.0176517 7.91406 0.228589 7.70703C0.439527 7.50001 0.752125 7.50001 0.752125 7.50001C1.04212 7.50001 2.45311 7.64999 4.26111 10.339C5.89811 7.845 10.3251 1.593 14.4911 0.0470029C14.8791 -0.0969971 15.3112 0.100995 15.4552 0.488995C15.5992 0.876995 15.4012 1.30901 15.0132 1.45301C10.3752 3.17401 4.94814 12.049 4.89314 12.139C4.75714 12.363 4.51413 12.5 4.25213 12.5Z"
+                                                        fill="#77B0A9" />
+                                                </svg> إجراءات مبسطة
                                             </li>
                                         </ul>
                                     </div>
@@ -193,78 +246,79 @@
 
                     <!-- Step 2: Product Details -->
                     <div class="step-content d-none" id="step2">
-                        <h3 class="text-end mb-4">قم بإدخال المنتجات التي تريد طلب تسعير عليها من خلال رفع ملف ال Excel
-                        </h3>
-
-                        <div class="row g-4 mb-4">
-                            <div class="col-md-6">
-                                <label class="form-label d-block text-end">إسم الشركة</label>
+                        <h4 class="heading-4 prim-color mb-3">قم بإدخال المنتجات التي تريد طلب تسعير عليها من خلال رفع
+                            ملف ال Excel</h4>
+                        <div class="row px-lg-4 py-lg-3">
+                            <div class="col-md-6 mb-32">
+                                <label class="form-label d-block">إسم الشركة</label>
                                 <input type="text" class="form-control" placeholder="ادخل إسم الشركة">
                             </div>
-                            <div class="col-md-6">
-                                <label class="form-label d-block text-end">القطاع</label>
-                                <select class="form-select text-end">
+                            <div class="col-md-6 mb-32">
+                                <label class="form-label d-block">القطاع</label>
+                                <select class="form-select">
                                     <option selected disabled>إختر القطاع</option>
                                     <option>قطاع التجزئة</option>
                                     <option>قطاع الجملة</option>
                                 </select>
                             </div>
-                        </div>
 
-                        <div class="d-flex justify-content-end mb-3">
-                            <div class="template-download">
-                                <span class="d-block text-end mb-2 text-muted small">قم بتحميل قالب جاهز لرفع
-                                    منتجاتك</span>
-                                <a href="#" class="btn-download-template small">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                        <polyline points="7 10 12 15 17 10"></polyline>
-                                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                                    </svg>
-                                    قم بتحميل قالب جاهز لرفع منتجاتك xls.
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="upload-box-container mb-4">
-                            <label class="d-block text-end mb-2 text-muted">يمكنك رفع ملف أكسيل بمنتجاتك</label>
-                            <div class="upload-box">
-                                <input type="file" id="excel-file" class="d-none" accept=".xlsx, .xls">
-                                <label for="excel-file" class="upload-box-label">
-                                    <div class="upload-icon mb-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            <div class="col-12 mb-32">
+                                <div class="template-download">
+                                    <span class="d-block mb-2 text-muted small">قم بتحميل قالب جاهز لرفع
+                                        منتجاتك</span>
+                                    <a href="#" class="btn-download-template small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                            <polyline points="17 8 12 3 7 8"></polyline>
-                                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                                            <polyline points="7 10 12 15 17 10"></polyline>
+                                            <line x1="12" y1="15" x2="12" y2="3"></line>
                                         </svg>
-                                    </div>
-                                    <span class="upload-text text-muted small">رفع ملف الإكسيل .. لا يتجاوز حجمه الملف
-                                        أكثر من 10ميجا</span>
-                                </label>
+                                        قم بتحميل قالب جاهز لرفع منتجاتك xls.
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="upload-box-container mb-4">
-                            <label class="d-block text-end mb-2 text-muted">المرفقات</label>
-                            <div class="upload-box">
-                                <input type="file" id="attachment-file" class="d-none">
-                                <label for="attachment-file" class="upload-box-label">
-                                    <div class="upload-icon mb-3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                            <polyline points="17 8 12 3 7 8"></polyline>
-                                            <line x1="12" y1="3" x2="12" y2="15"></line>
-                                        </svg>
+                            <div class="col-12 mb-32">
+                                <div class="upload-box-container">
+                                    <label class="d-block mb-2 fs-14 text-color">يمكنك رفع ملف أكسيل بمنتجاتك</label>
+                                    <div class="upload-box">
+                                        <input type="file" id="pricing-file" class="d-none" accept=".xlsx, .xls">
+                                        <label for="pricing-file" class="cursor-pointer">
+                                            <div class="upload-icon mb-12">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M15.0098 0.628906C15.0771 0.220203 15.4634 -0.0565962 15.8721 0.0107422C17.1072 0.214266 18.1007 0.610172 18.8926 1.41113C19.7491 2.27757 20.1346 3.37978 20.3193 4.76953C20.4998 6.12725 20.5 7.86713 20.5 10.084V10.1973C20.5 12.4142 20.4998 14.154 20.3193 15.5117C20.1346 16.9015 19.749 18.0036 18.8926 18.8701C18.0348 19.7378 16.9415 20.1299 15.5635 20.3174C14.2195 20.5002 12.4978 20.5 10.3076 20.5H10.1924C8.00221 20.5 6.28049 20.5002 4.93652 20.3174C3.55848 20.1299 2.46518 19.7378 1.60742 18.8701C0.751026 18.0036 0.365389 16.9015 0.180664 15.5117C0.000210141 14.154 -1.29339e-05 12.4142 0 10.1973V10.084C-1.29332e-05 7.86713 0.000204321 6.12725 0.180664 4.76953C0.36543 3.37978 0.750927 2.27757 1.60742 1.41113C2.39925 0.610172 3.39281 0.214266 4.62793 0.0107422C5.03663 -0.0565962 5.4229 0.220203 5.49023 0.628906C5.5573 1.03739 5.28054 1.42284 4.87207 1.49023C3.82319 1.66305 3.16855 1.96645 2.6748 2.46582C2.14023 3.00656 1.83005 3.74098 1.66699 4.96777C1.50122 6.21519 1.5 7.85496 1.5 10.1406C1.5 10.4377 1.50154 10.7242 1.50195 11H5.67578C6.95574 11.0001 7.81114 12.0399 8.22168 12.8623C8.51189 13.4438 9.07541 14 10.25 14C11.4246 14 11.9881 13.4438 12.2783 12.8623C12.6889 12.0399 13.5443 11.0001 14.8242 11H18.998C18.9985 10.7242 19 10.4377 19 10.1406C19 7.85496 18.9988 6.21519 18.833 4.96777C18.67 3.74098 18.3598 3.00656 17.8252 2.46582C17.3314 1.96645 16.6768 1.66305 15.6279 1.49023C15.2195 1.42284 14.9427 1.03739 15.0098 0.628906ZM1.5127 12.5C1.52818 13.6268 1.56477 14.5454 1.66699 15.3145C1.83004 16.541 2.14033 17.2747 2.6748 17.8154C3.20815 18.3549 3.93016 18.6667 5.13867 18.8311C6.36988 18.9985 7.98939 19 10.25 19C12.5106 19 14.1301 18.9985 15.3613 18.8311C16.5698 18.6667 17.2919 18.3549 17.8252 17.8154C18.3597 17.2747 18.67 16.541 18.833 15.3145C18.9352 14.5454 18.9718 13.6268 18.9873 12.5H14.8242C14.4202 12.5001 13.9518 12.8676 13.6201 13.5322C13.104 14.5665 12.0532 15.5 10.25 15.5C8.44685 15.5 7.39604 14.5665 6.87988 13.5322C6.54817 12.8676 6.07977 12.5001 5.67578 12.5H1.5127ZM10.25 0C10.5083 0 10.7311 0.0893873 10.8926 0.175781C11.0599 0.265339 11.2155 0.381514 11.3535 0.499023C11.6289 0.733621 11.9042 1.03568 12.1504 1.32617C12.38 1.59716 12.603 1.88099 12.793 2.12305C12.8089 2.14332 12.8244 2.16394 12.8398 2.18359C13.053 2.45501 13.1994 2.63628 13.2881 2.72754C13.5767 3.02457 13.5695 3.4994 13.2725 3.78809C12.9754 4.07673 12.5006 4.07044 12.2119 3.77344C12.0549 3.61185 11.8534 3.35411 11.6611 3.10938C11.6463 3.09053 11.6312 3.07179 11.6162 3.05273C11.4233 2.80702 11.2165 2.54453 11.0059 2.2959C11.0038 2.29351 11.002 2.29046 11 2.28809V8.75C11 9.16421 10.6642 9.5 10.25 9.5C9.83579 9.5 9.5 9.16421 9.5 8.75V2.28809C9.49798 2.29046 9.49616 2.29351 9.49414 2.2959C9.28347 2.54453 9.07669 2.80702 8.88379 3.05273C8.86883 3.07179 8.85367 3.09053 8.83887 3.10938C8.64664 3.35411 8.44515 3.61185 8.28809 3.77344C7.9994 4.07044 7.52457 4.07673 7.22754 3.78809C6.93053 3.4994 6.92327 3.02457 7.21191 2.72754C7.30061 2.63628 7.44697 2.45501 7.66016 2.18359C7.6756 2.16394 7.69111 2.14333 7.70703 2.12305C7.89703 1.88099 8.11999 1.59716 8.34961 1.32617C8.59575 1.03569 8.87108 0.733621 9.14648 0.499023C9.28445 0.381514 9.44014 0.265339 9.60742 0.175781C9.76886 0.0893874 9.99171 1.047e-07 10.25 0Z"
+                                                        fill="#161616" />
+                                                </svg>
+                                            </div>
+                                            <span class="upload-text">رفع ملف الإكسيل ، لا يتجاوز حجمه الملف أكثر من 10
+                                                ميجا</span>
+                                        </label>
                                     </div>
-                                    <span class="upload-text text-muted small">رفع المرفقات الخاصة بمنتجاتك .. لا يتجاوز
-                                        حجمه الملف أكثر من 10ميجا</span>
-                                </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="upload-box-container">
+                                    <label class="d-block mb-2 fs-14 text-color">المرفقات</label>
+                                    <div class="upload-box">
+                                        <input type="file" id="pricing-file" class="d-none" accept=".xlsx, .xls">
+                                        <label for="pricing-file" class="cursor-pointer">
+                                            <div class="upload-icon mb-12">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                    viewBox="0 0 21 21" fill="none">
+                                                    <path
+                                                        d="M15.0098 0.628906C15.0771 0.220203 15.4634 -0.0565962 15.8721 0.0107422C17.1072 0.214266 18.1007 0.610172 18.8926 1.41113C19.7491 2.27757 20.1346 3.37978 20.3193 4.76953C20.4998 6.12725 20.5 7.86713 20.5 10.084V10.1973C20.5 12.4142 20.4998 14.154 20.3193 15.5117C20.1346 16.9015 19.749 18.0036 18.8926 18.8701C18.0348 19.7378 16.9415 20.1299 15.5635 20.3174C14.2195 20.5002 12.4978 20.5 10.3076 20.5H10.1924C8.00221 20.5 6.28049 20.5002 4.93652 20.3174C3.55848 20.1299 2.46518 19.7378 1.60742 18.8701C0.751026 18.0036 0.365389 16.9015 0.180664 15.5117C0.000210141 14.154 -1.29339e-05 12.4142 0 10.1973V10.084C-1.29332e-05 7.86713 0.000204321 6.12725 0.180664 4.76953C0.36543 3.37978 0.750927 2.27757 1.60742 1.41113C2.39925 0.610172 3.39281 0.214266 4.62793 0.0107422C5.03663 -0.0565962 5.4229 0.220203 5.49023 0.628906C5.5573 1.03739 5.28054 1.42284 4.87207 1.49023C3.82319 1.66305 3.16855 1.96645 2.6748 2.46582C2.14023 3.00656 1.83005 3.74098 1.66699 4.96777C1.50122 6.21519 1.5 7.85496 1.5 10.1406C1.5 10.4377 1.50154 10.7242 1.50195 11H5.67578C6.95574 11.0001 7.81114 12.0399 8.22168 12.8623C8.51189 13.4438 9.07541 14 10.25 14C11.4246 14 11.9881 13.4438 12.2783 12.8623C12.6889 12.0399 13.5443 11.0001 14.8242 11H18.998C18.9985 10.7242 19 10.4377 19 10.1406C19 7.85496 18.9988 6.21519 18.833 4.96777C18.67 3.74098 18.3598 3.00656 17.8252 2.46582C17.3314 1.96645 16.6768 1.66305 15.6279 1.49023C15.2195 1.42284 14.9427 1.03739 15.0098 0.628906ZM1.5127 12.5C1.52818 13.6268 1.56477 14.5454 1.66699 15.3145C1.83004 16.541 2.14033 17.2747 2.6748 17.8154C3.20815 18.3549 3.93016 18.6667 5.13867 18.8311C6.36988 18.9985 7.98939 19 10.25 19C12.5106 19 14.1301 18.9985 15.3613 18.8311C16.5698 18.6667 17.2919 18.3549 17.8252 17.8154C18.3597 17.2747 18.67 16.541 18.833 15.3145C18.9352 14.5454 18.9718 13.6268 18.9873 12.5H14.8242C14.4202 12.5001 13.9518 12.8676 13.6201 13.5322C13.104 14.5665 12.0532 15.5 10.25 15.5C8.44685 15.5 7.39604 14.5665 6.87988 13.5322C6.54817 12.8676 6.07977 12.5001 5.67578 12.5H1.5127ZM10.25 0C10.5083 0 10.7311 0.0893873 10.8926 0.175781C11.0599 0.265339 11.2155 0.381514 11.3535 0.499023C11.6289 0.733621 11.9042 1.03568 12.1504 1.32617C12.38 1.59716 12.603 1.88099 12.793 2.12305C12.8089 2.14332 12.8244 2.16394 12.8398 2.18359C13.053 2.45501 13.1994 2.63628 13.2881 2.72754C13.5767 3.02457 13.5695 3.4994 13.2725 3.78809C12.9754 4.07673 12.5006 4.07044 12.2119 3.77344C12.0549 3.61185 11.8534 3.35411 11.6611 3.10938C11.6463 3.09053 11.6312 3.07179 11.6162 3.05273C11.4233 2.80702 11.2165 2.54453 11.0059 2.2959C11.0038 2.29351 11.002 2.29046 11 2.28809V8.75C11 9.16421 10.6642 9.5 10.25 9.5C9.83579 9.5 9.5 9.16421 9.5 8.75V2.28809C9.49798 2.29046 9.49616 2.29351 9.49414 2.2959C9.28347 2.54453 9.07669 2.80702 8.88379 3.05273C8.86883 3.07179 8.85367 3.09053 8.83887 3.10938C8.64664 3.35411 8.44515 3.61185 8.28809 3.77344C7.9994 4.07044 7.52457 4.07673 7.22754 3.78809C6.93053 3.4994 6.92327 3.02457 7.21191 2.72754C7.30061 2.63628 7.44697 2.45501 7.66016 2.18359C7.6756 2.16394 7.69111 2.14333 7.70703 2.12305C7.89703 1.88099 8.11999 1.59716 8.34961 1.32617C8.59575 1.03569 8.87108 0.733621 9.14648 0.499023C9.28445 0.381514 9.44014 0.265339 9.60742 0.175781C9.76886 0.0893874 9.99171 1.047e-07 10.25 0Z"
+                                                        fill="#161616" />
+                                                </svg>
+                                            </div>
+                                            <span class="upload-text">رفع المرفقات الخاصة بمنتجاتك , لا يتجاوز حجمه
+                                                الملف
+                                                أكثر
+                                                من 10ميجا</span>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -281,8 +335,8 @@
 
                         <div class="card mb-4 border-0 shadow-sm">
                             <div class="card-body p-4">
-                                <h5 class="card-title text-end mb-3">مراجعة طلبات التسعير</h5>
-                                <p class="text-muted small text-end mb-4">تأكد من صحة البيانات قبل الإرسال</p>
+                                <h5 class="card-title mb-3">مراجعة طلبات التسعير</h5>
+                                <p class="text-muted small mb-4">تأكد من صحة البيانات قبل الإرسال</p>
 
                                 <div
                                     class="d-flex justify-content-between align-items-center bg-light p-3 rounded mb-4">
@@ -297,7 +351,7 @@
                                 </div>
 
                                 <div class="mb-4">
-                                    <h6 class="text-end mb-3">المنتجات المطلوبة</h6>
+                                    <h6 class="mb-3">المنتجات المطلوبة</h6>
                                     <div class="d-flex justify-content-end">
                                         <a href="#"
                                             class="btn btn-outline-secondary btn-sm d-flex align-items-center gap-2">
@@ -317,7 +371,7 @@
 
                         <div class="row g-4">
                             <div class="col-md-6">
-                                <h5 class="text-end mb-3">طريقة الدفع</h5>
+                                <h5 class="mb-3">طريقة الدفع</h5>
                                 <div class="payment-options">
                                     <label
                                         class="payment-option-card d-flex align-items-center justify-content-between p-3 border rounded mb-3 cursor-pointer">
@@ -347,7 +401,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="bg-light p-4 rounded h-100">
-                                    <h5 class="text-end mb-4">ملخص الطلب</h5>
+                                    <h5 class="mb-4">ملخص الطلب</h5>
                                     <div class="d-flex justify-content-between mb-3">
                                         <span>عدد التقارير:</span>
                                         <span class="fw-bold">10</span>
@@ -379,10 +433,23 @@
                     </div>
 
                     <!-- Navigation Buttons -->
-                    <div class="d-flex justify-content-end mt-5 pt-4 border-top">
-                        <button type="button" class="btn btn-outline-secondary px-5" id="prevBtn"
-                            style="visibility: hidden;">رجوع</button>
-                        <button type="button" class="btn btn-dark px-5" id="nextBtn">التالي</button>
+                    <div class="d-flex justify-content-end gap-2 mt-40">
+                        <button type="button" class="main-btn bg-colored-light colored-text px-5" id="prevBtn"
+                            style="visibility: hidden;">رجوع <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                height="12" viewBox="0 0 18 12" fill="none">
+                                <path
+                                    d="M17.5 5.75049C17.5 5.37693 17.3343 5.03037 17.1775 4.77014C17.0082 4.48932 16.7806 4.1994 16.5308 3.91672C16.0298 3.34965 15.3761 2.74067 14.7418 2.1898C14.1037 1.6357 13.4678 1.12548 12.9928 0.754711C12.7548 0.569014 12.5564 0.417578 12.417 0.312267C12.3472 0.259597 12.2922 0.218425 12.2544 0.190231L12.2109 0.157846L12.1993 0.149292L12.1953 0.146332C11.8618 -0.0993295 11.3918 -0.0284391 11.1462 0.305063C10.9005 0.638549 10.9717 1.10803 11.3052 1.3537L11.3179 1.36311L11.358 1.39288C11.3934 1.41928 11.4458 1.45852 11.5128 1.50914C11.6468 1.61039 11.839 1.75698 12.0698 1.93716C12.5323 2.29813 13.1464 2.79102 13.7583 3.32238C14.3739 3.85697 14.9702 4.41579 15.4067 4.90986C15.4343 4.94111 15.461 4.97182 15.4868 5.00198L0.749983 5.00198C0.33577 5.00198 -1.66273e-05 5.33777 -1.66635e-05 5.75198C-1.66998e-05 6.1662 0.33577 6.50198 0.749983 6.50198L15.4843 6.50198C15.4593 6.53119 15.4334 6.56091 15.4067 6.59114C14.9702 7.08521 14.3739 7.64404 13.7583 8.17863C13.1464 8.70998 12.5323 9.20288 12.0698 9.56385C11.839 9.74402 11.6468 9.89062 11.5128 9.99187C11.4458 10.0425 11.3934 10.0817 11.358 10.1081L11.3179 10.1379L11.3052 10.1473C10.9717 10.393 10.9005 10.8625 11.1462 11.1959C11.3918 11.5294 11.8618 11.6003 12.1953 11.3547L12.1993 11.3517L12.2109 11.3432L12.2544 11.3108C12.2922 11.2826 12.3472 11.2414 12.417 11.1887C12.5564 11.0834 12.7548 10.932 12.9928 10.7463C13.4678 10.3755 14.1037 9.86531 14.7418 9.3112C15.3761 8.76034 16.0298 8.15135 16.5308 7.58428C16.7806 7.3016 17.0082 7.01168 17.1775 6.73086C17.3334 6.4722 17.498 6.12821 17.5 5.75723"
+                                    fill="#016B61" />
+                            </svg>
+                        </button>
+                        <button type="button" class="main-btn btn-custom-dark d-flex align-items-center gap-2 px-5"
+                            id="nextBtn">التالي <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10"
+                                viewBox="0 0 15 10" fill="none">
+                                <path
+                                    d="M0 4.79207C2.23199e-06 5.10337 0.138045 5.39217 0.268766 5.60903C0.40983 5.84304 0.599536 6.08465 0.807653 6.32021C1.22515 6.79277 1.76989 7.30026 2.29853 7.75931C2.83027 8.22107 3.36019 8.64624 3.75604 8.95522C3.9543 9.10997 4.1197 9.23617 4.23587 9.32392C4.29397 9.36782 4.3398 9.40213 4.37132 9.42562L4.40762 9.45261L4.41726 9.45974L4.4206 9.4622C4.69852 9.66692 5.09013 9.60785 5.29485 9.32993C5.49956 9.05202 5.44023 8.66079 5.16235 8.45607L5.15174 8.44822L5.11836 8.42341C5.08885 8.40141 5.04516 8.36871 4.98933 8.32653C4.87764 8.24216 4.71752 8.12 4.52516 7.96985C4.13977 7.66904 3.62803 7.2583 3.11811 6.8155C2.60509 6.37001 2.10818 5.90432 1.74443 5.49259C1.72142 5.46655 1.69916 5.44096 1.67764 5.41583L13.9583 5.41583C14.3035 5.41583 14.5833 5.136 14.5833 4.79083C14.5833 4.44565 14.3035 4.16583 13.9583 4.16583L1.67975 4.16583C1.70061 4.14149 1.72217 4.11672 1.74443 4.09153C2.10818 3.6798 2.60509 3.21412 3.11811 2.76862C3.62802 2.32583 4.13977 1.91508 4.52516 1.61428C4.71752 1.46413 4.87764 1.34197 4.98933 1.25759C5.04516 1.21541 5.08885 1.18271 5.11836 1.16071L5.15174 1.1359L5.16234 1.12806C5.44023 0.923333 5.49956 0.532101 5.29485 0.254195C5.09013 -0.0237227 4.69852 -0.0827981 4.4206 0.12192L4.41726 0.124387L4.40762 0.131515L4.37132 0.158502C4.3398 0.181998 4.29397 0.216308 4.23586 0.260199C4.11969 0.347958 3.9543 0.474155 3.75604 0.628902C3.36018 0.93788 2.83027 1.36306 2.29853 1.82481C1.76989 2.28387 1.22515 2.79135 0.807652 3.26391C0.599536 3.49948 0.40983 3.74108 0.268766 3.9751C0.138831 4.19065 0.00166038 4.4773 1.43046e-05 4.78646"
+                                    fill="white" />
+                            </svg>
+                        </button>
                     </div>
                 </form>
             </div>

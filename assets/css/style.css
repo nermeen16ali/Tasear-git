@@ -597,7 +597,6 @@ main {
     border-radius: var(--border-radius-lg);
     padding: 24px 40px;
     background: #fff;
-    transition: all 0.3s ease;
     height: 100%;
 }
 
@@ -661,15 +660,19 @@ main {
     color: #000;
 }
 
+.text-success-custom {
+    color: #00A63E;
+}
+
 .heading-4 {
     font-size: 23.04px;
     font-weight: 500;
     line-height: 32.26px;
 }
 
-.heading-4:not(.prim-color):not(.grayed-text) {
+/* .heading-4:not(.prim-color):not(.grayed-text) {
     color: var(--titles-color);
-}
+} */
 
 .prim-color {
     color: var(--primary-color);
@@ -1725,9 +1728,7 @@ main {
     display: flex;
     justify-content: space-between;
     position: relative;
-    max-width: 800px;
-    margin: 0 auto 3rem;
-    direction: rtl;
+    max-width: 870px;
 }
 
 .stepper-item {
@@ -1740,19 +1741,32 @@ main {
 }
 
 /* Connecting Line */
-.stepper-item::after {
+/* .stepper-item::after {
     content: '';
     position: absolute;
     top: 20px;
-    /* Center of the 40px circle */
     right: 50%;
-    /* Start from the center of the current item */
     width: 100%;
-    /* Extend to the next item */
     height: 3px;
     background-color: #E5E7EB;
     z-index: -1;
     transform: translateY(-50%);
+} */
+
+.stepper-item::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 63%;
+    width: calc(100% - 70px);
+    height: 3px;
+    background-color: #E5E7EB;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+.stepper-item.completed::after {
+    background-color: #016B61;
 }
 
 /* Hide line for the last item (far left) */
@@ -1766,46 +1780,38 @@ main {
     height: 40px;
     border-radius: 50%;
     background-color: #D1D5DB;
-    /* Inactive Gray */
-    color: #4B5563;
-    /* Inactive Text Color */
+    color: #374151;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
     margin-bottom: 10px;
     z-index: 2;
-    border: none;
-    /* Remove border if not needed */
 }
 
 /* Active Step */
 .stepper-item.active .step-counter {
     background-color: #016B61;
-    /* Active Green */
     color: #fff;
 }
 
 /* Completed Step (Optional: can be same as active or different) */
 .stepper-item.completed .step-counter {
-    background-color: #016B61;
-    color: #fff;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 15px -3px #0000001A;
+
 }
 
 /* Text */
 .step-name {
-    font-size: 14px;
-    color: #6B7280;
-    font-weight: 500;
+    color: #374151;
 }
 
 .stepper-item.active .step-name {
     color: #016B61;
-    font-weight: bold;
 }
 
 /* Form Steps */
-.form-step {
+/* .form-step {
     display: none;
     animation: fadeIn 0.5s ease;
 }
@@ -1824,9 +1830,9 @@ main {
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
 
-.step-header {
+/* .step-header {
     text-align: center;
     margin-bottom: 40px;
 }
@@ -1840,7 +1846,7 @@ main {
 .step-subtitle {
     color: #6B7280;
     font-size: 16px;
-}
+} */
 
 /* Step 1: Pricing Type Cards */
 .pricing-type-cards {
@@ -2846,6 +2852,10 @@ main {
     border-bottom: 1px solid #E5E7EB;
 }
 
+.py-12 {
+    padding-block: 12px;
+}
+
 .pay-info h6 {
     color: #1F2937;
     font-weight: normal;
@@ -3084,11 +3094,11 @@ hr {
 /* --- Upload Your Pricing Section --- */
 
 .upload-instruction-title {
-    font-size: 23.04px;
+    /* font-size: 23.04px;
     font-weight: 500;
     color: var(--primary-color);
+    line-height: 120%; */
     margin-bottom: 34px;
-    line-height: 120%;
 }
 
 .btn-download-template {
@@ -3344,46 +3354,31 @@ hr {
 } */
 
 /* Pricing Option Cards */
-.pricing-option-card {
+/* .pricing-option-card {
     cursor: pointer;
     transition: all 0.3s ease;
-}
+} */
 
 .pricing-option-card .card-content {
-    border: 2px solid #E5E7EB;
-    border-radius: 12px;
-    transition: all 0.3s ease;
+    border: 1px solid #D2D6DB;
+    border-radius: var(--border-radius-lg);
+    padding: 56px 16px 36px 16px;
 }
 
-.pricing-option-card:hover .card-content {
+.pricing-option-card .form-check-input {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.pricing-option-card:hover .card-content,
+.pricing-option-card input:checked+.card-content {
     border-color: var(--secondary-color);
 }
 
-.pricing-option-card input:checked+.card-content {
-    border-color: var(--primary-color);
-    background-color: #F0FDFA;
-}
-
-.pricing-option-card .check-icon {
-    color: #E5E7EB;
-    font-size: 24px;
-}
-
-.pricing-option-card input:checked+.card-content .check-icon {
+/* .pricing-option-card .icon-wrapper {
     color: var(--primary-color);
-}
-
-.pricing-option-card input:checked+.card-content .check-icon .fa-circle {
-    display: none;
-}
-
-.pricing-option-card input:not(:checked)+.card-content .check-icon .fa-circle-check {
-    display: none;
-}
-
-.pricing-option-card .icon-wrapper {
-    color: var(--primary-color);
-}
+} */
 
 /* .btn-download-template {
     color: var(--primary-color);
