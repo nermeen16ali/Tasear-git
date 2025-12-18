@@ -373,6 +373,10 @@ main {
     padding-block: 80px;
 }
 
+.py-40 {
+    padding-block: 40px;
+}
+
 .mb-12 {
     margin-bottom: 12px;
 }
@@ -1179,7 +1183,59 @@ main {
     gap: 6px;
 }
 
-/* --- How It Works Section --- */
+/* how-it-works-section*/
+.step-icon {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-item p {
+    margin-bottom: 20px;
+    max-width: 318px;
+}
+
+.decore {
+    position: absolute;
+    z-index: 1;
+}
+
+.decore-1 {
+    top: 0;
+    right: 62px;
+}
+
+.decore-2 {
+    bottom: 35px;
+    right: 72px;
+}
+
+/* .decorated {
+    position: relative;
+}
+
+.decorated::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    width: 120px;
+    height: 2px;
+    background-image: repeating-linear-gradient(to right,
+            #9CA3AF 0,
+            #9CA3AF 8px,
+            transparent 8px,
+            transparent 16px);
+    transform: translateY(-50%);
+    z-index: 1;
+} */
+
 /* .how-it-works-section {
     padding: 80px 0;
     background-color: #F3F4F6;
