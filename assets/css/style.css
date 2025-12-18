@@ -1032,6 +1032,25 @@ main {
     font-size: 14px;
 }
 
+.product-tab span {
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 6.5px;
+    line-height: 100%;
+    margin-right: 4px;
+    font-size: 12px;
+    min-height: 20px;
+    min-width: 20px;
+    color: var(--body-txt-color);
+    background-color: #E5E7EB;
+}
+
+.filter-bar .product-tab {
+    padding: 11px 24px;
+}
+
 .product-tab:not(.active):hover {
     border-color: var(--secondary-color);
     color: var(--secondary-color);
@@ -1041,6 +1060,11 @@ main {
     background: linear-gradient(90deg, #063235 0%, #0A4A4F 100%);
     color: #fff;
     border-color: #E5E7EB;
+}
+
+.product-tab.active span {
+    background: #FFFFFF33;
+    color: #fff;
 }
 
 .product-card {
