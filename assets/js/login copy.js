@@ -1,86 +1,57 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Forms
-    const loginForm = document.getElementById('loginForm');
-    const forgetPasswordForm = document.getElementById('forgetPassword');
-    const reassignPhoneForm = document.getElementById('reassignPhone');
-    const resetPasswordForm = document.getElementById('resetPassword');
-    const codeForm = document.getElementById('codeForm');
+document.addEventListener("click", function (e) {
+    const target = e.target.closest("a, button");
+    if (!target) return;
 
-    // Helper function to show a specific form
-    function showForm(formToShow) {
-        // Hide all forms
-        [loginForm, forgetPasswordForm, reassignPhoneForm, resetPasswordForm, codeForm].forEach(form => {
-            if (form) form.classList.add('d-none');
+    const text = target.textContent.trim();
+
+    // Helper
+    function showForm(name) {
+        document.querySelectorAll(".auth-form").forEach(f => {
+            f.classList.remove("active");
         });
+        const form = document.querySelector(`[data-form="${name}"]`);
+        if (form) form.classList.add("active");
+    }
 
-        // Show the requested form
-        if (formToShow) {
-            formToShow.classList.remove('d-none');
+    // LOGIN → FORGET PASSWORD
+    if (text.includes("نسيت") || text.includes("Forget")) {
+        e.preventDefault();
+        showForm("forget");
+    }
+
+    // FORGET PASSWORD → OTP
+    if (text.includes("إرسال") || text.includes("Send")) {
+        if (target.closest(".forget-password")) {
+            e.preventDefault();
+            showForm("code");
         }
     }
 
-    // --- Event Listeners ---
-
-    // 1. Login Form -> Forget Password
-    const toForgetPassword = document.getElementById('toForgetPassword');
-    if (toForgetPassword) {
-        toForgetPassword.addEventListener('click', (e) => {
+    // OTP → RESET PASSWORD
+    if (text.includes("تحقق") || text.includes("Verify")) {
+        if (target.closest(".code-verification")) {
             e.preventDefault();
-            showForm(forgetPasswordForm);
-        });
+            showForm("reset");
+        }
     }
 
-    // 2. Forget Password Form -> Code Form
-    const toCodeForm = document.getElementById('toCodeForm');
-    if (toCodeForm) {
-        toCodeForm.addEventListener('click', (e) => {
-            showForm(codeForm);
-        });
+    // CHANGE PHONE NUMBER (OTP → REASSIGN)
+    if (text.includes("تغيير رقم الهاتف")) {
+        e.preventDefault();
+        showForm("reassign");
     }
 
-    // 3. Reassign Phone Form -> Code Form
-    const toCodeFormFromReassign = document.getElementById('toCodeFormFromReassign');
-    if (toCodeFormFromReassign) {
-        toCodeFormFromReassign.addEventListener('click', (e) => {
+    // REASSIGN PHONE → OTP
+    if (text.includes("حفظ") || text.includes("Save")) {
+        if (target.closest(".reassign-phone")) {
             e.preventDefault();
-            showForm(codeForm);
-        });
+            showForm("code");
+        }
     }
 
-    // 4. Code Verification Form
-    // "تحقق من الرمز" -> Reset Password Form
-    const toLoginForm = document.getElementById('toLoginForm');
-    if (toLoginForm) {
-        toLoginForm.addEventListener('click', (e) => {
-            showForm(resetPasswordForm);
-        });
+    // BACK TO LOGIN (any link mentioning login)
+    if (text.includes("تسجيل الدخول") || text.includes("Login")) {
+        e.preventDefault();
+        showForm("login");
     }
-
-    // "تغيير رقم الهاتف" -> Reassign Phone Form
-    const toReassignPhone = document.getElementById('toReassignPhone');
-    if (toReassignPhone) {
-        toReassignPhone.addEventListener('click', (e) => {
-            e.preventDefault();
-            showForm(reassignPhoneForm);
-        });
-    }
-
-    // 5. Reset Password Form -> Login Form
-    const toResetPassword = document.getElementById('toResetPassword');
-    if (toResetPassword) {
-        toResetPassword.addEventListener('click', (e) => {
-            e.preventDefault();
-            showForm(loginForm);
-        });
-    }
-
-    // 6. Back to Login Links
-    const backToLoginLinks = document.querySelectorAll('.back-to-login');
-    backToLoginLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            showForm(loginForm);
-        });
-    });
-
 });

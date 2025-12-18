@@ -305,6 +305,20 @@ textarea.form-control {
     border-radius: 50%;
 }
 
+.auth-form {
+    display: none;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+hr.horizontal {
+    background-color: #D1D5DB;
+    width: 2px;
+    height: 24px;
+}
+
 /* --- Navbar --- */
 .navbar-custom {
     background-color: #fff;
@@ -412,7 +426,7 @@ main {
     background: linear-gradient(77.46deg, #063235 0.02%, rgba(10, 74, 79, 0.8) 99.98%);
     color: #fff;
     position: relative;
-    padding: 81px 0;
+    padding: 72px 0 81px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -421,8 +435,43 @@ main {
 .hero-title {
     font-size: 47.78px;
     font-weight: 700;
-    line-height: 48px;
-    margin-bottom: 20px;
+    line-height: 58px;
+    /* line-height: 48px; */
+    padding-bottom: 20px;
+    height: 130px;
+    /* height: 124.5px; */
+}
+
+.animated-box {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 8px;
+    white-space: nowrap;
+}
+
+.word {
+    color: #fff;
+    font-weight: 700;
+    margin: 0 10px;
+    min-width: 95px;
+    text-align: center;
+}
+
+/* Half square shapes */
+.box {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #fff;
+}
+
+.box.left {
+    border-right: none;
+    border-top: none;
+}
+
+.box.right {
+    border-left: none;
+    border-bottom: none;
 }
 
 .hero-subtitle {
@@ -2680,10 +2729,11 @@ main {
     flex-direction: row-reverse;
 } */
 
-.user-avatar img {
+.chat-avatar img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    border: 1px solid #E5E7EB;
 }
 
 .user-details {
