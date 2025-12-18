@@ -4377,3 +4377,27 @@ fill='%23063235' stroke='%23063235' stroke-linecap='round' stroke-linejoin='roun
 #ordersAccordion .accordion-button:not(.collapsed)::after {
     transform: rotate(180deg);
 }
+
+.sgssearch-input.form-control {
+    padding: 8px 42px;
+    height: 100%;
+}
+
+.search-icon-right {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-icon-left {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-chip {
+    padding: 6px 8px;
+    cursor: pointer;
+}
