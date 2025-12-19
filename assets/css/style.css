@@ -1055,9 +1055,14 @@ main {
     border-radius: 16px;
 }
 
+.product-card .upload-text img {
+    width: 18px;
+    height: 18px;
+}
+
 .product-card:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
 }
 
 .product-card:hover .img-container img {
@@ -1086,6 +1091,10 @@ main {
 
 .product-card .rounded-icon {
     background-color: var(--gray-bg-color);
+}
+
+.fav-btn.active svg path {
+    fill: #FF383C !important;
 }
 
 .product-description {
@@ -1570,6 +1579,18 @@ main {
     color: #F3F4F6;
 }
 
+.form-check-input.card-check {
+    width: 20.5px;
+    height: 20.5px;
+    border: 2px solid #016B61;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.form-check-input.card-check:checked {
+    background-color: #016B61;
+    border-color: #016B61;
+}
 
 .form-check-input:focus,
 .form-select:focus,
@@ -1660,6 +1681,10 @@ main {
 
 .back_to_top:hover {
     box-shadow: 0 12px 12px 0 #063235ab;
+}
+
+.product-card .rounded-icon:hover {
+    box-shadow: 0px 10px 15px -3px #0000001A;
 }
 
 .back_to_top:hover svg {
