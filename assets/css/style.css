@@ -717,6 +717,10 @@ main {
     color: #000;
 }
 
+.title-color {
+    color: var(--titles-color);
+}
+
 .text-success-custom {
     color: #00A63E;
 }
@@ -1591,6 +1595,41 @@ main {
     background-color: #016B61;
     border-color: #016B61;
 }
+
+.choices__inner {
+    background-color: #fff;
+    min-width: 300px;
+    border-radius: 8px;
+}
+
+.choices[data-type*=select-one] {
+    height: fit-content;
+}
+
+.choices[data-type*="select-one"]::after {
+    content: "";
+    position: absolute;
+    right: unset;
+    left: 11.5px;
+    /* top: 50%;
+    transform: translateY(-50%); */
+
+    width: 13px;
+    height: 7px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='7' viewBox='0 0 13 7' fill='none'%3E%3Cpath d='M11.75 0.75L7.22222 5.34317C6.6875 5.88561 5.8125 5.88561 5.27778 5.34317L0.75 0.75' stroke='%23374151' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border: none;
+    pointer-events: none;
+}
+
+.choices.is-open[data-type*="select-one"]::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
 
 .form-check-input:focus,
 .form-select:focus,
