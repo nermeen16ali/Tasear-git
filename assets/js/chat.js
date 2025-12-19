@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const messageHTML = `
             <div class="message incoming system-message">
                 <div class="message-avatar">
-                    <img src="assets/images/tasear-logo-alt.svg" alt="System">
+                    <img src="assets/images/logo-tasear.png" alt="System">
                 </div>
                 <div class="message-content">
                     <p>${message}</p>
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const messageHTML = `
             <div class="message outgoing">
                 <div class="message-avatar">
-                    <img src="assets/images/tasear-logo-alt.svg" alt="Me">
+                    <img src="assets/images/logo-tasear.png" alt="Me">
                 </div>
                 <div class="message-content">
                     <p>${text}</p>

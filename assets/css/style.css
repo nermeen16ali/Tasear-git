@@ -1498,23 +1498,14 @@ main {
 .footer-section {
     background-color: #111827;
     color: #fff;
-    padding-block: 48px 24px;
+    padding-top: 48px;
 }
 
-.footer-content {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr 1fr 1.2fr;
-    gap: 40px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Column 1: Brand */
+/* Brand */
 .footer-brand p {
     color: #F9FAFB;
-    line-height: 1.8;
-    margin-bottom: 24px;
-    margin-top: 20px;
+    line-height: 24px;
+    margin-block: 16px;
 }
 
 .footer-social {
@@ -1531,32 +1522,18 @@ main {
     color: #77B0A9;
 }
 
-/* Column 2 & 3: Links & Contact */
-.footer-title {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 24px;
-    color: #fff;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .footer-links li {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
-.footer-links a {
+.footer-links a,
+.footer-bottom-links a {
     color: #F9FAFB;
-    text-decoration: none;
-    transition: color 0.3s ease;
 }
 
+.footer-bottom-links a:hover,
 .footer-links a:hover {
-    color: #77B0A9;
+    color: #9CA3AF;
 }
 
 .footer-contact li {
@@ -1564,19 +1541,13 @@ main {
     align-items: center;
     gap: 12px;
     color: #F9FAFB;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
-.footer-contact li svg {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-}
-
-/* Column 4: Newsletter */
+/* Newsletter */
 .footer-newsletter p {
     color: #F9FAFB;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .newsletter-form {
@@ -1612,10 +1583,11 @@ main {
 .footer-bottom {
     padding: 24px 0;
     display: flex;
+    border-top: 1px solid #1F2937;
     justify-content: space-between;
     align-items: center;
-    color: #94A3B8;
-    font-size: 13px;
+    font-size: 14px;
+    margin-top: 60px;
 }
 
 .footer-bottom-links {
@@ -1623,36 +1595,8 @@ main {
     gap: 24px;
 }
 
-.footer-bottom-links a {
-    color: #94A3B8;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-bottom-links a:hover {
-    color: #fff;
-}
-
-@media (max-width: 991px) {
-    .footer-content {
-        grid-template-columns: 1fr 1fr;
-    }
-}
 
 @media (max-width: 768px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .footer-social {
-        justify-content: center;
-    }
-
-    .footer-contact li {
-        justify-content: center;
-    }
-
     .footer-bottom {
         flex-direction: column;
         gap: 16px;
@@ -1899,7 +1843,7 @@ main {
     background: #fff;
     overflow: hidden;
     height: 727px;
-    border: 1px solid #E5E7EB;
+    /* border: 1px solid #E5E7EB; */
 }
 
 /* Sidebar */
@@ -2044,6 +1988,10 @@ main {
     background-position: center;
 }
 
+.chat-header .dropdown-toggle::after {
+    display: none;
+}
+
 .user-details span {
     color: var(--gray-bg-color);
 }
@@ -2119,6 +2067,10 @@ main {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.chat-messages::-webkit-scrollbar {
+    display: none;
 }
 
 .message {
@@ -2829,6 +2781,11 @@ hr {
 
 .form-group .form-control {
     padding-inline: 34px;
+}
+
+.modal-backdrop {
+    --bs-backdrop-bg: var(--titles-color);
+    opacity: 0.3;
 }
 
 .sign .modal-backdrop.show {
