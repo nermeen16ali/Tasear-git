@@ -325,108 +325,115 @@
 
                     <!-- Step 3: Review & Send -->
                     <div class="step-content d-none" id="step3">
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                            <div>
-                                <h3 class="mb-1">إجمالي طلبات التسعير</h3>
-                                <p class="text-muted">راجع طلبات التسعير واستكمل عملية الدفع</p>
+                        <h4 class="prim-color heading-4">مراجعة طلبات التسعير</h4>
+                        <p class="text-grayed mb-4">تأكد من صحة البيانات قبل الإرسال</p>
+                        <div class="light-blue-box d-flex align-items-center p-3 prim-color mb-32">
+                            <div class="icon-32 btn-custom-light pb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14"
+                                    fill="none">
+                                    <path
+                                        d="M6.125 7C7.05326 7 7.9435 6.63125 8.59987 5.97487C9.25625 5.3185 9.625 4.42826 9.625 3.5C9.625 2.57174 9.25625 1.6815 8.59987 1.02513C7.9435 0.368749 7.05326 0 6.125 0C5.19674 0 4.3065 0.368749 3.65013 1.02513C2.99375 1.6815 2.625 2.57174 2.625 3.5C2.625 4.42826 2.99375 5.3185 3.65013 5.97487C4.3065 6.63125 5.19674 7 6.125 7ZM4.87539 8.3125C2.18203 8.3125 0 10.4945 0 13.1879C0 13.6363 0.363672 14 0.812109 14H11.4379C11.8863 14 12.25 13.6363 12.25 13.1879C12.25 10.4945 10.068 8.3125 7.37461 8.3125H4.87539Z"
+                                        fill="white" />
+                                </svg>
                             </div>
-                            <span class="badge bg-light text-dark p-2">10 طلبات</span>
+                            <h6 class="heading-6 prim-color fw-normal">تسعير شركة</h6>
+                            <a href="#" class="fs-14 text-decoration-underline highlight">تعديل</a>
                         </div>
+                        <h4 class="heading-4 prim-color mb-3">المنتجات المطلوبة</h4>
 
-                        <div class="card mb-4 border-0 shadow-sm">
-                            <div class="card-body p-4">
-                                <h5 class="card-title mb-3">مراجعة طلبات التسعير</h5>
-                                <p class="text-muted small mb-4">تأكد من صحة البيانات قبل الإرسال</p>
-
-                                <div
-                                    class="d-flex justify-content-between align-items-center bg-light p-3 rounded mb-4">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <div class="avatar-circle bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center"
-                                            style="width: 40px; height: 40px;">
-                                            <i class="fa-regular fa-user"></i>
-                                        </div>
-                                        <span class="fw-bold">تسعير شركة تعديل</span>
-                                    </div>
-                                    <a href="#" class="text-primary-custom text-decoration-none small">تعديل</a>
-                                </div>
-
-                                <div class="mb-4">
-                                    <h6 class="mb-3">المنتجات المطلوبة</h6>
-                                    <div class="d-flex justify-content-end">
-                                        <a href="#"
-                                            class="btn btn-outline-secondary btn-sm d-flex align-items-center gap-2">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round">
-                                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                                <polyline points="7 10 12 15 17 10"></polyline>
-                                                <line x1="12" y1="15" x2="12" y2="3"></line>
-                                            </svg>
-                                            قم بتحميل الملف الذي يحتوي منتجاتك pdf
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row g-4">
+                        <a href="#" class="btn-download-template small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11"
+                                fill="none">
+                                <path
+                                    d="M11.166 8C11.4422 8 11.666 8.22386 11.666 8.5C11.666 8.92449 11.6452 9.29966 11.5752 9.61816C11.504 9.94208 11.3756 10.2385 11.1406 10.4736C10.9054 10.7088 10.6083 10.837 10.2842 10.9082C9.96568 10.9782 9.5905 11 9.16602 11H2.5C2.07551 11 1.70034 10.9782 1.38184 10.9082C1.0577 10.837 0.760577 10.7088 0.525391 10.4736C0.290453 10.2385 0.16201 9.94208 0.0908203 9.61816C0.0208517 9.29966 0 8.92449 0 8.5C8.05839e-09 8.22386 0.223858 8 0.5 8C0.775993 8.00018 1 8.22397 1 8.5C1 8.90281 1.0209 9.1917 1.06738 9.40332C1.11254 9.6089 1.17455 9.70859 1.23242 9.7666C1.29039 9.82457 1.39072 9.88639 1.59668 9.93164C1.80828 9.9781 2.0973 10 2.5 10H9.16602C9.56871 10 9.85773 9.9781 10.0693 9.93164C10.2753 9.88639 10.3756 9.82457 10.4336 9.7666C10.4915 9.70859 10.5535 9.6089 10.5986 9.40332C10.6451 9.1917 10.666 8.90281 10.666 8.5C10.666 8.22397 10.89 8.00018 11.166 8ZM5.83301 0C6.10915 8.05326e-09 6.33301 0.223858 6.33301 0.5V6.1416C6.3343 6.14008 6.33562 6.13825 6.33691 6.13672C6.47729 5.97105 6.61462 5.79557 6.74316 5.63184C6.75315 5.61911 6.76356 5.60633 6.77344 5.59375C6.90158 5.4306 7.0369 5.25909 7.1416 5.15137C7.3341 4.95365 7.65072 4.94923 7.84863 5.1416C8.04634 5.33409 8.05075 5.65072 7.8584 5.84863C7.79926 5.90947 7.7017 6.03096 7.55957 6.21191C7.54943 6.22483 7.53877 6.23766 7.52832 6.25098C7.40161 6.4124 7.25276 6.60246 7.09961 6.7832C6.93557 6.97678 6.75188 7.17766 6.56836 7.33398C6.47633 7.41237 6.37234 7.49009 6.26074 7.5498C6.15314 7.60735 6.00502 7.66699 5.83301 7.66699C5.66099 7.66699 5.51287 7.60735 5.40527 7.5498C5.29368 7.49009 5.18969 7.41237 5.09766 7.33398C4.91413 7.17766 4.73045 6.97678 4.56641 6.7832C4.41325 6.60246 4.26441 6.4124 4.1377 6.25098C4.12725 6.23766 4.11659 6.22483 4.10645 6.21191C3.96432 6.03096 3.86675 5.90947 3.80762 5.84863C3.61527 5.65072 3.61968 5.33409 3.81738 5.1416C4.0153 4.94923 4.33192 4.95365 4.52441 5.15137C4.62912 5.25909 4.76443 5.4306 4.89258 5.59375C4.90246 5.60633 4.91286 5.61911 4.92285 5.63184C5.0514 5.79557 5.18872 5.97105 5.3291 6.13672C5.3304 6.13825 5.33171 6.14008 5.33301 6.1416V0.5C5.33301 0.223858 5.55687 0 5.83301 0Z"
+                                    fill="#063235" />
+                            </svg>
+                            قم بتحميل الملف الذي يحتوي منتجاتك.pdf
+                        </a>
+                        <div class="row">
                             <div class="col-md-6">
-                                <h5 class="mb-3">طريقة الدفع</h5>
-                                <div class="payment-option cursor-pointers">
-                                    <label
-                                        class="payment-option cursor-pointer-card d-flex align-items-center justify-content-between p-3 border rounded mb-3 cursor-pointer">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <i class="fa-regular fa-credit-card"></i>
-                                            <span>بطاقة ائتمانية</span>
-                                        </div>
-                                        <input type="radio" name="paymentMethod" value="credit_card" checked>
-                                    </label>
-                                    <label
-                                        class="payment-option cursor-pointer-card d-flex align-items-center justify-content-between p-3 border rounded mb-3 cursor-pointer">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <i class="fa-brands fa-apple"></i>
-                                            <span>Apple Pay</span>
-                                        </div>
-                                        <input type="radio" name="paymentMethod" value="apple_pay">
-                                    </label>
-                                </div>
-                                <button type="button" class="btn btn-dark w-100 py-3 mt-3">
-                                    <i class="fa-solid fa-lock me-2"></i> الدفع الآمن
-                                </button>
-                                <div class="text-center mt-2">
-                                    <small class="text-muted"><i
-                                            class="fa-solid fa-shield-halved text-success me-1"></i> معاملتك محمية
-                                        بتشفير SSL</small>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="bg-light p-4 rounded h-100">
-                                    <h5 class="mb-4">ملخص الطلب</h5>
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <span>عدد التقارير:</span>
-                                        <span class="fw-bold">10</span>
+                                <div class="cart-card">
+                                    <h5 class="heading-5 prim-color mb-20">ملخص الطلب</h5>
+                                    <div class="d-flex align-items-center justify-content-between black-color mb-12">
+                                        <p>عدد التقارير:</p>
+                                        <p>1</p>
                                     </div>
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <span>تكلفة التقارير:</span>
-                                        <span class="fw-bold">300 ريال</span>
+                                    <div class="d-flex align-items-center justify-content-between black-color mb-12">
+                                        <p>تكلفة التقارير:</p>
+                                        <p>300 ريال</p>
                                     </div>
-                                    <div class="d-flex justify-content-between mb-3 border-bottom pb-3">
-                                        <span>ضريبة القيمة المضافة ( 15 %):</span>
-                                        <span class="fw-bold">113.5 ريال</span>
+                                    <div class="d-flex align-items-center justify-content-between black-color mb-12">
+                                        <p>ضريبة القيمة المضافة ( 15 %):</p>
+                                        <p>1113.5 ريال</p>
                                     </div>
-                                    <div class="d-flex justify-content-between mb-4">
-                                        <span class="fw-bold fs-5">الإجمالي:</span>
-                                        <span class="fw-bold fs-5 text-primary-custom">413.5 ريال</span>
+                                    <hr class="m-0">
+                                    <div
+                                        class="d-flex align-items-center justify-content-between prim-color heading-6 mb-20">
+                                        <p>الإجمالي:</p>
+                                        <p>413.5 ريال</p>
                                     </div>
-
-                                    <div class="alert alert-info d-flex align-items-start gap-2 border-0 bg-white">
-                                        <i class="fa-solid fa-clock mt-1 text-primary"></i>
+                                    <div class="info-box d-flex align-items-start gap-1">
                                         <div>
-                                            <strong>مدة التسليم</strong>
-                                            <p class="mb-0 small text-muted">ستحصل على التقارير خلال ساعة إلى يومين كحد
-                                                أقصى</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path
+                                                    d="M8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0ZM7.25 3.75V8C7.25 8.25 7.375 8.48438 7.58437 8.625L10.5844 10.625C10.9281 10.8562 11.3938 10.7625 11.625 10.4156C11.8562 10.0687 11.7625 9.60625 11.4156 9.375L8.75 7.6V3.75C8.75 3.33437 8.41562 3 8 3C7.58437 3 7.25 3.33437 7.25 3.75Z"
+                                                    fill="#3B82F6" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <span class="alt mb-2">مدة التسليم</span>
+                                            <p>ستحصل على التقارير خلال ساعة إلى يومين كحد أقصى</p>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="cart-card">
+                                    <h5 class="heading-5 prim-color mb-20">طريقة الدفع</h5>
+                                    <label class="d-flex align-items-center mb-12 payment-item cursor-pointer mb-4">
+                                        <input class="form-check-input me-2" type="radio" name="language" checked>
+                                        <div class="black-color">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="me-1" width="18" height="14"
+                                                viewBox="0 0 18 14" fill="none">
+                                                <path
+                                                    d="M2 0C0.896875 0 0 0.896875 0 2V3H18V2C18 0.896875 17.1031 0 16 0H2ZM18 6H0V12C0 13.1031 0.896875 14 2 14H16C17.1031 14 18 13.1031 18 12V6ZM3.5 10H5.5C5.775 10 6 10.225 6 10.5C6 10.775 5.775 11 5.5 11H3.5C3.225 11 3 10.775 3 10.5C3 10.225 3.225 10 3.5 10ZM7 10.5C7 10.225 7.225 10 7.5 10H11.5C11.775 10 12 10.225 12 10.5C12 10.775 11.775 11 11.5 11H7.5C7.225 11 7 10.775 7 10.5Z"
+                                                    fill="#063235" />
+                                            </svg>
+                                            بطاقة ائتمانية
+                                        </div>
+                                    </label>
+                                    <label class="d-flex align-items-center mb-12 payment-item cursor-pointer mb-40">
+                                        <input class="form-check-input me-2" type="radio" name="language" checked>
+                                        <div class="black-color">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="9"
+                                                viewBox="0 0 20 9" fill="none">
+                                                <path
+                                                    d="M3.65282 1.05625C3.41844 1.33438 3.04344 1.55312 2.66844 1.52187C2.62157 1.14687 2.80594 0.746875 3.02157 0.503125C3.25594 0.21875 3.66532 0.015625 3.99969 0C4.03719 0.3875 3.88407 0.771875 3.65282 1.05625ZM3.99344 1.59375C3.44969 1.5625 2.98407 1.90313 2.72782 1.90313C2.46532 1.90313 2.07157 1.60938 1.64032 1.61875C1.08094 1.62813 0.562192 1.94375 0.277817 2.44688C-0.309683 3.45625 0.124692 4.94687 0.693442 5.76875C0.971567 6.175 1.30282 6.62188 1.74032 6.60625C2.15594 6.59063 2.31844 6.3375 2.81844 6.3375C3.32157 6.3375 3.46844 6.60625 3.90594 6.6C4.35907 6.59062 4.64344 6.19375 4.92157 5.7875C5.23719 5.325 5.36844 4.87813 5.37469 4.85313C5.36532 4.84375 4.49969 4.5125 4.49032 3.5125C4.48094 2.675 5.17469 2.27813 5.20594 2.25313C4.81532 1.67188 4.20594 1.60938 3.99344 1.59375ZM7.13094 0.4625V6.55312H8.07782V4.47187H9.38719C10.5841 4.47187 11.4216 3.65 11.4216 2.4625C11.4216 1.275 10.5966 0.4625 9.41844 0.4625H7.13094ZM8.07782 1.25938H9.16844C9.99032 1.25938 10.4591 1.69688 10.4591 2.46563C10.4591 3.23438 9.99032 3.67812 9.16532 3.67812H8.07782V1.25938ZM13.1466 6.6C13.7403 6.6 14.2903 6.3 14.5403 5.82188H14.5591V6.55312H15.4341V3.52187C15.4341 2.64375 14.7309 2.075 13.6497 2.075C12.6466 2.075 11.9028 2.65 11.8747 3.4375H12.7278C12.7997 3.0625 13.1466 2.81563 13.6216 2.81563C14.1997 2.81563 14.5247 3.08438 14.5247 3.58125V3.91875L13.3434 3.99062C12.2466 4.05625 11.6528 4.50625 11.6528 5.2875C11.6559 6.075 12.2684 6.6 13.1466 6.6ZM13.4028 5.87812C12.8997 5.87812 12.5778 5.63438 12.5778 5.26563C12.5778 4.88125 12.8872 4.65938 13.4778 4.625L14.5278 4.55938V4.90313C14.5278 5.47188 14.0434 5.87812 13.4028 5.87812ZM16.6059 8.20938C17.5278 8.20938 17.9622 7.85625 18.3403 6.79063L19.9997 2.13438H19.0372L17.9247 5.73125H17.9059L16.7934 2.13438H15.8059L17.4059 6.56875L17.3184 6.8375C17.1747 7.29375 16.9403 7.47187 16.5216 7.47187C16.4466 7.47187 16.3028 7.4625 16.2434 7.45625V8.1875C16.2997 8.2 16.5341 8.20938 16.6059 8.20938Z"
+                                                    fill="#063235" />
+                                            </svg>
+                                            Apple Pay
+                                        </div>
+                                    </label>
+                                    <a href="checkout.html"
+                                        class="main-btn btn-custom-dark d-flex align-items-center justify-content-center mb-3 gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18"
+                                            viewBox="0 0 16 18" fill="none">
+                                            <path
+                                                d="M5.0625 5.0625V6.75H10.6875V5.0625C10.6875 3.50859 9.42891 2.25 7.875 2.25C6.32109 2.25 5.0625 3.50859 5.0625 5.0625ZM2.8125 6.75V5.0625C2.8125 2.26758 5.08008 0 7.875 0C10.6699 0 12.9375 2.26758 12.9375 5.0625V6.75H13.5C14.741 6.75 15.75 7.75898 15.75 9V15.75C15.75 16.991 14.741 18 13.5 18H2.25C1.00898 18 0 16.991 0 15.75V9C0 7.75898 1.00898 6.75 2.25 6.75H2.8125Z"
+                                                fill="white" />
+                                        </svg>
+                                        الدفع الآمن
+                                    </a>
+                                    <p class="gray-14-text text-center"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                            <path
+                                                d="M6.56251 0C6.68829 0 6.81407 0.0273438 6.92892 0.0792969L12.0777 2.26406C12.6793 2.51836 13.1277 3.11172 13.125 3.82812C13.1113 6.54063 11.9957 11.5035 7.28439 13.7594C6.82775 13.9781 6.29728 13.9781 5.84064 13.7594C1.12931 11.5035 0.0136843 6.54063 1.24373e-05 3.82812C-0.00272194 3.11172 0.445716 2.51836 1.04728 2.26406L6.19884 0.0792969C6.31095 0.0273438 6.43673 0 6.56251 0ZM6.56251 1.82656V12.1625C10.3359 10.3359 11.3504 6.2918 11.375 3.86641L6.56251 1.82656Z"
+                                                fill="#22C55E" />
+                                        </svg>
+                                        <span class="mx-1">معاملتك محمية بتشفير</span>
+                                        SSL
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -434,9 +441,9 @@
 
                     <!-- Navigation Buttons -->
                     <div class="d-flex justify-content-end gap-2 mt-40">
-                        <button type="button" class="main-btn bg-colored-light colored-text px-5" id="prevBtn"
-                            style="visibility: hidden;">رجوع <svg xmlns="http://www.w3.org/2000/svg" width="18"
-                                height="12" viewBox="0 0 18 12" fill="none">
+                        <button type="button" class="main-btn bg-colored-light colored-text px-5 d-none"
+                            id="prevBtn">رجوع <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"
+                                viewBox="0 0 18 12" fill="none">
                                 <path
                                     d="M17.5 5.75049C17.5 5.37693 17.3343 5.03037 17.1775 4.77014C17.0082 4.48932 16.7806 4.1994 16.5308 3.91672C16.0298 3.34965 15.3761 2.74067 14.7418 2.1898C14.1037 1.6357 13.4678 1.12548 12.9928 0.754711C12.7548 0.569014 12.5564 0.417578 12.417 0.312267C12.3472 0.259597 12.2922 0.218425 12.2544 0.190231L12.2109 0.157846L12.1993 0.149292L12.1953 0.146332C11.8618 -0.0993295 11.3918 -0.0284391 11.1462 0.305063C10.9005 0.638549 10.9717 1.10803 11.3052 1.3537L11.3179 1.36311L11.358 1.39288C11.3934 1.41928 11.4458 1.45852 11.5128 1.50914C11.6468 1.61039 11.839 1.75698 12.0698 1.93716C12.5323 2.29813 13.1464 2.79102 13.7583 3.32238C14.3739 3.85697 14.9702 4.41579 15.4067 4.90986C15.4343 4.94111 15.461 4.97182 15.4868 5.00198L0.749983 5.00198C0.33577 5.00198 -1.66273e-05 5.33777 -1.66635e-05 5.75198C-1.66998e-05 6.1662 0.33577 6.50198 0.749983 6.50198L15.4843 6.50198C15.4593 6.53119 15.4334 6.56091 15.4067 6.59114C14.9702 7.08521 14.3739 7.64404 13.7583 8.17863C13.1464 8.70998 12.5323 9.20288 12.0698 9.56385C11.839 9.74402 11.6468 9.89062 11.5128 9.99187C11.4458 10.0425 11.3934 10.0817 11.358 10.1081L11.3179 10.1379L11.3052 10.1473C10.9717 10.393 10.9005 10.8625 11.1462 11.1959C11.3918 11.5294 11.8618 11.6003 12.1953 11.3547L12.1993 11.3517L12.2109 11.3432L12.2544 11.3108C12.2922 11.2826 12.3472 11.2414 12.417 11.1887C12.5564 11.0834 12.7548 10.932 12.9928 10.7463C13.4678 10.3755 14.1037 9.86531 14.7418 9.3112C15.3761 8.76034 16.0298 8.15135 16.5308 7.58428C16.7806 7.3016 17.0082 7.01168 17.1775 6.73086C17.3334 6.4722 17.498 6.12821 17.5 5.75723"
                                     fill="#016B61" />
@@ -626,7 +633,7 @@
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
-    <script src="assets/js/special-pricing.js"></script>
+    <script src="assets/js/special-pricing-2.js"></script>
 
 </body>
 
