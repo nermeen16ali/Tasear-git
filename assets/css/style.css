@@ -2745,6 +2745,10 @@ hr {
     border: 1px solid #F9FAFB;
 }
 
+.borderd-gray {
+    border: 1px solid #D1D5DB;
+}
+
 .icon-sm {
     border: 1px solid #D1D5DB;
     width: 24px;
@@ -3139,7 +3143,7 @@ fill='%23063235' stroke='%23063235' stroke-linecap='round' stroke-linejoin='roun
     background-position: center;
 }
 
-/* 3️⃣ Rotate when opened */
+/* Rotate when opened */
 #ordersAccordion .accordion-button:not(.collapsed)::after {
     transform: rotate(180deg);
 }
