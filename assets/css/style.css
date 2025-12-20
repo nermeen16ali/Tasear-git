@@ -3196,6 +3196,20 @@ hr {
         font-size: 16px;
     }
 
+    .search-container {
+        border-radius: 8px;
+        padding-bottom: 48px;
+    }
+
+    .search-input-wrapper {
+        margin-bottom: 12px;
+        padding: 14px 21px;
+    }
+
+    .search-input-wrapper+.btn-filter {
+        float: inline-end;
+    }
+
     .box {
         width: 24px;
         height: 24px;
