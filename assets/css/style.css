@@ -501,7 +501,6 @@ main {
 .search-tabs {
     display: flex;
     justify-content: center;
-    justify-content: center;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     overflow: hidden;
@@ -1669,15 +1668,6 @@ main {
 .footer-bottom-links {
     display: flex;
     gap: 24px;
-}
-
-
-@media (max-width: 768px) {
-    .footer-bottom {
-        flex-direction: column;
-        gap: 16px;
-        text-align: center;
-    }
 }
 
 /* --- back to top arrow--- */
@@ -3198,7 +3188,36 @@ hr {
 
     .search-container {
         border-radius: 8px;
-        padding-bottom: 48px;
+        padding: 12px 12px 48px 12px;
+    }
+
+    .search-input::placeholder {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
+    .mb-40 {
+        margin-bottom: 32px;
+    }
+
+    .stats {
+        padding-block: 30px;
+    }
+
+    .row.gy-4 {
+        --bs-gutter-x: 0.5rem;
+    }
+
+    .white-card p {
+        font-size: 13px;
+    }
+
+    .heading-3 {
+        font-size: 22px;
     }
 
     .search-input-wrapper {
@@ -3210,9 +3229,69 @@ hr {
         float: inline-end;
     }
 
+    .main-text {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
     .box {
         width: 24px;
         height: 24px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 24px;
+        padding-inline: 4px;
+    }
+
+    .cta-app-section {
+        padding-block: 60px;
+    }
+
+    .stats-decoration {
+        display: none;
+    }
+
+    .footer-section>.container>.row>* {
+        margin-bottom: 12px;
+    }
+
+    .footer-section {
+        font-size: 12px;
+    }
+
+    .cta-app-title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+
+    .cta-app-card h3 {
+        margin-bottom: 16px;
+    }
+
+    .cta-app-card p {
+        font-size: 12px;
+    }
+
+    .search-tab {
+        flex: 1;
+        min-width: unset;
+        white-space: nowrap;
+    }
+
+    .lg-decoration,
+    .sm-decoration {
+        width: 54px;
+        height: 54px;
+    }
+
+    .sm-decoration {
+        top: unset;
     }
 }
 
