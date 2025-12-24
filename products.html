@@ -16,6 +16,37 @@
 </head>
 
 <body>
+    <!-- Pricing Request Modal -->
+    <div class="modal fade" id="pricingModal" tabindex="-1" aria-labelledby="pricingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-440 pt-3 pb-4 px-4">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title heading-5 prim-color" id="pricingModalLabel">طلب تسعير</h5>
+                    <button type="button" class="ms-auto" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0.334325 0.3486C0.548458 0.134532 0.838845 0.0142755 1.14163 0.0142755C1.44441 0.0142755 1.7348 0.134532 1.94893 0.3486L7.99286 6.39253L14.0368 0.3486C14.1421 0.23954 14.2681 0.152549 14.4074 0.092705C14.5468 0.0328606 14.6966 0.00136062 14.8482 4.31137e-05C14.9998 -0.0012744 15.1502 0.0276167 15.2905 0.085031C15.4308 0.142445 15.5583 0.227233 15.6656 0.334446C15.7728 0.44166 15.8576 0.569152 15.915 0.709484C15.9724 0.849816 16.0013 1.00018 16 1.15179C15.9986 1.30341 15.9671 1.45325 15.9073 1.59256C15.8474 1.73187 15.7605 1.85787 15.6514 1.96321L9.60747 8.00714L15.6514 14.0511C15.8594 14.2664 15.9745 14.5549 15.9719 14.8543C15.9693 15.1537 15.8492 15.4401 15.6375 15.6518C15.4258 15.8635 15.1394 15.9836 14.84 15.9862C14.5406 15.9888 14.2522 15.8737 14.0368 15.6657L7.99286 9.62174L1.94893 15.6657C1.73357 15.8737 1.44513 15.9888 1.14574 15.9862C0.846342 15.9836 0.559947 15.8635 0.348234 15.6518C0.136522 15.4401 0.0164322 15.1537 0.0138305 14.8543C0.0112289 14.5549 0.126324 14.2664 0.334325 14.0511L6.37826 8.00714L0.334325 1.96321C0.120257 1.74907 0 1.45869 0 1.1559C0 0.85312 0.120257 0.562733 0.334325 0.3486Z"
+                                fill="#4F4F4F" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="quantityInput" class="form-label fs-14 text-color"> من فضلك ادخل الكمية</label>
+                        <input type="number" class="form-control" id="quantityInput" placeholder="أدخل الكمية" min="1"
+                            value="1">
+                    </div>
+                </div>
+                <div class="modal-footer border-0 pt-0">
+                    <button type="button" class="main-btn bg-colored-light delete-btn maxed-btn"
+                        data-bs-dismiss="modal">إلغاء</button>
+
+                    <button type="button" class="main-btn btn-custom-dark maxed-btn" id="confirmPricingBtn">طلب
+                        تسعير</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
@@ -1428,38 +1459,6 @@
         </div>
     </footer>
 
-    <!-- Pricing Request Modal -->
-    <div class="modal fade" id="pricingModal" tabindex="-1" aria-labelledby="pricingModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content modal-440 pt-3 pb-4 px-4">
-                <div class="modal-header border-0 pb-0">
-                    <h5 class="modal-title heading-5 prim-color" id="pricingModalLabel">طلب تسعير</h5>
-                    <button type="button" class="ms-auto" data-bs-dismiss="modal" aria-label="Close">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0.334325 0.3486C0.548458 0.134532 0.838845 0.0142755 1.14163 0.0142755C1.44441 0.0142755 1.7348 0.134532 1.94893 0.3486L7.99286 6.39253L14.0368 0.3486C14.1421 0.23954 14.2681 0.152549 14.4074 0.092705C14.5468 0.0328606 14.6966 0.00136062 14.8482 4.31137e-05C14.9998 -0.0012744 15.1502 0.0276167 15.2905 0.085031C15.4308 0.142445 15.5583 0.227233 15.6656 0.334446C15.7728 0.44166 15.8576 0.569152 15.915 0.709484C15.9724 0.849816 16.0013 1.00018 16 1.15179C15.9986 1.30341 15.9671 1.45325 15.9073 1.59256C15.8474 1.73187 15.7605 1.85787 15.6514 1.96321L9.60747 8.00714L15.6514 14.0511C15.8594 14.2664 15.9745 14.5549 15.9719 14.8543C15.9693 15.1537 15.8492 15.4401 15.6375 15.6518C15.4258 15.8635 15.1394 15.9836 14.84 15.9862C14.5406 15.9888 14.2522 15.8737 14.0368 15.6657L7.99286 9.62174L1.94893 15.6657C1.73357 15.8737 1.44513 15.9888 1.14574 15.9862C0.846342 15.9836 0.559947 15.8635 0.348234 15.6518C0.136522 15.4401 0.0164322 15.1537 0.0138305 14.8543C0.0112289 14.5549 0.126324 14.2664 0.334325 14.0511L6.37826 8.00714L0.334325 1.96321C0.120257 1.74907 0 1.45869 0 1.1559C0 0.85312 0.120257 0.562733 0.334325 0.3486Z"
-                                fill="#4F4F4F" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="quantityInput" class="form-label fs-14 text-color"> من فضلك ادخل الكمية</label>
-                        <input type="number" class="form-control" id="quantityInput" placeholder="أدخل الكمية" min="1"
-                            value="1">
-                    </div>
-                </div>
-                <div class="modal-footer border-0 pt-0">
-                    <button type="button" class="main-btn bg-colored-light delete-btn maxed-btn"
-                        data-bs-dismiss="modal">إلغاء</button>
-
-                    <button type="button" class="main-btn btn-custom-dark maxed-btn" id="confirmPricingBtn">طلب
-                        تسعير</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- SweetAlert2 -->
@@ -1515,7 +1514,7 @@
 
             // Show SweetAlert (modern toast)
             Swal.fire({
-                title: 'تمت الإضافة',
+                title: 'تمت الإضافة بنجاح',
                 icon: 'success',
                 toast: true,
                 position: 'top-end',
