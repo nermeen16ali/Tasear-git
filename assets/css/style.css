@@ -3173,8 +3173,12 @@ hr {
     }
 
     .hero-title {
-        font-size: 32px;
-        line-height: 48px;
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
     }
 
     .odometer {
