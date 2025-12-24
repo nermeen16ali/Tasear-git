@@ -30,7 +30,7 @@ $(document).ready(function () {
       lengthChange: false,
       order: [],
       columnDefs: [
-        { orderable: true, targets: [1, 2] },
+        { orderable: true, targets: 1 },
         { orderable: false, targets: "_all" }
       ],
       language: {

@@ -157,10 +157,10 @@ textarea.form-control {
     background-color: #FCFCFC;
 }
 
-.pricing-table.centered-cl td:nth-last-child(-n + 3),
+/* .pricing-table.centered-cl td:nth-last-child(-n + 3),
 .pricing-table.centered-cl th:nth-last-child(-n + 3) {
     text-align: center !important;
-}
+} */
 
 .pricing-table thead th.sorting:after,
 .pricing-table thead th.sorting_asc:after,
