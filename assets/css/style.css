@@ -3169,7 +3169,7 @@ hr {
 
 @media (max-width: 768px) {
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .hero-title {
@@ -3197,6 +3197,10 @@ hr {
 
     .search-input::placeholder {
         font-size: 14px;
+    }
+
+    .btn-upload-quote {
+        margin-bottom: 44px;
     }
 
     .section-title {
