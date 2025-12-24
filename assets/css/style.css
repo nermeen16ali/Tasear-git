@@ -3314,6 +3314,15 @@ hr {
         font-size: 12px;
     }
 
+    .py-80 {
+        padding-block: 40px;
+    }
+
+    .btn-upload-quote {
+        padding: 12px 24px;
+        gap: 6px;
+    }
+
     .pricing-card-list li:not(:last-child) {
         margin-bottom: 0;
     }
