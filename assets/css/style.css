@@ -3323,6 +3323,14 @@ hr {
         gap: 6px;
     }
 
+    .search-tab {
+        gap: 4px;
+    }
+
+    .search-tab svg {
+        height: 14px;
+    }
+
     .pricing-card-list li:not(:last-child) {
         margin-bottom: 0;
     }
