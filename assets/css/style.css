@@ -3177,6 +3177,14 @@ hr {
         line-height: 40px;
     }
 
+    .hero-section {
+        padding: 48px 0 62px;
+    }
+
+    .py-80-40 {
+        padding-block: 40px;
+    }
+
     .hero-subtitle {
         font-size: 16px;
     }
@@ -3306,7 +3314,7 @@ hr {
     }
 
     .pricing-card-list li:not(:last-child) {
-        margin-bottom: 2px;
+        margin-bottom: 0;
     }
 
     .cta-app-title {
@@ -3321,7 +3329,12 @@ hr {
 
     .cta-app-card p,
     .pricing-card-list li {
+        font-size: 11px;
+    }
+
+    .cta-app-description {
         font-size: 12px;
+        line-height: 21px;
     }
 
     .search-tab {
