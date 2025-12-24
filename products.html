@@ -1482,14 +1482,19 @@
             // Validate quantity
             if (!quantity || quantity < 1) {
                 Swal.fire({
-                    title: 'خطأ',
-                    text: 'الرجاء إدخال كمية صحيحة',
+                    title: 'الرجاء إدخال كمية صحيحة',
                     icon: 'error',
-                    confirmButtonText: 'حسناً',
-                    confirmButtonColor: '#016B61'
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 2500,
+                    timerProgressBar: false,
+                    iconColor: '#dc3545',
+                    background: '#ffffff'
                 });
                 return;
             }
+
 
             // Close the modal
             const modal = bootstrap.Modal.getInstance(document.getElementById('pricingModal'));
@@ -1508,13 +1513,19 @@
                 currentButton.classList.add('btn-custom-light');
             }
 
-            // Show SweetAlert
+            // Show SweetAlert (modern toast)
             Swal.fire({
-                title: 'تمت الاضافة',
+                title: 'تمت الإضافة',
                 icon: 'success',
-                confirmButtonText: 'حسناً',
-                confirmButtonColor: '#016B61'
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 2000,
+                timerProgressBar: false,
+                iconColor: '#77B0A9',
+                background: '#ffffff'
             });
+
 
             // Reset quantity input
             document.getElementById('quantityInput').value = '1';
