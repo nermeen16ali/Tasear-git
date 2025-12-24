@@ -1347,22 +1347,13 @@ main {
 
 /* --- CTA App Section --- */
 .cta-app-section {
-    background: linear-gradient(135deg, #0A4A4F 0%, #063235 100%);
-    padding: 80px 0;
+    background: linear-gradient(135deg, rgb(119 176 169 / 34%) 0%, rgb(6 50 53) 100%), url(../images/cta-bg.webp);
+    background-size: cover;
+    background-position: center;
+    /* padding: 80px 0; */
     color: #fff;
     position: relative;
     overflow: hidden;
-}
-
-.cta-app-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-}
-
-.cta-app-text {
-    flex: 1;
 }
 
 .cta-app-title {
@@ -1430,11 +1421,11 @@ main {
     height: 20px;
 }
 
-.cta-app-image {
+/* .cta-app-image {
     flex: 1;
     max-width: fit-content;
     position: relative;
-}
+} */
 
 .cta-app-card {
     background: rgba(255, 255, 255, 0.1);
@@ -1498,18 +1489,18 @@ main {
 }
 
 @media (max-width: 991px) {
-    .cta-app-content {
+    /* .cta-app-content {
         flex-direction: column;
         text-align: center;
-    }
+    } */
 
     .cta-app-buttons {
         justify-content: center;
     }
 
-    .cta-app-image {
+    /* .cta-app-image {
         max-width: 100%;
-    }
+    } */
 }
 
 /* --- Footer Section --- */
@@ -3313,9 +3304,9 @@ hr {
         padding-inline: 4px;
     }
 
-    .cta-app-section {
+    /* .cta-app-section {
         padding-block: 60px;
-    }
+    } */
 
     .stats-decoration {
         display: none;
