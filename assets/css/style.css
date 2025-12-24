@@ -3200,8 +3200,12 @@ hr {
     }
 
     .section-title {
-        font-size: 26px;
+        font-size: 24px;
         margin-bottom: 8px;
+    }
+
+    .heading-5 {
+        font-size: 16px;
     }
 
     .mb-40 {
