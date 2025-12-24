@@ -3309,7 +3309,8 @@ hr {
         margin-bottom: 12px;
     }
 
-    .footer-section {
+    .footer-section,
+    .search-tab {
         font-size: 12px;
     }
 
