@@ -709,7 +709,8 @@ main {
     line-height: 100%;
 }
 
-.heading-3 {
+.heading-3,
+.swal2-title {
     font-size: 27.65px;
     line-height: 120%;
     font-weight: normal;
@@ -2855,6 +2856,11 @@ hr {
 
 .form-group .form-control {
     padding-inline: 34px;
+}
+
+.modal-440,
+.swal2-show {
+    width: 440px;
 }
 
 .modal-backdrop {
