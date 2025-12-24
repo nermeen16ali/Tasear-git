@@ -3220,7 +3220,8 @@ hr {
         margin-bottom: 8px;
     }
 
-    .heading-5 {
+    .heading-5,
+    .btn-filter {
         font-size: 16px;
     }
 
@@ -3271,7 +3272,7 @@ hr {
 
     .search-input-wrapper {
         margin-bottom: 12px;
-        padding: 14px 21px;
+        padding: 10px 21px;
     }
 
     .search-input-wrapper+.btn-filter {
