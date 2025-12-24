@@ -3225,6 +3225,15 @@ hr {
         font-size: 16px;
     }
 
+    .icon-56 {
+        width: 42px;
+        height: 42px;
+    }
+
+    .icon-56 svg {
+        height: 18px;
+    }
+
     .mb-40 {
         margin-bottom: 32px;
     }
