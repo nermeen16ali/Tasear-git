@@ -320,8 +320,6 @@ hr.horizontal {
     background-color: #fff;
     padding: 3px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    height: 74px;
-
 }
 
 header .nav-link {
@@ -3149,6 +3147,10 @@ hr {
         height: 34px;
     }
 
+    .navbar-custom {
+        height: 74px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -3156,6 +3158,10 @@ hr {
     body,
     .fs-6 {
         font-size: 12px;
+    }
+
+    .py-56 {
+        padding-block: 32px;
     }
 
     .hero-title {
