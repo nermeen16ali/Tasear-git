@@ -3295,6 +3295,11 @@ hr {
 
     .search-input-wrapper+.btn-filter {
         float: inline-end;
+        font-size: 14px;
+    }
+
+    .search-input-wrapper+.btn-filter svg {
+        width: 16px;
     }
 
     .main-text {
