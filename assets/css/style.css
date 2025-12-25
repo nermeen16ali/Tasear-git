@@ -78,6 +78,11 @@ table td {
     font-weight: 700;
 }
 
+html[dir="rtl"] table.dataTable thead th:last-child,
+html[dir="rtl"] table.dataTable tbody td:last-child {
+    text-align: center;
+}
+
 .table>:not(caption)>*>* {
     border-bottom: unset;
     padding-block: 16px;
