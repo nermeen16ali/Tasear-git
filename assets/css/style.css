@@ -521,7 +521,7 @@ main {
 
 .btn-filter {
     color: var(--primary-color);
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
     white-space: nowrap;
     font-size: 19.2px;
 }
@@ -1487,21 +1487,6 @@ main {
     font-size: 16px;
 }
 
-@media (max-width: 991px) {
-    /* .cta-app-content {
-        flex-direction: column;
-        text-align: center;
-    } */
-
-    .cta-app-buttons {
-        justify-content: center;
-    }
-
-    /* .cta-app-image {
-        max-width: 100%;
-    } */
-}
-
 /* --- Footer Section --- */
 .footer-section {
     background-color: #111827;
@@ -1761,11 +1746,6 @@ main {
 
 .form-select:not(.sm-select) {
     height: 44px;
-}
-
-.form-select.sm-select {
-    min-width: 121px;
-    height: 34px;
 }
 
 /* --- Multi-Step Form --- */
@@ -3163,6 +3143,14 @@ hr {
     cursor: pointer;
 }
 
+@media (min-width: 992px) {
+    .form-select.sm-select {
+        min-width: 121px;
+        height: 34px;
+    }
+
+}
+
 @media (max-width: 768px) {
     body {
         font-size: 12px;
@@ -3200,7 +3188,7 @@ hr {
 
     .search-container {
         border-radius: 8px;
-        padding: 12px 12px 48px 12px;
+        padding: 12px 12px 36px 12px;
     }
 
     .search-input::placeholder {
@@ -3216,8 +3204,7 @@ hr {
         margin-bottom: 8px;
     }
 
-    .heading-5,
-    .btn-filter {
+    .heading-5 {
         font-size: 16px;
     }
 
@@ -3276,8 +3263,26 @@ hr {
     }
 
     .search-input-wrapper {
-        margin-bottom: 12px;
+        margin-bottom: 8px;
         padding: 10px 21px;
+    }
+
+    .btn-filter span {
+        display: none;
+    }
+
+    .filter-select-group {
+        width: 100%;
+    }
+
+    .prim-section {
+        padding-bottom: 40px;
+    }
+
+    .form-select.sm-select {
+        font-size: 12px;
+        background-position: left 5px center;
+        padding-inline-end: 4px;
     }
 
     .search-input-wrapper+.btn-filter {
@@ -3302,10 +3307,6 @@ hr {
         margin-top: 24px;
         padding-inline: 4px;
     }
-
-    /* .cta-app-section {
-        padding-block: 60px;
-    } */
 
     .stats-decoration {
         display: none;
