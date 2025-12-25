@@ -3152,7 +3152,9 @@ hr {
 }
 
 @media (max-width: 768px) {
-    body {
+
+    body,
+    .fs-6 {
         font-size: 12px;
     }
 
