@@ -3218,7 +3218,7 @@ hr {
     }
 
     .mb-40 {
-        margin-bottom: 32px;
+        margin-bottom: 24px;
     }
 
     .stats {
@@ -3267,7 +3267,7 @@ hr {
         padding: 10px 21px;
     }
 
-    .btn-filter span {
+    .filter-bar .btn-filter span {
         display: none;
     }
 
