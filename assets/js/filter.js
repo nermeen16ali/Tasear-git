@@ -30,9 +30,12 @@ function closeFilter() {
 // }
 
 function applyFilter() {
-    const checkedInputs = document.querySelectorAll('input:checked');
+    const filter = document.getElementById('filterPanel');
 
-    // ❌ لا يوجد أي اختيار
+    // inputs المتعلمة داخل الفلتر فقط
+    const checkedInputs = filter.querySelectorAll('input:checked');
+
+    // ❌ لا يوجد أي اختيار داخل الفلتر
     if (checkedInputs.length === 0) {
         Swal.fire({
             toast: true,
@@ -41,7 +44,6 @@ function applyFilter() {
             title: 'من فضلك اختر تصفية واحدة على الأقل',
             showConfirmButton: false,
             timer: 3000,
-            timerProgressBar: false,
             customClass: {
                 popup: 'swal-top-center'
             }
@@ -49,11 +51,12 @@ function applyFilter() {
         return;
     }
 
-    // ✅ يوجد اختيارات
-    const sectors = [...document.querySelectorAll('input[type="checkbox"]:checked')]
+    // ✅ القطاعات (checkboxes داخل الفلتر فقط)
+    const sectors = [...filter.querySelectorAll('input[type="checkbox"]:checked')]
         .map(el => el.value);
 
-    const suppliers = document.querySelector('input[name="suppliers"]:checked')?.value;
+    // ✅ عدد الموردين (radio داخل الفلتر فقط)
+    const suppliers = filter.querySelector('input[name="suppliers"]:checked')?.value;
 
     console.log("القطاعات:", sectors);
     console.log("عدد الموردين:", suppliers);
@@ -65,7 +68,6 @@ function applyFilter() {
         title: 'تم تطبيق التصفية بنجاح',
         showConfirmButton: false,
         timer: 3000,
-        timerProgressBar: false,
         customClass: {
             popup: 'swal-top-center'
         }
@@ -73,9 +75,13 @@ function applyFilter() {
 }
 
 
+
 function resetFilter() {
-    document.querySelectorAll('input').forEach(input => {
+    const filter = document.getElementById('filterPanel');
+
+    filter.querySelectorAll('input').forEach(input => {
         input.checked = false;
     });
 }
+
 
