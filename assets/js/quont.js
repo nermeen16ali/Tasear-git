@@ -41,6 +41,7 @@ document.getElementById('confirmPricingBtn').addEventListener('click', function 
                     </svg>`;
         currentButton.classList.remove('btn-custom-dark');
         currentButton.classList.add('btn-custom-light');
+        currentButton.disabled = true;
     }
 
     // Show SweetAlert (modern toast)
