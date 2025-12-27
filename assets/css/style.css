@@ -1857,34 +1857,6 @@ main {
 
 }
 
-@media (max-width: 768px) {
-    .stepper-wrapper {
-        flex-direction: row;
-        gap: 0;
-    }
-
-    .stepper-item {
-        width: auto;
-        flex: 1;
-    }
-
-    .step-name {
-        font-size: 11px;
-    }
-
-    .pricing-type-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .review-container {
-        grid-template-columns: 1fr;
-    }
-
-    .step-actions {
-        justify-content: center;
-    }
-}
-
 /* Chat Section Styles */
 .chat-container {
     display: flex;
@@ -3501,8 +3473,46 @@ hr {
     .footer-newsletter {
         width: 80%;
     }
-}
 
+    .stepper-wrapper {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .chat-container {
+        flex-direction: column;
+    }
+
+    .chat-sidebar {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .stepper-item {
+        width: auto;
+        flex: 1;
+    }
+
+    .step-name {
+        font-size: 11px;
+    }
+
+    .chat-progress-container {
+        padding: 24px;
+    }
+
+    .pricing-type-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .review-container {
+        grid-template-columns: 1fr;
+    }
+
+    .step-actions {
+        justify-content: center;
+    }
+}
 
 .table td input {
     width: fit-content;
