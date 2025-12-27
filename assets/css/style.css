@@ -3507,6 +3507,10 @@ hr {
     table.dataTable.pricing-table {
         border-spacing: 12px 0 !important;
     }
+
+    .page-breadcrumb .fs-14 {
+        font-size: 12px;
+    }
 }
 
 .table td input {
