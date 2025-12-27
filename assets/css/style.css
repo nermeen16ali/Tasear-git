@@ -3178,10 +3178,7 @@ hr {
 @media (max-width: 768px) {
 
     body,
-    .fs-6 {
-        font-size: 14px;
-    }
-
+    .fs-6,
     .pricing-table th {
         font-size: 14px;
     }
