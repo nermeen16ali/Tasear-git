@@ -3511,6 +3511,10 @@ hr {
     .page-breadcrumb .fs-14 {
         font-size: 12px;
     }
+
+    .payment-item {
+        padding: 10px;
+    }
 }
 
 .table td input {
