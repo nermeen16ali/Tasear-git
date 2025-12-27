@@ -231,10 +231,6 @@ textarea.form-control {
     font-size: 12px;
 }
 
-.main-btn.maxed-btn {
-    min-width: 172px;
-}
-
 .main-text {
     color: var(--body-txt-color);
     font-weight: 500;
@@ -337,6 +333,10 @@ header .nav-link {
         align-items: center;
         flex-direction: column;
         gap: 2px;
+    }
+
+    .main-btn.maxed-btn {
+        min-width: 172px;
     }
 }
 
