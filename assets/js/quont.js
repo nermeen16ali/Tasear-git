@@ -17,7 +17,7 @@ document.getElementById('confirmPricingBtn').addEventListener('click', function 
             toast: true,
             position: 'top-end',
             showConfirmButton: false,
-            timer: 2500,
+            timer: 3000,
             timerProgressBar: false,
             iconColor: '#dc3545',
             background: '#ffffff'
@@ -50,10 +50,8 @@ document.getElementById('confirmPricingBtn').addEventListener('click', function 
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 2000,
+        timer: 3000,
         timerProgressBar: false,
-        iconColor: '#77B0A9',
-        background: '#ffffff'
     });
 
 

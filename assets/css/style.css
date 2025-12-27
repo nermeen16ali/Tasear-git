@@ -195,7 +195,7 @@ textarea.form-control {
 
 .bg-grayed-btn {
     background-color: #F9FAFB;
-    color: #374151;
+    color: #016B61;
 }
 
 .bg-grayed-btn:hover {
@@ -3161,8 +3161,21 @@ hr {
 @media (max-width: 768px) {
 
     body,
-    .fs-6 {
+    .fs-6,
+    .fs-14 {
         font-size: 12px;
+    }
+
+    .pricing-table th {
+        font-size: 14px;
+    }
+
+    table td {
+        font-size: 13px;
+    }
+
+    .delete-btn svg {
+        width: 14px;
     }
 
     .py-56 {
@@ -3421,3 +3434,58 @@ fill='%23063235' stroke='%23063235' stroke-linecap='round' stroke-linejoin='roun
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.filter-card {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 300px;
+    background: #fff;
+    z-index: 1050;
+    transition: right 0.4s ease;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    border-radius: 24px 0 0 24px;
+}
+
+/* when active */
+.filter-card.active {
+    right: 0;
+}
+
+
+.filter-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.filter-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.stars {
+    color: #FACC15;
+}
+
+/* 
+.btn-filter {
+    background: #6bb1a3;
+    color: #fff;
+    border-radius: 12px;
+}
+
+.btn-filter:hover {
+    background: #5aa294;
+}
+
+.btn-reset {
+    background: transparent;
+    color: #6bb1a3;
+    border: none;
+} */
