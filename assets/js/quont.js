@@ -58,3 +58,66 @@ document.getElementById('confirmPricingBtn').addEventListener('click', function 
     // Reset quantity input
     document.getElementById('quantityInput').value = '1';
 });
+
+const selectAllBtn = document.querySelector('.select-all');
+
+selectAllBtn.addEventListener('click', function () {
+    const checkedBoxes = document.querySelectorAll('.card-check:checked');
+
+    // ❌ أقل من منتجين
+    if (checkedBoxes.length < 2) {
+        Swal.fire({
+            toast: true,
+            position: 'top',
+            icon: 'warning',
+            title: ' من فضلك اختر منتجين على الأقل',
+            showConfirmButton: false,
+            timer: 3000,
+            customClass: {
+                popup: 'swal-top-center'
+            }
+        });
+        return;
+    }
+
+    // ✅ التعامل مع كل card مختارة
+    checkedBoxes.forEach(cb => {
+        const card = cb.closest('.product-card');
+        const pricingBtn = card.querySelector('.pricing-request .main-btn');
+
+        // تغيير زر "طلب تسعير"
+        pricingBtn.innerHTML = `
+            تمت الإضافة
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                viewBox="0 0 24 24" fill="none">
+                <path d="M20 6L9 17L4 12"
+                    stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        `;
+
+        pricingBtn.classList.remove('btn-custom-dark');
+        pricingBtn.classList.add('btn-custom-light');
+        pricingBtn.disabled = true;
+        pricingBtn.removeAttribute('data-bs-toggle');
+        pricingBtn.removeAttribute('data-bs-target');
+
+        // تعطيل checkbox
+        cb.disabled = true;
+    });
+
+    // 🎉 SweetAlert نجاح
+    Swal.fire({
+        toast: true,
+        position: 'top',
+        icon: 'success',
+        title: 'تمت إضافة المنتجات إلى السلة بنجاح',
+        showConfirmButton: false,
+        timer: 3000,
+        customClass: {
+            popup: 'swal-top-center'
+        }
+    });
+});
+
+
