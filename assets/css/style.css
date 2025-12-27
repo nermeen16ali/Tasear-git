@@ -3231,6 +3231,27 @@ hr {
         margin-block: 20px 40px;
     }
 
+    .pricing-option-card .card-content {
+        padding: 42px 10px 24px 10px;
+        height: 100%;
+    }
+
+    .grayed-icon,
+    .step-counter {
+        width: 32px;
+        height: 32px;
+    }
+
+    .stepper-item::after {
+        top: 20px;
+        width: 100%;
+    }
+
+    .grayed-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+
     .hero-title,
     .contact-form-container .contact-title {
         font-size: 28px;
