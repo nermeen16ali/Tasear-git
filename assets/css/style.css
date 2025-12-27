@@ -3383,8 +3383,7 @@ hr {
         margin-bottom: 12px;
     }
 
-    .footer-section,
-    .search-tab {
+    .footer-section {
         font-size: 12px;
     }
 
@@ -3395,10 +3394,6 @@ hr {
     .btn-upload-quote {
         padding: 12px 24px;
         gap: 6px;
-    }
-
-    .search-tab {
-        gap: 4px;
     }
 
     .search-tab svg {
@@ -3433,6 +3428,8 @@ hr {
         flex: 1;
         min-width: unset;
         white-space: nowrap;
+        gap: 4px;
+        font-size: 14px;
     }
 
     .lg-decoration,
