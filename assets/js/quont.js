@@ -19,7 +19,7 @@ document.getElementById('confirmPricingBtn').addEventListener('click', function 
             showConfirmButton: false,
             timer: 3000,
             timerProgressBar: false,
-            iconColor: '#dc3545',
+            iconColor: 'error',
             background: '#ffffff'
         });
         return;

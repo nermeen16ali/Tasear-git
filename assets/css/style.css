@@ -3418,6 +3418,12 @@ hr {
     }
 }
 
+
+.table td input {
+    width: fit-content;
+
+}
+
 #ordersAccordion {
     --bs-accordion-btn-icon: none;
     --bs-accordion-btn-active-icon: none;

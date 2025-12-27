@@ -40,7 +40,7 @@ function applyFilter() {
         Swal.fire({
             toast: true,
             position: 'top',
-            icon: 'error',
+            icon: 'warning',
             title: 'من فضلك اختر تصفية واحدة على الأقل',
             showConfirmButton: false,
             timer: 3000,
