@@ -3227,6 +3227,10 @@ hr {
         height: 32px;
     }
 
+    .my-40-80 {
+        margin-block: 20px 40px;
+    }
+
     .hero-title,
     .contact-form-container .contact-title {
         font-size: 28px;
