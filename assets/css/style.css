@@ -3512,6 +3512,7 @@ hr {
 
 .table td input {
     width: fit-content;
+    border: 0;
 
 }
 
