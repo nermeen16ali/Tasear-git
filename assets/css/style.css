@@ -3197,7 +3197,7 @@ hr {
     }
 
     .notification-item .position-absolute {
-        top: 0;
+        top: 6px;
         left: 12px;
     }
 
