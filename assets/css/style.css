@@ -239,10 +239,6 @@ textarea.form-control {
     line-height: 26.88px;
 }
 
-.px-55 {
-    padding-inline: 55px;
-}
-
 .mt-40 {
     margin-top: 40px;
 }
@@ -339,6 +335,11 @@ header .nav-link {
     .main-btn.maxed-btn {
         min-width: 172px;
     }
+
+    .px-55 {
+        padding-inline: 55px;
+    }
+
 }
 
 .navbar-custom .nav-link {
