@@ -2567,10 +2567,6 @@ hr {
     margin-bottom: 73px;
 }
 
-.faq-accordion {
-    padding: 40px;
-}
-
 .faq-accordion .accordion-item {
     border: none;
     border-radius: 8px;
@@ -3093,6 +3089,10 @@ hr {
         height: 34px;
     }
 
+    .faq-accordion {
+        padding: 40px;
+    }
+
     .chat-container {
         height: 727px;
     }
@@ -3212,6 +3212,10 @@ hr {
         height: 32px;
     }
 
+    .blob-icon img {
+        height: 150px;
+    }
+
     .my-40-80 {
         margin-block: 20px 40px;
     }
@@ -3286,7 +3290,8 @@ hr {
         font-size: 14px;
     }
 
-    .btn-upload-quote {
+    .btn-upload-quote,
+    .blob-icon {
         margin-bottom: 44px;
     }
 
@@ -3471,7 +3476,11 @@ hr {
         min-width: unset;
         white-space: nowrap;
         gap: 4px;
-        font-size: 14px;
+        font-size: 15px;
+    }
+
+    input:not([type="number"]).form-control:not(.form-control.verification-input) {
+        height: 40px;
     }
 
     .lg-decoration,
