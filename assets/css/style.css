@@ -3175,6 +3175,27 @@ hr {
         font-size: 14px;
     }
 
+    .square {
+        width: 32px;
+        height: 32px;
+    }
+
+    .top-right {
+        right: 32px;
+    }
+
+    .bottom-right {
+        top: 32px;
+    }
+
+    .bottom-left {
+        bottom: 32px;
+    }
+
+    .top-left {
+        left: 32px;
+    }
+
     .notification-item .position-absolute {
         top: 0;
         left: 12px;
