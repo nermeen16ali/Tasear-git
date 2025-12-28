@@ -3330,6 +3330,10 @@ hr {
         height: 14px;
     }
 
+    .choices__inner {
+        min-width: 250px;
+    }
+
     .chat-icon svg {
         height: 20px;
     }
