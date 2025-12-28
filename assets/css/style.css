@@ -3486,10 +3486,6 @@ hr {
         font-size: 15px;
     }
 
-    input:not([type="number"]).form-control:not(.form-control.verification-input) {
-        height: 40px;
-    }
-
     .lg-decoration,
     .sm-decoration {
         width: 54px;
