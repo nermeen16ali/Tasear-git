@@ -1994,7 +1994,7 @@ main {
     margin-right: 12px;
 }
 
-.dropdown-toggle::after {
+/* .dropdown-toggle::after {
     content: "";
     display: inline-block;
     width: 14px;
@@ -2006,9 +2006,12 @@ main {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-}
+} */
 
-.chat-header .dropdown-toggle::after {
+/* .chat-header .dropdown-toggle::after {
+    display: none;
+} */
+.dropdown-toggle::after {
     display: none;
 }
 
@@ -3148,10 +3151,6 @@ hr {
         font-size: 15px;
     }
 
-    header .nav-link svg {
-        margin-left: 8px;
-    }
-
     .navbar-collapse>li {
         margin-bottom: 24px;
     }
@@ -3163,6 +3162,24 @@ hr {
     .fs-6,
     .pricing-table th {
         font-size: 14px;
+    }
+
+    header .nav-link svg {
+        margin-left: 8px;
+        width: 18px;
+    }
+
+    .back_to_top {
+        inset-inline-end: 24px;
+    }
+
+    .page-breadcrumb svg {
+        width: 4px;
+    }
+
+    .navbar-toggler-icon {
+        width: 24px;
+        height: 24px;
     }
 
     table td {
@@ -3205,7 +3222,7 @@ hr {
         width: 100%;
     }
 
-    .grayed-icon svg {
+    .grayed-icon:not(.back_to_top) svg {
         width: 16px;
         height: 16px;
     }
@@ -3518,6 +3535,14 @@ hr {
 
     main {
         padding-top: 64px;
+    }
+
+    .table>:not(caption)>*>* {
+        padding-block: 12px;
+    }
+
+    .cart-card {
+        padding: 12px;
     }
 }
 
