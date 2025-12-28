@@ -3546,7 +3546,8 @@ hr {
         padding: 8px 16px;
     }
 
-    .grayed-icon svg {
+    .grayed-icon svg,
+    .grayed-icon img {
         width: 20px;
         height: 20px;
     }
