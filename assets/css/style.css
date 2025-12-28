@@ -3330,6 +3330,15 @@ hr {
         height: 14px;
     }
 
+    .chat-icon svg {
+        height: 20px;
+    }
+
+    .btn-icon-circle {
+        width: 28px;
+        height: 28px;
+    }
+
     .steps-container {
         --bs-gutter-y: 2rem;
     }
@@ -3549,6 +3558,20 @@ hr {
 
     .cart-card {
         padding: 12px;
+    }
+
+    .icon-64 {
+        width: 52px;
+        height: 52px;
+    }
+
+    .badge {
+        padding: 6px;
+        font-size: 11px;
+    }
+
+    .supplier-accordion .accordion-button {
+        padding: 12px 10px;
     }
 }
 
