@@ -3515,6 +3515,10 @@ hr {
     .payment-item {
         padding: 10px;
     }
+
+    main {
+        padding-top: 64px;
+    }
 }
 
 .table td input {
