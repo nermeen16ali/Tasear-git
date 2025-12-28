@@ -1852,8 +1852,6 @@ main {
     display: flex;
     background: #fff;
     overflow: hidden;
-    height: 727px;
-    /* border: 1px solid #E5E7EB; */
 }
 
 /* Sidebar */
@@ -3094,6 +3092,10 @@ hr {
         height: 34px;
     }
 
+    .chat-container {
+        height: 727px;
+    }
+
     .tracker-line {
         position: absolute;
         top: 16px;
@@ -3166,7 +3168,8 @@ hr {
 
     body,
     .fs-6,
-    .pricing-table th {
+    .pricing-table th,
+    .form-control {
         font-size: 14px;
     }
 
@@ -3511,8 +3514,40 @@ hr {
         font-size: 11px;
     }
 
-    .chat-progress-container {
-        padding: 24px;
+    .chat-progress-container,
+    .chat-messages {
+        padding: 16px 12px;
+    }
+
+    .chat-messages {
+        max-height: 450px;
+    }
+
+    .message {
+        max-width: 100%;
+    }
+
+    .bg-grayed-link {
+        padding: 8px 16px;
+    }
+
+    .grayed-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .chat-container .main-btn {
+        padding: 4px 12px;
+        font-size: 14px;
+    }
+
+    .chat-action-block {
+        padding: 12px 10px;
+    }
+
+    .product-tab {
+        padding: 8px 16px;
+        font-size: 12px;
     }
 
     .pricing-type-cards {
@@ -3560,8 +3595,19 @@ hr {
         padding-block: 12px;
     }
 
-    .cart-card {
+    .cart-card,
+    .conversation-item {
         padding: 12px;
+    }
+
+    .unread-badge {
+        font-size: 10px;
+        min-width: 16px;
+        min-height: 16px;
+    }
+
+    .conv-time {
+        font-size: 10px;
     }
 
     .icon-64 {
