@@ -3174,6 +3174,11 @@ hr {
         font-size: 14px;
     }
 
+    .notification-item .position-absolute {
+        top: 0;
+        left: 12px;
+    }
+
     header .nav-link svg {
         margin-left: 8px;
         width: 18px;
