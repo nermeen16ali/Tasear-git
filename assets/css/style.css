@@ -3231,7 +3231,8 @@ hr {
     }
 
     .grayed-icon,
-    .step-counter {
+    .step-counter,
+    .slider-arrow-btn {
         width: 32px;
         height: 32px;
     }
@@ -3558,6 +3559,10 @@ hr {
 
     .thumbnail-card img {
         height: 85px;
+    }
+
+    .categories-slider.container {
+        padding-inline: calc(var(--bs-gutter-x) * .5);
     }
 
     .chat-container .main-btn {
